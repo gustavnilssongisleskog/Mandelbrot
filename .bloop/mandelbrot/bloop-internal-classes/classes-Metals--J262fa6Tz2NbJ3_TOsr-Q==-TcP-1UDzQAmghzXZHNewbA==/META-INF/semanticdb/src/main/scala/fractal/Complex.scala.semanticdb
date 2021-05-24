@@ -117,7 +117,7 @@ scala/Int#2
  local02$
  fractal/Complex#sqr().2
  fractal/Complex#2$
- fractal/Complex#`^`().2$
+ fractal/Complex#`*`().2$
  fractal/Complex#abs().2
  scala/Double#2$
  java/lang/Math#sqrt().2
@@ -134,4 +134,4 @@ scala/Int#2
 4 5scala/StringContext#s().2*
 ( (scala/StringContext.apply().2!
 ) +fractal/Complex#re.2!
-0 2fractal/Complex#im.PZ C7C679CC594DD6C060A2D787256EEBDD
+0 2fractal/Complex#im.PZ E8CB972D142A73A4647BDAC8B0ECF515

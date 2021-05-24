@@ -12,7 +12,7 @@ case class Complex(val re: Double = 0, val im: Double = 0){
         res
     }
 
-    def sqr: Complex = this ^ 2
+    def sqr: Complex = this * this
 
     def abs: Double = Math.sqrt(re * re + im * im)
 
