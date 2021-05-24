@@ -1,0 +1,137 @@
+
+¹"$src/main/scala/fractal/Complex.scala*#
+fractal/Complex# €*Complex€*-
+fractal/Complex#`<init>`(). €@*<init>€*-
+fractal/Complex#`<init>`().(re) €*re€*-
+fractal/Complex#`<init>`().(im) €*im€*!
+fractal/Complex#re. €*re€*!
+fractal/Complex#im. €*im€* 
+fractal/Complex#`+`().*+€*+
+fractal/Complex#`+`().(other)*other€* 
+fractal/Complex#`*`().**€*+
+fractal/Complex#`*`().(other)*other€* 
+fractal/Complex#`^`().*^€*#
+fractal/Complex#`^`().(n)*n€*
+local0 €*res€*
+local1*i€*"
+fractal/Complex#sqr().*sqr€*"
+fractal/Complex#abs().*abs€*,
+fractal/Complex#toString().*toString€*$
+fractal/Complex#copy().*copy€*&
+fractal/Complex#copy().(re)*re€*&
+fractal/Complex#copy().(im)*im€*8
+!fractal/Complex#copy$default$1().*copy$default$1€*8
+!fractal/Complex#copy$default$2().*copy$default$2€* 
+fractal/Complex#_1().*_1€* 
+fractal/Complex#_2().*_2€*"
+fractal/Complex.
+ *Complex€*&
+fractal/Complex.apply().*apply€*'
+fractal/Complex.apply().(re)*re€*'
+fractal/Complex.apply().(im)*im€**
+fractal/Complex.unapply().*unapply€*+
+fractal/Complex.unapply().(x$1)*x$1€*,
+fractal/Complex.toString().*toString€*R
+.fractal/Complex.$lessinit$greater$default$1().*$lessinit$greater$default$1€*R
+.fractal/Complex.$lessinit$greater$default$2().*$lessinit$greater$default$2€2
+ fractal/2
+ fractal/Complex#2)
+ fractal/Complex#`<init>`().2
+ !scala/Double#2
+/ 5scala/Double#2!
+ fractal/Complex#re.2!
++ -fractal/Complex#im.2$
+ 	fractal/Complex#`+`().2+
+
+ fractal/Complex#`+`().(other)2
+ fractal/Complex#2
+ "fractal/Complex#2&
+, ,fractal/Complex.apply().2
+% ,fractal/Complex.2#
+0 1scala/Double#`+`(+7).2!
+- /fractal/Complex#re.2!
+8 :fractal/Complex#re.2+
+2 7fractal/Complex#`+`().(other)2#
+? @scala/Double#`+`(+7).2!
+< >fractal/Complex#im.2!
+G Ifractal/Complex#im.2+
+A Ffractal/Complex#`+`().(other)2$
+ 	fractal/Complex#`*`().2+
+
+ fractal/Complex#`*`().(other)2
+ fractal/Complex#2
+ "fractal/Complex#2&
+, ,fractal/Complex.apply().2
+% ,fractal/Complex.2#
+; <scala/Double#`-`(+6).2#
+0 1scala/Double#`*`(+6).2!
+- /fractal/Complex#re.2!
+8 :fractal/Complex#re.2+
+2 7fractal/Complex#`*`().(other)2#
+@ Ascala/Double#`*`(+6).2!
+= ?fractal/Complex#im.2!
+H Jfractal/Complex#im.2+
+B Gfractal/Complex#`*`().(other)2#
+Z [scala/Double#`+`(+7).2#
+O Pscala/Double#`*`(+6).2!
+L Nfractal/Complex#re.2!
+W Yfractal/Complex#im.2+
+Q Vfractal/Complex#`*`().(other)2#
+_ `scala/Double#`*`(+6).2!
+\ ^fractal/Complex#im.2!
+g ifractal/Complex#re.2+
+a ffractal/Complex#`*`().(other)2$
+ 	fractal/Complex#`^`().2'
+
+ fractal/Complex#`^`().(n)2
+ 
+scala/Int#2
+ fractal/Complex#2
+		 local02&
+		 fractal/Complex.apply().2
+		 fractal/Complex.29
+
+
+ +scala/collection/immutable/Range#foreach().2,
+
+
+ scala/runtime/RichInt#until().26
+
+
+ (scala/LowPriorityImplicits#intWrapper().2'
+
+
+ fractal/Complex#`^`().(n)2
+
+
+ local12
+
+
+ !local02$
+
+(
+ )fractal/Complex#`*`().2
+
+$
+ 'local02
+ local02$
+ fractal/Complex#sqr().2
+ fractal/Complex#2$
+ fractal/Complex#`^`().2$
+ fractal/Complex#abs().2
+ scala/Double#2$
+ java/lang/Math#sqrt().2
+ java/lang/Math#2#
+( )scala/Double#`+`(+7).2#
+# $scala/Double#`*`(+6).2!
+  "fractal/Complex#re.2!
+% 'fractal/Complex#re.2#
+- .scala/Double#`*`(+6).2!
+* ,fractal/Complex#im.2!
+/ 1fractal/Complex#im.2)
+ fractal/Complex#toString().2"
+ #scala/Predef.String#2&
+4 5scala/StringContext#s().2*
+( (scala/StringContext.apply().2!
+) +fractal/Complex#re.2!
+0 2fractal/Complex#im.PZ C7C679CC594DD6C060A2D787256EEBDD

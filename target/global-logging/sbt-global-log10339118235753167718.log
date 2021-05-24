@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(87376f5b-3d2e-47b0-9aff-0e3c613a17d5), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@34070bd2, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\target\scala-3.0.0\classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\target\scala-3.0.0\classes ...[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 2 s, completed 23 maj 2021 18:53:50[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

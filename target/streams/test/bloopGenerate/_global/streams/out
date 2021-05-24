@@ -1,0 +1,4 @@
+[debug] [mandelbrot-test] Classpath dependencies List()
+[debug] [mandelbrot-test] Dependencies from configurations List(mandelbrot)
+[debug] Bloop wrote the configuration of project 'mandelbrot-test' to 'C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\.bloop\mandelbrot-test.json'
+[success] Generated .bloop\mandelbrot-test.json

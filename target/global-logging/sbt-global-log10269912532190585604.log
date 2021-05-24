@@ -1,0 +1,9 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(console, Some(c9493e0a-c91b-4ec1-b894-f27541e4cd8a), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / console[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@6edd4fe2, check cycles: false, forcegc: true[0m
+[0m[[0m[33mwarn[0m] [0m[0mCanceling execution...[0m
+[0m[[0m[33mwarn[0m] [0m[0mRun canceled.[0m
+[0m[[0m[31merror[0m] [0m[0mCancelled: console[0m
+[0m[[0m[31merror[0m] [0m[0mCancelled: console[0m
+[0m[[0m[31merror[0m] [0m[0mUse 'last' for the full log.[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
