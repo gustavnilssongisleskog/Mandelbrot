@@ -1,0 +1,96 @@
+
+å 9src/main/scala/fractal/application/controls/Buttons.scala*7
+%fractal/application/controls/Buttons.
+ *Buttons€*B
+.fractal/application/controls/Buttons.inButton. €*inButton€*
+local0*e€*D
+/fractal/application/controls/Buttons.outButton. €*	outButton€*
+local1*e€*N
+5fractal/application/controls/Buttons.zoomDirection(). €*zoomDirection€*R
+6fractal/application/controls/Buttons.zoomChangeButton. €*zoomChangeButton€*
+local2*e€*F
+0fractal/application/controls/Buttons.zoomButton. €*
+zoomButton€*
+local3*e€*H
+1fractal/application/controls/Buttons.resetButton. €*resetButton€*
+local4*e€2'
+ $fractal/application/controls/2
+ fractal/application/2
+ fractal/2"
+ javax/swing/JButton.2"
+ javax/swing/JButton#2
+ javax/swing/2
+ javax/2&
+ fractal/application/GUI.2"
+ fractal/application/2
+ fractal/23
+$ +%fractal/application/graphics/Picture#2+
+ #fractal/application/graphics/2"
+ fractal/application/2
+ fractal/2,
+ $fractal/mandelbrot/Mandelbrot.2,
+ $fractal/mandelbrot/Mandelbrot#2!
+ fractal/mandelbrot/2
+ fractal/23
+ %fractal/application/controls/Buttons.2<
+		 .fractal/application/controls/Buttons.inButton.2/
+		 !javax/swing/JButton#`<init>`(+2).2"
+		 javax/swing/JButton#2=
+
+
+ /javax/swing/AbstractButton#addActionListener().2<
+
+
+ .fractal/application/controls/Buttons.inButton.2
+
+
+  local02'
+ scala/Predef.println(+1).2/
+ !fractal/application/GUI.zoomIn().23
+ %fractal/application/GUI.newPicture().2=
+ /fractal/application/controls/Buttons.outButton.2/
+ !javax/swing/JButton#`<init>`(+2).2"
+ javax/swing/JButton#2=
+ /javax/swing/AbstractButton#addActionListener().2=
+ /fractal/application/controls/Buttons.outButton.2
+  !local12'
+ scala/Predef.println(+1).20
+ "fractal/application/GUI.zoomOut().23
+ %fractal/application/GUI.newPicture().2C
+ 5fractal/application/controls/Buttons.zoomDirection().2D
+ 6fractal/application/controls/Buttons.zoomChangeButton.2/
+& &!javax/swing/JButton#`<init>`(+2).2"
+ &javax/swing/JButton#2=
+ &/javax/swing/AbstractButton#addActionListener().2D
+ 6fractal/application/controls/Buttons.zoomChangeButton.2
+' (local22'
+ scala/Predef.println(+1).2C
+ 5fractal/application/controls/Buttons.zoomDirection().2 
+ scala/Int#`/`(+6).2C
+ )5fractal/application/controls/Buttons.zoomDirection().2$
+ scala/Double#`==`(+3).2C
+ 5fractal/application/controls/Buttons.zoomDirection().23
+4 ;%javax/swing/AbstractButton#setText().2D
+# 36fractal/application/controls/Buttons.zoomChangeButton.23
+` g%javax/swing/AbstractButton#setText().2D
+O _6fractal/application/controls/Buttons.zoomChangeButton.2>
+ 0fractal/application/controls/Buttons.zoomButton.2/
+   !javax/swing/JButton#`<init>`(+2).2"
+  javax/swing/JButton#2=
+    /javax/swing/AbstractButton#addActionListener().2>
+   0fractal/application/controls/Buttons.zoomButton.2
+ !  "local32'
+!! scala/Predef.println(+1).2C
+"" 5fractal/application/controls/Buttons.zoomDirection().20
+"(" /"fractal/application/GUI.zoomOut().2/
+"=" C!fractal/application/GUI.zoomIn().23
+## %fractal/application/GUI.newPicture().2?
+&& 1fractal/application/controls/Buttons.resetButton.2/
+&!& !!javax/swing/JButton#`<init>`(+2).2"
+&& !javax/swing/JButton#2=
+'' !/javax/swing/AbstractButton#addActionListener().2?
+'' 1fractal/application/controls/Buttons.resetButton.2
+'"' #local42'
+(( scala/Predef.println(+1).22
+)) $fractal/application/GUI.zoomReset().23
+** %fractal/application/GUI.newPicture().PZ 882602659F6251B78452AF1407C3B444

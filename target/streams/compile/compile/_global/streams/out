@@ -1,6 +1,14 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E161] Naming Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\graphics\FractalImage.scala:39:16 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m39 |[0m            [33mval[0m [36mfile[0m = [33mnew[0m [35mFile[0m([31ms"[0m${name getOrElse [31ms"Mandelbrot: [0m${[31m2[0m / reSize}[31mx zoom, [0m${Complex(reMid - reSize / [31m2[0m, imMid - imSize / [31m2[0m)}[31m, [0m${Complex(reMid + reSize / [31m2[0m, imMid + imSize / [31m2[0m)}[31m"[0m}[31m.png"[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |            [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |            file is already defined as [33mvalue[0m [35mfile[0m[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\controls\Buttons.scala:11:21 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m        frame.remove(picture)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                     [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                     Not found: picture[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\controls\Buttons.scala:12:8 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m        picture = [33mnew[0m [35mPicture[0m(Mandelbrot(dim, reMid, initSize * scale, imMid, initSize * scale).repsss)[0m
+[0m[[0m[31merror[0m] [0m[0m   |        [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |        Not found: picture[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\controls\Buttons.scala:13:18 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m        frame.add(picture)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                  [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                  Not found: picture[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

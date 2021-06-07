@@ -1,105 +1,0 @@
-
-“,src/main/scala/fractal/graphics/SColor.scala*)
-fractal/graphics/SColor.
- *SColor€*1
-fractal/graphics/SColor.colors. €*colors€*3
- fractal/graphics/SColor.colors2. €*colors2€*.
- fractal/graphics/SColor.color().*color€*3
-&fractal/graphics/SColor.color().(reps)*reps€2
- fractal/graphics/2
- fractal/2&
- fractal/graphics/SColor.24
-) 0&fractal/mandelbrot/Mandelbrot.maxReps.2,
- (fractal/mandelbrot/Mandelbrot.2!
- fractal/mandelbrot/2
- fractal/2
- java/awt/Color#2
- 	java/awt/2
- java/2,
- $scala/util/Random#nextInt(+1).2*
- $scala/util/Random#nextInt().2 
- scala/util/Random.2
- scala/util/2
- scala/2-
- fractal/graphics/SColor.colors.27
- )scala/collection/IterableFactory#apply().2#
- scala/package.Vector.2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
-		 java/awt/Color#`<init>`().2
-		 java/awt/Color#2(
-
-
- java/awt/Color#`<init>`().2
-
-
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2.
-""  fractal/graphics/SColor.colors2.2@
-"" 2scala/collection/StrictOptimizedSeqFactory#fill().2#
-"" scala/package.Vector.2(
-"-" -java/awt/Color#`<init>`().2
-"'" -java/awt/Color#2,
-"." 5scala/util/Random#nextInt(+1).2,
-"<" Cscala/util/Random#nextInt(+1).2,
-"J" Qscala/util/Random#nextInt(+1).2.
-$$  fractal/graphics/SColor.color().24
-$$ &fractal/graphics/SColor.color().(reps)2
-$$ 
-scala/Int#2
-$$  java/awt/Color#24
-%% &fractal/graphics/SColor.color().(reps)24
-&& &fractal/mandelbrot/Mandelbrot.maxReps.2#
-&%& *java/awt/Color#black.2
-&& $java/awt/Color#2.
-''  scala/collection/SeqOps#apply().2-
-'' fractal/graphics/SColor.colors.2 
-'6' 7scala/Int#`%`(+3).2 
-'1' 2scala/Int#`-`(+3).2 
-'#' $scala/Int#`+`(+4).24
-'' "&fractal/graphics/SColor.color().(reps)2-
-',' 0scala/collection/SeqOps#size().2-
-'%' +fractal/graphics/SColor.colors.2-
-'?' Cscala/collection/SeqOps#size().2-
-'8' >fractal/graphics/SColor.colors.PZ 4D4FD17DA350D72487B5D45FDC75DC19
