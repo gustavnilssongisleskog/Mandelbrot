@@ -85,6 +85,7 @@ object SColor{
         val img = new Rainbow
         frame.add(img)
         frame.setSize(new Dimension(800, 800))
+        frame.setDefaultCloseOperation(3)
         frame.setVisible(true)
     }
 

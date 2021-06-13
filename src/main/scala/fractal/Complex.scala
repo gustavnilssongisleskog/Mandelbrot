@@ -18,5 +18,5 @@ case class Complex(val re: Double = 0, val im: Double = 0){
 
     def abs: Double = Math.sqrt(re * re + im * im)
 
-    override def toString(): String = s"$re + ${im}i"
+    override def toString(): String = s"$re ${if im < 0 then s"- ${-im}" else s"+ $im"}i"
 }

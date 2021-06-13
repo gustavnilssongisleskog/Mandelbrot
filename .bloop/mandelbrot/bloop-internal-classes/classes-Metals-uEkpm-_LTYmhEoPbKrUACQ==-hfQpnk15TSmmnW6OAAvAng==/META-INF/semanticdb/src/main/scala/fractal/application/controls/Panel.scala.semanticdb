@@ -1,51 +1,0 @@
-
-7src/main/scala/fractal/application/controls/Panel.scala*3
-#fractal/application/controls/Panel.
- *Panel€*H
-0fractal/application/controls/Panel.commandPanel. €*commandPanel€2'
- $fractal/application/controls/2
- fractal/application/2
- fractal/23
- %fractal/application/controls/Buttons.22
- $fractal/application/controls/Labels.2!
- javax/swing/JPanel.2!
- javax/swing/JPanel#2
- javax/swing/2
- javax/2"
- java/awt/FlowLayout#2
- 	java/awt/2
- java/21
-		 #fractal/application/controls/Panel.2>
-
-
- 0fractal/application/controls/Panel.commandPanel.2.
-
-!
- ! javax/swing/JPanel#`<init>`(+1).2!
-
-
- !javax/swing/JPanel#2/
-
-0
- 0!java/awt/FlowLayout#`<init>`(+1).2"
-
-&
- 0java/awt/FlowLayout#2)
-
-<
- Bjava/awt/FlowLayout#CENTER.2"
-
-1
- ;java/awt/FlowLayout#2'
- java/awt/Container#add().2>
- 0fractal/application/controls/Panel.commandPanel.2D
- %6fractal/application/controls/Buttons.zoomChangeButton.2'
- java/awt/Container#add().2>
- 0fractal/application/controls/Panel.commandPanel.2>
- 0fractal/application/controls/Buttons.zoomButton.2'
- java/awt/Container#add().2>
- 0fractal/application/controls/Panel.commandPanel.2?
-  1fractal/application/controls/Buttons.resetButton.2'
- java/awt/Container#add().2>
- 0fractal/application/controls/Panel.commandPanel.2<
- .fractal/application/controls/Labels.zoomLabel.PZ 437F992C8000270DE5A9E7A0AC1DB502
