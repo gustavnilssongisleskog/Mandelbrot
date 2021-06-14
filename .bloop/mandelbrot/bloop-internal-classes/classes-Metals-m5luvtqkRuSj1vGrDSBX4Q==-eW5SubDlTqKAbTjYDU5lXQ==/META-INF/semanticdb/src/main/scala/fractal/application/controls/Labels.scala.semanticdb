@@ -1,64 +1,0 @@
-
-™8src/main/scala/fractal/application/controls/Labels.scala*5
-$fractal/application/controls/Labels.
- *Labels€*C
-.fractal/application/controls/Labels.zoomLabel. €*	zoomLabel€*
-local0 *$anon€*
-local1*paintComponent€*
-local2*g€*K
-2fractal/application/controls/Labels.positionLabel. €*positionLabel€*
-local3 *$anon€*
-local4*paintComponent€*
-local5*g€2'
- $fractal/application/controls/2
- fractal/application/2
- fractal/27
-  .)fractal/application/GUI.getScaleFactor().23
-0 :%fractal/application/GUI.getMouseRe().23
-< F%fractal/application/GUI.getMouseIm().2&
- fractal/application/GUI.2"
- fractal/application/2
- fractal/2!
- javax/swing/JLabel.2!
- javax/swing/JLabel#2
- javax/swing/2
- javax/2 
- java/awt/Graphics.2 
- java/awt/Graphics#2
- 	java/awt/2
- java/22
- $fractal/application/controls/Labels.2<
-		 .fractal/application/controls/Labels.zoomLabel.2.
-		  javax/swing/JLabel#`<init>`(+2).2!
-		 javax/swing/JLabel#2
-
-
- #local12
-
-$
- %local22 
-
-'
- /java/awt/Graphics#2+
- javax/swing/JLabel#setText().2&
-4 5scala/StringContext#s().2*
- scala/StringContext.apply().2 
-! "scala/Int#`/`(+6).27
-# 1)fractal/application/GUI.getScaleFactor().26
-  (javax/swing/JComponent#paintComponent().2
-! "local22@
- 2fractal/application/controls/Labels.positionLabel.2.
-" " javax/swing/JLabel#`<init>`(+2).2!
- "javax/swing/JLabel#2
- #local42
-$ %local52 
-' /java/awt/Graphics#2+
- javax/swing/JLabel#setText().2)
-< Dfractal/Complex#toString().2&
-# #fractal/Complex.apply().2
- #fractal/Complex.2
- fractal/23
-$ .%fractal/application/GUI.getMouseRe().23
-0 :%fractal/application/GUI.getMouseIm().26
-  (javax/swing/JComponent#paintComponent().2
-! "local5PZ 4AA7B93CCDC9F374DEBC19F9ED2680ED

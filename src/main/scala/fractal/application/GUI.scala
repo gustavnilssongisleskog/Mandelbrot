@@ -17,13 +17,14 @@ object GUI{
     val initSize = 2.5D
     val initRe = -0.5
     val initIm = 0D
-    private var mandel = Mandelbrot(dim, initRe, initSize, initIm, initSize)
+    val standardMandel = Mandelbrot(dim, initRe, initSize, initIm, initSize)
+    private var mandel = standardMandel
     
-    private var scaleFactor = 1D
+    /*private var scaleFactor = 1D
     def zoomIn: Unit = scaleFactor /= 2
     def zoomOut: Unit = scaleFactor *= 2
-    def zoomReset: Unit = scaleFactor = 1D
-    def getScaleFactor: Double = scaleFactor
+    def zoomReset: Unit = scaleFactor = 1D*/
+    def scaleFactor: Double = mandel.reSize / 2.5
     
     private val mouse = new MouseHandler
     private var mouseRe = 0D
@@ -35,20 +36,36 @@ object GUI{
         mouseIm = -y * mandel.imSize / dim + mandel.imMid + mandel.imSize / 2
     }
 
+    val history = new History(mandel)
+
     private var picture: Picture = new Picture(mandel.repsss)
-    def newPicture(reMid: Double = initRe, imMid: Double = initIm, scaleFactor: Double = scaleFactor): Unit = {
+    def zoomIn(reMid: Double, imMid: Double): Unit = {
+        history.newEntry(Mandelbrot(dim, reMid, initSize * scaleFactor / 2, imMid, initSize * scaleFactor / 2))
+        updateFrame
+    }
+    def zoomOut(reMid: Double, imMid: Double): Unit = {
+        history.newEntry(Mandelbrot(dim, reMid, initSize * scaleFactor * 2, imMid, initSize * scaleFactor * 2))
+        updateFrame
+    }
+    def moveTo(reMid: Double, imMid: Double): Unit = {
+        history.newEntry(Mandelbrot(dim, reMid, initSize * scaleFactor, imMid, initSize * scaleFactor))
+        updateFrame
+    }
+    def reset: Unit = {
+        history.newEntry(standardMandel)
+        updateFrame
+    }
+    def updateFrame: Unit = {
+        mandel = history.getCur
         frame.remove(picture)
-        mandel = Mandelbrot(dim, reMid, initSize * scaleFactor, imMid, initSize * scaleFactor)
-        picture = new Picture(mandel.repsss)
+        picture = new Picture(history.getCur.repsss)
         picture.addMouseListener(mouse)
         picture.addMouseMotionListener(mouse)
         frame.add(picture, BorderLayout.CENTER)
         frame.revalidate
-
         Labels.zoomLabel.repaint()
     }
 
-    
     @main
     def createWindow: Unit = {
 

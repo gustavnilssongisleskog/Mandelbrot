@@ -1,6 +1,6 @@
 package fractal.application.controls
 
-import fractal.application.GUI.{dim, frame, newPosition, zoomIn, zoomOut, newPicture, getMouseRe, getMouseIm}
+import fractal.application.GUI.{dim, newPosition, zoomIn, zoomOut, moveTo, getMouseRe, getMouseIm}
 import Labels.positionLabel
 import Panel.commandPanel
 
@@ -14,17 +14,15 @@ class MouseHandler extends MouseInputAdapter{
     override def mouseClicked(e: MouseEvent): Unit = {
         e.getButton match
             case MouseEvent.BUTTON1 => 
-                zoomIn
-                newPicture(getMouseRe, getMouseIm)
+                zoomIn(getMouseRe, getMouseIm)
                 println("Left")
             
             case MouseEvent.BUTTON2 => 
-                newPicture(getMouseRe, getMouseIm)
+                moveTo(getMouseRe, getMouseIm)
                 println("Wheel")
             
             case MouseEvent.BUTTON3 => 
-                zoomOut
-                newPicture(getMouseRe, getMouseIm)
+                zoomOut(getMouseRe, getMouseIm)
                 println("Right")
 
             case _ => println("undefined")

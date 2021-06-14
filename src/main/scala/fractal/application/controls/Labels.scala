@@ -1,6 +1,6 @@
 package fractal.application.controls
 
-import fractal.application.GUI.{getScaleFactor, getMouseRe, getMouseIm}
+import fractal.application.GUI.{scaleFactor, getMouseRe, getMouseIm}
 
 
 import javax.swing.JLabel
@@ -9,7 +9,7 @@ import java.awt.Graphics
 object Labels{
     val zoomLabel = new JLabel("Zoom: 1x") {
         override def paintComponent(g: Graphics) = {
-            setText(s"Zoom: ${(1 / getScaleFactor)}x")
+            setText(s"Zoom: ${(1 / scaleFactor)}x")
             super.paintComponent(g)
         }
     }

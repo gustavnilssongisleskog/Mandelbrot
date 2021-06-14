@@ -7,7 +7,7 @@ import fractal.mandelbrot.Mandelbrot
 
 object Buttons{
 
-    val inButton = new JButton("+")
+    /*val inButton = new JButton("+")
     inButton.addActionListener(e => 
         println("in")
         zoomIn
@@ -34,12 +34,25 @@ object Buttons{
         println("zoom")
         zoomDirection match {case 2D => zoomOut; case 0.5 => zoomIn}
         newPicture()
-    )
+    )*/
 
     val resetButton = new JButton("Reset")
     resetButton.addActionListener(e =>
         println("reset")
-        zoomReset
-        newPicture()
+        reset
+    )
+
+    val backButton = new JButton("\u2b9c")
+    backButton.addActionListener(e =>
+        println("back")
+        history.back
+        updateFrame
+    )
+
+    val forwardButton = new JButton("\u2b9e")
+    forwardButton.addActionListener(e =>
+        println("forward")
+        history.forward
+        updateFrame
     )
 }
