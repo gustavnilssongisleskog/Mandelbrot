@@ -37,9 +37,9 @@ object GUI{
     }
 
     val history = new History(mandel)
-
+    
     private var picture: Picture = new Picture(mandel.repsss)
-    def zoomIn(reMid: Double, imMid: Double): Unit = {
+    def zoomIn(reMid: Double, imMid: Double): Unit = {   
         history.newEntry(Mandelbrot(dim, reMid, initSize * scaleFactor / 2, imMid, initSize * scaleFactor / 2))
         updateFrame
     }

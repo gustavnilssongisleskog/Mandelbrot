@@ -1,10 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\controls\Labels.scala:19:109 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m19 |[0m            setText([31ms"[0m${[33mif[0m getMouseRe < [31m0[0m [33mthen[0m getMouseRe.toString.take([31m5[0m) [33melse[0m getMouseRe.toString.take([31m4[0m)}[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                                                                             [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                 unclosed string literal[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\controls\Labels.scala:20:108 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m20 |[0m              ${[33mif[0m getMouseIm < [31m0[0m [33mthen[0m getMouseIm.toString.take([31m5[0m) [33melse[0m [31ms"+[0m${getMouseIm.toString.take([31m5[0m)}[31m"[0m}[31mi[0m")[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                                                                            [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                 unclosed string literal[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\mandelbrot\Mandelbrot.scala:34:16 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m34 |[0m        counter.setLocationRelativeTo([31mnull[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |        [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value setLocationRelativeTo is not a member of fractal.application.ProgressFrame[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

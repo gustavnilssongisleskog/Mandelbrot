@@ -289,4 +289,4 @@ scala/Int#2
 DD ,fractal/application/createWindow#`<init>`().25
 DD 'fractal/application/GUI.createWindow().27
 DD )scala/util/CommandLineParser.showError().2
-DD local0PZ 833095E70BB1CF74D53B76BCBF97B4F7
+DD local0PZ 92E8CAF35664C6453D09F497F4F31A7A

@@ -2,12 +2,6 @@ package fractal.application
 
 import fractal.mandelbrot.Mandelbrot
 
-import javax.swing.JList
-import scala.collection.mutable.ArrayBuffer
-import javax.swing.JOptionPane
-import javax.swing.JFrame
-import java.util.Stack
-
 class History(first: Mandelbrot){
     import History.StackEntry
 
