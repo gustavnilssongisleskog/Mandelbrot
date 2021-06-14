@@ -1,6 +1,55 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 25 products, 11 sources, 2 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 28 products, 11 sources, 2 libraries[0m
 [0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/fractal/application/History.scala, ${BASE}/src/main/scala/fractal/application/graphics/SColor.scala, ${BASE}/src/main/scala/fractal/application/controls/Panel.scala, ${BASE}/src/main/scala/fractal/mandelbrot/Mandelbrot.scala, ${BASE}/src/main/scala/fractal/application/GUI.scala, ${BASE}/src/main/scala/fractal/Complex.scala, ${BASE}/src/main/scala/fractal/application/controls/Labels.scala, ${BASE}/src/main/scala/fractal/application/controls/Buttons.scala, ${BASE}/src/main/scala/fractal/application/graphics/Picture.scala, ${BASE}/src/main/scala/fractal/application/graphics/FractalImage.scala, ${BASE}/src/main/scala/fractal/application/controls/MouseHandler.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
-[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/fractal/application/controls/Buttons.scala, ${BASE}/src/main/scala/fractal/application/History.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/fractal/application/controls/Buttons.scala, ${BASE}/src/main/scala/fractal/application/History.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(fractal.application.controls.Buttons, fractal.application.History$.StackEntry, fractal.application.History)[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(fractal.application.controls.Buttons, fractal.application.History$.StackEntry, fractal.application.History)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/fractal/application/controls/Buttons.scala, ${BASE}/src/main/scala/fractal/application/History.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: fractal.application.controls.Buttons, fractal.application.History$.StackEntry, fractal.application.History[0m
+[0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\target\scala-3.0.0\classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: C:\Users\Gustav\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-sbt-bridge\3.0.0\scala3-sbt-bridge-3.0.0.jar.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 5c6a8d42 for Scala Compiler version 3.0.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\Gustav\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-library_3\3.0.0\scala3-library_3-3.0.0.jar;C:\Users\Gustav\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.5\scala-library-2.13.5.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\target\scala-3.0.0\classes[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.7454155 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from fractal.application.History...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: fractal.application.History[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(fractal.application.History)[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of fractal.application.controls.Buttons: Set(UsedName(forward,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of fractal.application.GUI. This dependency is not being considered for invalidation.[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(fractal.application.History,ModifiedNames(changes = UsedName(forward,[Default]))) invalidates 2 classes due to The fractal.application.History has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(forward,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(fractal.application.History)[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by member reference: Set(fractal.application.controls.Buttons)[0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	fractal.application.controls.Buttons[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: fractal.application.controls.Buttons[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding fractal.application.controls.Panel by fractal.application.controls.Buttons[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding fractal.application.controls.MouseHandler by fractal.application.controls.Panel[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding fractal.application.GUI by fractal.application.controls.MouseHandler[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding fractal.application.controls.Labels by fractal.application.GUI[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding fractal.application.graphics.Picture by fractal.application.GUI[0m
+[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0mFinal step, transitive dependencies:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set(fractal.application.controls.Buttons)[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m

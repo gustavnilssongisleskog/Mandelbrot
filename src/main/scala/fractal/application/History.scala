@@ -12,8 +12,8 @@ class History(first: Mandelbrot){
     import History.StackEntry
 
     private var cur = new StackEntry(first)
-    def back: Unit = if cur.getPrev != None then cur = cur.getPrev.get
-    def forward: Unit = if cur.getNext != None then cur = cur.getNext.get
+    def back: Boolean = if cur.getPrev != None then {cur = cur.getPrev.get; true} else false
+    def forward: Boolean = if cur.getNext != None then {cur = cur.getNext.get; true} else false
     def newEntry(newMandel: Mandelbrot): Unit = {cur.updateNext(newMandel); forward}
     def getCur: Mandelbrot = cur.mandel
 }

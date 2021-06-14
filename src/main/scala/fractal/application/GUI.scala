@@ -24,7 +24,7 @@ object GUI{
     def zoomIn: Unit = scaleFactor /= 2
     def zoomOut: Unit = scaleFactor *= 2
     def zoomReset: Unit = scaleFactor = 1D*/
-    def scaleFactor: Double = mandel.reSize / 2.5
+    def scaleFactor: Double = mandel.reSize / initSize
     
     private val mouse = new MouseHandler
     private var mouseRe = 0D

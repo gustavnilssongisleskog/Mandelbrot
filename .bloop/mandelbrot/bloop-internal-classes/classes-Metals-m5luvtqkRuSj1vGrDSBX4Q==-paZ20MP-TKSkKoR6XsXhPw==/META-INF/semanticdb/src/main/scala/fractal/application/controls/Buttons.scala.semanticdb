@@ -1,58 +1,0 @@
-
-»9src/main/scala/fractal/application/controls/Buttons.scala*7
-%fractal/application/controls/Buttons.
- *Buttons€*H
-1fractal/application/controls/Buttons.resetButton. €*resetButton€*
-local0*e€*F
-0fractal/application/controls/Buttons.backButton. €*
-backButton€*
-local1*e€*L
-3fractal/application/controls/Buttons.forwardButton. €*forwardButton€*
-local2*e€2'
- $fractal/application/controls/2
- fractal/application/2
- fractal/2"
- javax/swing/JButton.2"
- javax/swing/JButton#2
- javax/swing/2
- javax/2&
- fractal/application/GUI.2"
- fractal/application/2
- fractal/23
-$ +%fractal/application/graphics/Picture#2+
- #fractal/application/graphics/2"
- fractal/application/2
- fractal/2,
- $fractal/mandelbrot/Mandelbrot.2,
- $fractal/mandelbrot/Mandelbrot#2!
- fractal/mandelbrot/2
- fractal/23
- %fractal/application/controls/Buttons.2?
-&& 1fractal/application/controls/Buttons.resetButton.2/
-&!& !!javax/swing/JButton#`<init>`(+2).2"
-&& !javax/swing/JButton#2=
-'' !/javax/swing/AbstractButton#addActionListener().2?
-'' 1fractal/application/controls/Buttons.resetButton.2
-'"' #local02'
-(( scala/Predef.println(+1).2.
-))  fractal/application/GUI.reset().2>
-,, 0fractal/application/controls/Buttons.backButton.2/
-, ,  !javax/swing/JButton#`<init>`(+2).2"
-,,  javax/swing/JButton#2=
---  /javax/swing/AbstractButton#addActionListener().2>
--- 0fractal/application/controls/Buttons.backButton.2
--!- "local12'
-.. scala/Predef.println(+1).21
-// #fractal/application/History#back().2.
-//  fractal/application/GUI.history.24
-00 &fractal/application/GUI.updateFrame().2A
-33 3fractal/application/controls/Buttons.forwardButton.2/
-3#3 #!javax/swing/JButton#`<init>`(+2).2"
-33 #javax/swing/JButton#2=
-44 #/javax/swing/AbstractButton#addActionListener().2A
-44 3fractal/application/controls/Buttons.forwardButton.2
-4$4 %local22'
-55 scala/Predef.println(+1).24
-66 &fractal/application/History#forward().2.
-66  fractal/application/GUI.history.24
-77 &fractal/application/GUI.updateFrame().PZ 82B09D280E38346B58C712F51A4DBEC7

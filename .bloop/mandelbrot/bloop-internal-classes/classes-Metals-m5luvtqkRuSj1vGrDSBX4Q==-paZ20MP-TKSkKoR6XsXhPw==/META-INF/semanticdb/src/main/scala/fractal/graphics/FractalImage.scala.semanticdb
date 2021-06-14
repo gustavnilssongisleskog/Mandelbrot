@@ -1,188 +1,0 @@
-
-Ž@2src/main/scala/fractal/graphics/FractalImage.scala*5
-fractal/graphics/FractalImage.
- *FractalImage€*P
-4fractal/graphics/FractalImage.createBufferedImage().*createBufferedImage€*I
-;fractal/graphics/FractalImage.createBufferedImage().(reDim)*reDim€*I
-;fractal/graphics/FractalImage.createBufferedImage().(reMid)*reMid€*K
-<fractal/graphics/FractalImage.createBufferedImage().(reSize)*reSize€*I
-;fractal/graphics/FractalImage.createBufferedImage().(imMid)*imMid€*K
-<fractal/graphics/FractalImage.createBufferedImage().(imSize)*imSize€*
-local0 €*mandel€*
-local1 €*image€*
-local2*x€*
-local3*y€*d
->fractal/graphics/FractalImage.createBufferedImage$default$1().*createBufferedImage$default$1€*d
->fractal/graphics/FractalImage.createBufferedImage$default$2().*createBufferedImage$default$2€*d
->fractal/graphics/FractalImage.createBufferedImage$default$3().*createBufferedImage$default$3€*d
->fractal/graphics/FractalImage.createBufferedImage$default$4().*createBufferedImage$default$4€*d
->fractal/graphics/FractalImage.createBufferedImage$default$5().*createBufferedImage$default$5€*4
-&fractal/graphics/FractalImage.main2().*main2€*<
-*fractal/graphics/FractalImage.createPNG().*	createPNG€*=
-0fractal/graphics/FractalImage.createPNG().(name)*name€*;
-/fractal/graphics/FractalImage.createPNG().(dim)*dim€*?
-1fractal/graphics/FractalImage.createPNG().(reMid)*reMid€*A
-2fractal/graphics/FractalImage.createPNG().(reSize)*reSize€*?
-1fractal/graphics/FractalImage.createPNG().(imMid)*imMid€*A
-2fractal/graphics/FractalImage.createPNG().(imSize)*imSize€*
-local4 €*file€*
-local5 €*e€*P
-4fractal/graphics/FractalImage.createPNG$default$1().*createPNG$default$1€*P
-4fractal/graphics/FractalImage.createPNG$default$2().*createPNG$default$2€*P
-4fractal/graphics/FractalImage.createPNG$default$3().*createPNG$default$3€*P
-4fractal/graphics/FractalImage.createPNG$default$4().*createPNG$default$4€*P
-4fractal/graphics/FractalImage.createPNG$default$5().*createPNG$default$5€*P
-4fractal/graphics/FractalImage.createPNG$default$6().*createPNG$default$6€*'
-fractal/graphics/main2# *main2€*4
-"fractal/graphics/main2#`<init>`(). €@*<init>€*.
-fractal/graphics/main2#main(). € *main€*1
-$fractal/graphics/main2#main().(args)*args€*
-local6 €*error€2
- fractal/graphics/2
- fractal/2+
- #java/awt/image/BufferedImage.2+
- #java/awt/image/BufferedImage#2
- java/awt/image/2
- 	java/awt/2
- java/2,
- $fractal/mandelbrot/Mandelbrot.2,
- $fractal/mandelbrot/Mandelbrot#2!
- fractal/mandelbrot/2
- fractal/2
- java/io/File.2
- java/io/File#2
- java/io/2
- java/2
- fractal/Complex.2
- fractal/Complex#2
- fractal/2$
- javax/imageio/ImageIO#2
- javax/imageio/2
- javax/2$
- javax/swing/ImageIcon.2$
- javax/swing/ImageIcon#2
- javax/swing/2
- javax/2!
- javax/swing/JFrame.2!
- javax/swing/JFrame#2
- javax/swing/2
- javax/2!
-		 javax/swing/JLabel.2!
-		 javax/swing/JLabel#2
-		 javax/swing/2
-		 javax/2!
-
-
- java/awt/Dimension.2!
-
-
- java/awt/Dimension#2
-
-
- 	java/awt/2
-
-
- java/2,
- fractal/graphics/FractalImage.2B
- 4fractal/graphics/FractalImage.createBufferedImage().2I
- ;fractal/graphics/FractalImage.createBufferedImage().(reDim)2
- 
-scala/Int#2I
- ;fractal/graphics/FractalImage.createBufferedImage().(reMid)2
- scala/Double#2J
- $<fractal/graphics/FractalImage.createBufferedImage().(reSize)2
-& ,scala/Double#2I
- ;fractal/graphics/FractalImage.createBufferedImage().(imMid)2
- scala/Double#2J
- !<fractal/graphics/FractalImage.createBufferedImage().(imSize)2
-# )scala/Double#2+
-0 =java/awt/image/BufferedImage#2
- local024
- &fractal/mandelbrot/Mandelbrot.apply().2,
- fractal/mandelbrot/Mandelbrot.2I
-  %;fractal/graphics/FractalImage.createBufferedImage().(reDim)2I
-' ,;fractal/graphics/FractalImage.createBufferedImage().(reMid)2J
-. 4<fractal/graphics/FractalImage.createBufferedImage().(reSize)2I
-6 ;;fractal/graphics/FractalImage.createBufferedImage().(imMid)2J
-= C<fractal/graphics/FractalImage.createBufferedImage().(imSize)2
- local126
-% %(java/awt/image/BufferedImage#`<init>`().2+
- %java/awt/image/BufferedImage#2I
-& +;fractal/graphics/FractalImage.createBufferedImage().(reDim)22
-4 9$fractal/mandelbrot/Mandelbrot#imDim.2
-- 3local029
- +scala/collection/immutable/Range#foreach().2,
- scala/runtime/RichInt#until().26
- (scala/LowPriorityImplicits#intWrapper().2I
- ;fractal/graphics/FractalImage.createBufferedImage().(reDim)2
- local229
-% %+scala/collection/immutable/Range#foreach().2,
- scala/runtime/RichInt#until().26
- (scala/LowPriorityImplicits#intWrapper().22
-  %$fractal/mandelbrot/Mandelbrot#imDim.2
- local02
- local324
- &java/awt/image/BufferedImage#setRGB().2
- local12
- local22
- local32&
-A Gjava/awt/Color#getRGB().2.
-& + fractal/graphics/SColor.color().2&
- %fractal/graphics/SColor.2.
-< < scala/collection/SeqOps#apply().2.
-9 9 scala/collection/SeqOps#apply().23
-3 9%fractal/mandelbrot/Mandelbrot#repsss.2
-, 2local02
-: ;local22
-= >local32
- local12
- 	scala/main#24
-   &fractal/graphics/FractalImage.main2().2
-   scala/Unit#28
-   !*fractal/graphics/FractalImage.createPNG().2=
- "  %/fractal/graphics/FractalImage.createPNG().(dim)28
-"" *fractal/graphics/FractalImage.createPNG().2>
-## 0fractal/graphics/FractalImage.createPNG().(name)2
-## scala/Option#2"
-## scala/Predef.String#2=
-$$ /fractal/graphics/FractalImage.createPNG().(dim)2
-$$ 
-scala/Int#2?
-%% 1fractal/graphics/FractalImage.createPNG().(reMid)2
-%% scala/Double#2@
-%% $2fractal/graphics/FractalImage.createPNG().(reSize)2
-%&% ,scala/Double#2?
-&& 1fractal/graphics/FractalImage.createPNG().(imMid)2
-&& scala/Double#2@
-&& !2fractal/graphics/FractalImage.createPNG().(imSize)2
-&#& )scala/Double#2
-&0& 4scala/Unit#2
-)) local42(
-)) java/io/File#`<init>`(+2).2
-)) java/io/File#2&
-)5) 6scala/StringContext#s().2*
-)") "scala/StringContext.apply().24
-).) .&fractal/mandelbrot/Mandelbrot.apply().2,
-)$) .fractal/mandelbrot/Mandelbrot.2'
-,, scala/Predef.println(+1).2%
-,,  java/io/File#getName().2
-,, local42.
---  javax/imageio/ImageIO#write(+1).2$
--- javax/imageio/ImageIO#2B
--- -4fractal/graphics/FractalImage.createBufferedImage().2=
--.- 1/fractal/graphics/FractalImage.createPNG().(dim)2?
--3- 81fractal/graphics/FractalImage.createPNG().(reMid)2@
--:- @2fractal/graphics/FractalImage.createPNG().(reSize)2?
--B- G1fractal/graphics/FractalImage.createPNG().(imMid)2@
--I- O2fractal/graphics/FractalImage.createPNG().(imSize)2
--Y- ]local42
-// local52&
-// scala/package.Exception#2'
-/!/ (scala/Predef.println(+1).2
-/)/ *local52
-## #scala/None.2%
- fractal/graphics/main2#20
- "fractal/graphics/main2#`<init>`().24
- &fractal/graphics/FractalImage.main2().27
- )scala/util/CommandLineParser.showError().2
- local6PZ 92BA1EB5E8EE6593CAC09981D6F8C37D

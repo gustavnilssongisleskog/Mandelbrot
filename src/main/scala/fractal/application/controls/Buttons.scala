@@ -1,9 +1,12 @@
 package fractal.application.controls
 
-import javax.swing.JButton
 import fractal.application.GUI._
 import fractal.application.graphics.Picture
 import fractal.mandelbrot.Mandelbrot
+
+import javax.swing.JButton
+import javax.swing.JOptionPane
+import javax.swing.JPanel
 
 object Buttons{
 
@@ -45,14 +48,23 @@ object Buttons{
     val backButton = new JButton("\u2b9c")
     backButton.addActionListener(e =>
         println("back")
-        history.back
-        updateFrame
+
+        if history.back 
+        then
+            updateFrame
+        else
+            val panel = new JPanel
+            JOptionPane.showMessageDialog(panel, "Can't go back any further!", "Warning", JOptionPane.WARNING_MESSAGE)
     )
 
     val forwardButton = new JButton("\u2b9e")
     forwardButton.addActionListener(e =>
         println("forward")
-        history.forward
-        updateFrame
+        if history.forward 
+        then
+            updateFrame
+        else
+            val panel = new JPanel
+            JOptionPane.showMessageDialog(panel, "Can't go forward any further!", "Warning", JOptionPane.WARNING_MESSAGE)
     )
 }

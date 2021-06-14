@@ -1,143 +1,0 @@
-
-‚10src/main/scala/fractal/application/History.scala*,
-fractal/application/History#*History€*9
-'fractal/application/History#`<init>`(). €@*<init>€*<
-.fractal/application/History#`<init>`().(first)*first€*3
-"fractal/application/History#first. €*first€*1
-"fractal/application/History#cur(). €*cur€*0
-#fractal/application/History#back().*back€*6
-&fractal/application/History#forward().*forward€*8
-'fractal/application/History#newEntry().*newEntry€*D
-2fractal/application/History#newEntry().(newMandel)*	newMandel€*4
-%fractal/application/History#getCur().*getCur€*.
-fractal/application/History.
- *History€*:
-'fractal/application/History.StackEntry#*
-StackEntry€*D
-2fractal/application/History.StackEntry#`<init>`(). €@*<init>€*L
-:fractal/application/History.StackEntry#`<init>`().(mandel) €*mandel€*E
-8fractal/application/History.StackEntry#`<init>`().(prev)*prev€*@
-.fractal/application/History.StackEntry#mandel. €*mandel€*<
-,fractal/application/History.StackEntry#prev. €*prev€*>
-.fractal/application/History.StackEntry#next(). €*next€*G
-4fractal/application/History.StackEntry#updateNext().*
-updateNext€*Q
-?fractal/application/History.StackEntry#updateNext().(newMandel)*	newMandel€*A
-1fractal/application/History.StackEntry#getNext().*getNext€*A
-1fractal/application/History.StackEntry#getPrev().*getPrev€*<
-'fractal/application/History.StackEntry.
- *
-StackEntry€*i
-Efractal/application/History.StackEntry.$lessinit$greater$default$2().*$lessinit$greater$default$2€2
- fractal/application/2
- fractal/2,
- $fractal/mandelbrot/Mandelbrot.2,
- $fractal/mandelbrot/Mandelbrot#2!
- fractal/mandelbrot/2
- fractal/2 
- javax/swing/JList.2 
- javax/swing/JList#2
- javax/swing/2
- javax/23
-  +%scala/collection/mutable/ArrayBuffer.23
-  +%scala/collection/mutable/ArrayBuffer#2'
- scala/collection/mutable/2
- scala/collection/2
- scala/2&
- javax/swing/JOptionPane.2&
- javax/swing/JOptionPane#2
- javax/swing/2
- javax/2!
- javax/swing/JFrame.2!
- javax/swing/JFrame#2
- javax/swing/2
- javax/2
- java/util/Stack.2
- java/util/Stack#2
- 
-java/util/2
- java/2*
-
-
- fractal/application/History#25
-
-
- 'fractal/application/History#`<init>`().2,
-
-
- fractal/mandelbrot/Mandelbrot#20
-
-
- "fractal/application/History#first.25
- 'fractal/application/History.StackEntry.25
- 'fractal/application/History.StackEntry#2*
- fractal/application/History.20
- "fractal/application/History#cur().2@
-$ $2fractal/application/History.StackEntry#`<init>`().25
- $'fractal/application/History.StackEntry#20
-% *"fractal/application/History#first.21
- #fractal/application/History#back().2
- scala/Unit#2
-$ &scala/Any#`!=`().2?
- #1fractal/application/History.StackEntry#getPrev().20
- "fractal/application/History#cur().2
-' +scala/None.20
-1 4"fractal/application/History#cur().2!
-C Fscala/Option#get().2?
-; B1fractal/application/History.StackEntry#getPrev().20
-7 :"fractal/application/History#cur().24
- &fractal/application/History#forward().2
- scala/Unit#2
-' )scala/Any#`!=`().2?
- &1fractal/application/History.StackEntry#getNext().20
- "fractal/application/History#cur().2
-* .scala/None.20
-4 7"fractal/application/History#cur().2!
-F Iscala/Option#get().2?
-> E1fractal/application/History.StackEntry#getNext().20
-: ="fractal/application/History#cur().25
- 'fractal/application/History#newEntry().2@
- 2fractal/application/History#newEntry().(newMandel)2,
- &fractal/mandelbrot/Mandelbrot#2
-) -scala/Unit#2B
-5 ?4fractal/application/History.StackEntry#updateNext().20
-1 4"fractal/application/History#cur().2@
-@ I2fractal/application/History#newEntry().(newMandel)24
-L S&fractal/application/History#forward().23
- %fractal/application/History#getCur().2,
- fractal/mandelbrot/Mandelbrot#2<
-! '.fractal/application/History.StackEntry#mandel.20
-  "fractal/application/History#cur().2*
- fractal/application/History.25
- 'fractal/application/History.StackEntry#2@
- 2fractal/application/History.StackEntry#`<init>`().2,
-) 3fractal/mandelbrot/Mandelbrot#2
-G Mscala/Option#25
-N X'fractal/application/History.StackEntry#2<
-! '.fractal/application/History.StackEntry#mandel.2:
-A E,fractal/application/History.StackEntry#prev.2<
- .fractal/application/History.StackEntry#next().2
-  scala/Option#25
-! +'fractal/application/History.StackEntry#2
-/ 3scala/None.2B
- 4fractal/application/History.StackEntry#updateNext().2M
-  ?fractal/application/History.StackEntry#updateNext().(newMandel)2,
-" ,fractal/mandelbrot/Mandelbrot#2
-/ 3scala/Unit#2<
-6 :.fractal/application/History.StackEntry#next().2!
-A Ascala/Some.apply().2
-= Ascala/Some.2@
-P P2fractal/application/History.StackEntry#`<init>`().25
-F P'fractal/application/History.StackEntry#2M
-Q Z?fractal/application/History.StackEntry#updateNext().(newMandel)2!
-` `scala/Some.apply().2
-\ `scala/Some.2?
- 1fractal/application/History.StackEntry#getNext().2
- scala/Option#25
- &'fractal/application/History.StackEntry#2<
-* ..fractal/application/History.StackEntry#next().2?
- 1fractal/application/History.StackEntry#getPrev().2
- scala/Option#25
- &'fractal/application/History.StackEntry#2:
-* .,fractal/application/History.StackEntry#prev.2
-\ `scala/None.PZ 3195A5294ECF9E7E154653E918530379

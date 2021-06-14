@@ -1,5 +1,5 @@
 
-ùd,src/main/scala/fractal/application/GUI.scala*&
+ªe,src/main/scala/fractal/application/GUI.scala*&
 fractal/application/GUI.
  *GUI€*/
 fractal/application/GUI.frame. €*frame€*+
@@ -95,7 +95,8 @@ getMouseIm€*:
  scala/Double#2#
 , -scala/Double#`/`(+6).23
 % +%fractal/mandelbrot/Mandelbrot#reSize.2/
- $!fractal/application/GUI.mandel().2,
+ $!fractal/application/GUI.mandel().2/
+. 6!fractal/application/GUI.initSize.2,
  fractal/application/GUI.mouse.2C
 ( (5fractal/application/controls/MouseHandler#`<init>`().28
  (*fractal/application/controls/MouseHandler#20
@@ -288,4 +289,4 @@ scala/Int#2
 DD ,fractal/application/createWindow#`<init>`().25
 DD 'fractal/application/GUI.createWindow().27
 DD )scala/util/CommandLineParser.showError().2
-DD local0PZ 4F87C3323E67DAE25B9F221C2CA6B237
+DD local0PZ 833095E70BB1CF74D53B76BCBF97B4F7
