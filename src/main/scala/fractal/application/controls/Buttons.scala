@@ -67,4 +67,10 @@ object Buttons{
             val panel = new JPanel
             JOptionPane.showMessageDialog(panel, "Can't go forward any further!", "Warning", JOptionPane.WARNING_MESSAGE)
     )
+
+    val musicButton = new JButton("Music")
+    musicButton.addActionListener(e =>
+        println("music")
+        music.chooseSong
+    )
 }

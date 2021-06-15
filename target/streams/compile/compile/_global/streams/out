@@ -1,6 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\mandelbrot\Mandelbrot.scala:34:16 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m34 |[0m        counter.setLocationRelativeTo([31mnull[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |        [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |value setLocationRelativeTo is not a member of fractal.application.ProgressFrame[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\Music.scala:51:56 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m51 |[0m                newSong(songs.filterNot(_ == song).apply(nextInt(songs.size - [31m1[0m)))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                        [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                        Found:    String[0m
+[0m[[0m[31merror[0m] [0m[0m   |                        Required: Int[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

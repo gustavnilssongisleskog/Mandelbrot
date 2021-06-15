@@ -32,12 +32,15 @@ object GUI{
     private var mouseIm = 0D
     def getMouseIm = mouseIm
     def newPosition(x: Int, y: Int): Unit = {
+        if music.stopped && music.getSong != "John Cage - 4′33″" then music.restart
         mouseRe = x * mandel.reSize / dim + mandel.reMid - mandel.reSize / 2
         mouseIm = -y * mandel.imSize / dim + mandel.imMid + mandel.imSize / 2
     }
+    
+    val music = new Music
 
     val history = new History(mandel)
-    
+
     private var picture: Picture = new Picture(mandel.repsss)
     def zoomIn(reMid: Double, imMid: Double): Unit = {   
         history.newEntry(Mandelbrot(dim, reMid, initSize * scaleFactor / 2, imMid, initSize * scaleFactor / 2))
@@ -78,5 +81,6 @@ object GUI{
         frame.setLocationRelativeTo(null)
         frame.setVisible(true)
 
+        music.startMusic
     }
 }

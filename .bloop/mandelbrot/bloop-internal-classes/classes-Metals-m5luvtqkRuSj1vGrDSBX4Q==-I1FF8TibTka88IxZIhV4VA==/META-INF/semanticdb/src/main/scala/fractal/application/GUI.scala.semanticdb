@@ -1,292 +1,0 @@
-
-ªe,src/main/scala/fractal/application/GUI.scala*&
-fractal/application/GUI.
- *GUI€*/
-fractal/application/GUI.frame. €*frame€*+
-fractal/application/GUI.dim. €*dim€*5
-!fractal/application/GUI.initSize. €*initSize€*1
-fractal/application/GUI.initRe. €*initRe€*1
-fractal/application/GUI.initIm. €*initIm€*A
-'fractal/application/GUI.standardMandel. €*standardMandel€*3
-!fractal/application/GUI.mandel(). €*mandel€*:
-&fractal/application/GUI.scaleFactor().*scaleFactor€*/
-fractal/application/GUI.mouse. €*mouse€*5
-"fractal/application/GUI.mouseRe(). €*mouseRe€*8
-%fractal/application/GUI.getMouseRe().*
-getMouseRe€*5
-"fractal/application/GUI.mouseIm(). €*mouseIm€*8
-%fractal/application/GUI.getMouseIm().*
-getMouseIm€*:
-&fractal/application/GUI.newPosition().*newPosition€*3
-)fractal/application/GUI.newPosition().(x)*x€*3
-)fractal/application/GUI.newPosition().(y)*y€*3
- fractal/application/GUI.history. €*history€*5
-"fractal/application/GUI.picture(). €*picture€*0
-!fractal/application/GUI.zoomIn().*zoomIn€*6
-(fractal/application/GUI.zoomIn().(reMid)*reMid€*6
-(fractal/application/GUI.zoomIn().(imMid)*imMid€*2
-"fractal/application/GUI.zoomOut().*zoomOut€*7
-)fractal/application/GUI.zoomOut().(reMid)*reMid€*7
-)fractal/application/GUI.zoomOut().(imMid)*imMid€*0
-!fractal/application/GUI.moveTo().*moveTo€*6
-(fractal/application/GUI.moveTo().(reMid)*reMid€*6
-(fractal/application/GUI.moveTo().(imMid)*imMid€*.
- fractal/application/GUI.reset().*reset€*:
-&fractal/application/GUI.updateFrame().*updateFrame€*<
-'fractal/application/GUI.createWindow().*createWindow€*8
-!fractal/application/createWindow# *createWindow€*>
-,fractal/application/createWindow#`<init>`(). €@*<init>€*8
-(fractal/application/createWindow#main(). € *main€*;
-.fractal/application/createWindow#main().(args)*args€*
-local0 €*error€2
- fractal/application/2
- fractal/2+
- fractal/application/graphics/2,
- $fractal/mandelbrot/Mandelbrot.2,
- $fractal/mandelbrot/Mandelbrot#2!
- fractal/mandelbrot/2
- fractal/2+
- fractal/application/controls/2
- javax/swing/2
- javax/2!
- java/awt/Dimension.2!
- java/awt/Dimension#2
- 	java/awt/2
- java/2"
- java/awt/FlowLayout.2"
- java/awt/FlowLayout#2
- 	java/awt/2
- java/2$
-		 java/awt/BorderLayout#2
-		 	java/awt/2
-		 java/2 
-
-
- java/awt/Graphics.2 
-
-
- java/awt/Graphics#2
-
-
- 	java/awt/2
-
-
- java/2&
- 
-fractal/application/GUI.2,
- fractal/application/GUI.frame.2.
-  javax/swing/JFrame#`<init>`(+2).2!
- javax/swing/JFrame#2*
- fractal/application/GUI.dim.2/
- !fractal/application/GUI.initSize.2-
- fractal/application/GUI.initRe.2-
- fractal/application/GUI.initIm.25
- 'fractal/application/GUI.standardMandel.24
-# #&fractal/mandelbrot/Mandelbrot.apply().2,
- #fractal/mandelbrot/Mandelbrot.2*
-$ 'fractal/application/GUI.dim.2-
-) /fractal/application/GUI.initRe.2/
-1 9!fractal/application/GUI.initSize.2-
-; Afractal/application/GUI.initIm.2/
-C K!fractal/application/GUI.initSize.2/
- !fractal/application/GUI.mandel().25
- ''fractal/application/GUI.standardMandel.24
- &fractal/application/GUI.scaleFactor().2
- scala/Double#2#
-, -scala/Double#`/`(+6).23
-% +%fractal/mandelbrot/Mandelbrot#reSize.2/
- $!fractal/application/GUI.mandel().2/
-. 6!fractal/application/GUI.initSize.2,
- fractal/application/GUI.mouse.2C
-( (5fractal/application/controls/MouseHandler#`<init>`().28
- (*fractal/application/controls/MouseHandler#20
- "fractal/application/GUI.mouseRe().23
- %fractal/application/GUI.getMouseRe().20
- "fractal/application/GUI.mouseRe().20
- "fractal/application/GUI.mouseIm().23
-   %fractal/application/GUI.getMouseIm().20
-   "fractal/application/GUI.mouseIm().24
-!! &fractal/application/GUI.newPosition().27
-!! )fractal/application/GUI.newPosition().(x)2
-!! 
-scala/Int#27
-!! )fractal/application/GUI.newPosition().(y)2
-!! "
-scala/Int#2
-!%! )scala/Unit#20
-"" "fractal/application/GUI.mouseRe().2#
-"9" :scala/Double#`-`(+6).2#
-"*" +scala/Double#`+`(+7).2#
-"$" %scala/Double#`/`(+3).2 
-"" scala/Int#`*`(+6).27
-"" )fractal/application/GUI.newPosition().(x)23
-"" #%fractal/mandelbrot/Mandelbrot#reSize.2/
-"" !fractal/application/GUI.mandel().2*
-"&" )fractal/application/GUI.dim.22
-"3" 8$fractal/mandelbrot/Mandelbrot#reMid.2/
-"," 2!fractal/application/GUI.mandel().2#
-"I" Jscala/Double#`/`(+3).23
-"B" H%fractal/mandelbrot/Mandelbrot#reSize.2/
-";" A!fractal/application/GUI.mandel().20
-## "fractal/application/GUI.mouseIm().2#
-#:# ;scala/Double#`+`(+7).2#
-#+# ,scala/Double#`+`(+7).2#
-#%# &scala/Double#`/`(+3).2 
-## scala/Int#`*`(+6).2$
-## scala/Int#`unary_-`().27
-## )fractal/application/GUI.newPosition().(y)23
-## $%fractal/mandelbrot/Mandelbrot#imSize.2/
-## !fractal/application/GUI.mandel().2*
-#'# *fractal/application/GUI.dim.22
-#4# 9$fractal/mandelbrot/Mandelbrot#imMid.2/
-#-# 3!fractal/application/GUI.mandel().2#
-#J# Kscala/Double#`/`(+3).23
-#C# I%fractal/mandelbrot/Mandelbrot#imSize.2/
-#<# B!fractal/application/GUI.mandel().2.
-&&  fractal/application/GUI.history.25
-&& 'fractal/application/History#`<init>`().2*
-&& fractal/application/History#2/
-&& $!fractal/application/GUI.mandel().20
-(( "fractal/application/GUI.picture().23
-((  %fractal/application/graphics/Picture#2>
-(.( .0fractal/application/graphics/Picture#`<init>`().23
-('( .%fractal/application/graphics/Picture#23
-(6( <%fractal/mandelbrot/Mandelbrot#repsss.2/
-(/( 5!fractal/application/GUI.mandel().2/
-)) !fractal/application/GUI.zoomIn().26
-)) (fractal/application/GUI.zoomIn().(reMid)2
-)) scala/Double#26
-)) #(fractal/application/GUI.zoomIn().(imMid)2
-)%) +scala/Double#2
-).) 2scala/Unit#25
-** 'fractal/application/History#newEntry().2.
-**  fractal/application/GUI.history.24
-*#* #&fractal/mandelbrot/Mandelbrot.apply().2,
-** #fractal/mandelbrot/Mandelbrot.2*
-*$* 'fractal/application/GUI.dim.26
-*)* .(fractal/application/GUI.zoomIn().(reMid)2#
-*G* Hscala/Double#`/`(+3).2#
-*9* :scala/Double#`*`(+6).2/
-*0* 8!fractal/application/GUI.initSize.24
-*;* F&fractal/application/GUI.scaleFactor().26
-*L* Q(fractal/application/GUI.zoomIn().(imMid)2#
-*j* kscala/Double#`/`(+3).2#
-*\* ]scala/Double#`*`(+6).2/
-*S* [!fractal/application/GUI.initSize.24
-*^* i&fractal/application/GUI.scaleFactor().24
-++ &fractal/application/GUI.updateFrame().20
--- "fractal/application/GUI.zoomOut().27
--- )fractal/application/GUI.zoomOut().(reMid)2
--- scala/Double#27
--- $)fractal/application/GUI.zoomOut().(imMid)2
--&- ,scala/Double#2
--/- 3scala/Unit#25
-.. 'fractal/application/History#newEntry().2.
-..  fractal/application/GUI.history.24
-.#. #&fractal/mandelbrot/Mandelbrot.apply().2,
-.. #fractal/mandelbrot/Mandelbrot.2*
-.$. 'fractal/application/GUI.dim.27
-.). .)fractal/application/GUI.zoomOut().(reMid)2#
-.G. Hscala/Double#`*`(+3).2#
-.9. :scala/Double#`*`(+6).2/
-.0. 8!fractal/application/GUI.initSize.24
-.;. F&fractal/application/GUI.scaleFactor().27
-.L. Q)fractal/application/GUI.zoomOut().(imMid)2#
-.j. kscala/Double#`*`(+3).2#
-.\. ]scala/Double#`*`(+6).2/
-.S. [!fractal/application/GUI.initSize.24
-.^. i&fractal/application/GUI.scaleFactor().24
-// &fractal/application/GUI.updateFrame().2/
-11 !fractal/application/GUI.moveTo().26
-11 (fractal/application/GUI.moveTo().(reMid)2
-11 scala/Double#26
-11 #(fractal/application/GUI.moveTo().(imMid)2
-1%1 +scala/Double#2
-1.1 2scala/Unit#25
-22 'fractal/application/History#newEntry().2.
-22  fractal/application/GUI.history.24
-2#2 #&fractal/mandelbrot/Mandelbrot.apply().2,
-22 #fractal/mandelbrot/Mandelbrot.2*
-2$2 'fractal/application/GUI.dim.26
-2)2 .(fractal/application/GUI.moveTo().(reMid)2#
-292 :scala/Double#`*`(+6).2/
-202 8!fractal/application/GUI.initSize.24
-2;2 F&fractal/application/GUI.scaleFactor().26
-2H2 M(fractal/application/GUI.moveTo().(imMid)2#
-2X2 Yscala/Double#`*`(+6).2/
-2O2 W!fractal/application/GUI.initSize.24
-2Z2 e&fractal/application/GUI.scaleFactor().24
-33 &fractal/application/GUI.updateFrame().2.
-55  fractal/application/GUI.reset().2
-55 scala/Unit#25
-66 'fractal/application/History#newEntry().2.
-66  fractal/application/GUI.history.25
-66 ''fractal/application/GUI.standardMandel.24
-77 &fractal/application/GUI.updateFrame().24
-99 &fractal/application/GUI.updateFrame().2
-99 scala/Unit#2/
-:: !fractal/application/GUI.mandel().23
-:: %fractal/application/History#getCur().2.
-::  fractal/application/GUI.history.2*
-;; javax/swing/JFrame#remove().2,
-;; fractal/application/GUI.frame.20
-;; "fractal/application/GUI.picture().20
-<< "fractal/application/GUI.picture().2>
-<< 0fractal/application/graphics/Picture#`<init>`().23
-<< %fractal/application/graphics/Picture#23
-<-< 3%fractal/mandelbrot/Mandelbrot#repsss.23
-<&< ,%fractal/application/History#getCur().2.
-<< % fractal/application/GUI.history.24
-==  &java/awt/Component#addMouseListener().20
-== "fractal/application/GUI.picture().2,
-=!= &fractal/application/GUI.mouse.2:
->> &,java/awt/Component#addMouseMotionListener().20
->> "fractal/application/GUI.picture().2,
->'> ,fractal/application/GUI.mouse.2)
-?? java/awt/Container#add(+3).2,
-?? fractal/application/GUI.frame.20
-?? "fractal/application/GUI.picture().2+
-?(? .java/awt/BorderLayout#CENTER.2$
-?? 'java/awt/BorderLayout#2.
-@@  java/awt/Component#revalidate().2,
-@@ fractal/application/GUI.frame.2+
-AA  java/awt/Component#repaint().2<
-AA .fractal/application/controls/Labels.zoomLabel.22
-AA $fractal/application/controls/Labels.2
-DD 	scala/main#25
-EE 'fractal/application/GUI.createWindow().2
-EE scala/Unit#2<
-GG &.javax/swing/JFrame#setDefaultCloseOperation().2,
-GG fractal/application/GUI.frame.2)
-HH java/awt/Container#add(+3).2,
-HH fractal/application/GUI.frame.2>
-HH $0fractal/application/controls/Panel.commandPanel.21
-HH #fractal/application/controls/Panel.2*
-H3H 8java/awt/BorderLayout#SOUTH.2$
-H&H 2java/awt/BorderLayout#24
-II  &java/awt/Component#addMouseListener().20
-II "fractal/application/GUI.picture().2,
-I!I &fractal/application/GUI.mouse.2:
-JJ &,java/awt/Component#addMouseMotionListener().20
-JJ "fractal/application/GUI.picture().2,
-J'J ,fractal/application/GUI.mouse.2'
-KK java/awt/Container#add().2,
-KK fractal/application/GUI.frame.20
-KK "fractal/application/GUI.picture().2(
-LL java/awt/Window#setSize().2,
-LL fractal/application/GUI.frame.2.
-L#L # java/awt/Dimension#`<init>`(+2).2!
-LL #java/awt/Dimension#22
-L+L 0$fractal/mandelbrot/Mandelbrot#reDim.2/
-L$L *!fractal/application/GUI.mandel().22
-L9L >$fractal/mandelbrot/Mandelbrot#imDim.2/
-L2L 8!fractal/application/GUI.mandel().26
-MM #(java/awt/Window#setLocationRelativeTo().2,
-MM fractal/application/GUI.frame.2+
-NN java/awt/Window#setVisible().2,
-NN fractal/application/GUI.frame.2/
-DD !fractal/application/createWindow#2:
-DD ,fractal/application/createWindow#`<init>`().25
-DD 'fractal/application/GUI.createWindow().27
-DD )scala/util/CommandLineParser.showError().2
-DD local0PZ 92E8CAF35664C6453D09F497F4F31A7A

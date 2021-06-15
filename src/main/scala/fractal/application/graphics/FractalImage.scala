@@ -27,7 +27,7 @@ object FractalImage{
         image
     }
 
-    @main
+    //@main
     def main2(): Unit = createPNG(dim = 1000)
 
     def createPNG(

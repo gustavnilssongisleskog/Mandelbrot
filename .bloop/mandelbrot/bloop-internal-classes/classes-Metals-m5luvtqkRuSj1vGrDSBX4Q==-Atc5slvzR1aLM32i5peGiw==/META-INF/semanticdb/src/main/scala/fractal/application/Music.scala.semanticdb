@@ -1,0 +1,154 @@
+
+’5.src/main/scala/fractal/application/Music.scala*(
+fractal/application/Music#*Music€*7
+%fractal/application/Music#`<init>`(). €@*<init>€*1
+ fractal/application/Music#songs. €*songs€*1
+!fractal/application/Music#song(). €*song€*4
+$fractal/application/Music#getSong().*getSong€*3
+"fractal/application/Music#music(). €*music€*1
+!fractal/application/Music#clip(). €*clip€*7
+$fractal/application/Music#shuffle(). €*shuffle€*4
+$fractal/application/Music#stopped().*stopped€*:
+'fractal/application/Music#startMusic().*
+startMusic€*4
+$fractal/application/Music#restart().*restart€*:
+'fractal/application/Music#chooseSong().*
+chooseSong€*
+local0 €*combobox€*
+local1 €*choice€*4
+$fractal/application/Music#newSong().*newSong€*9
++fractal/application/Music#newSong().(nSong)*nSong€2
+ fractal/application/2
+ fractal/2.
+ & javax/sound/sampled/AudioSystem#2"
+ javax/sound/sampled/2
+ javax/sound/2
+ javax/2
+ java/io/File.2
+ java/io/File#2
+ java/io/2
+ java/2,
+  scala/util/Random#nextInt(+1).2*
+  scala/util/Random#nextInt().2 
+ scala/util/Random.2
+ scala/util/2
+ scala/2$
+ javax/swing/JComboBox.2$
+ javax/swing/JComboBox#2
+ javax/swing/2
+ javax/2&
+ javax/swing/JOptionPane#2
+ javax/swing/2
+ javax/2(
+ fractal/application/Music#23
+		 %fractal/application/Music#`<init>`().2.
+		  fractal/application/Music#songs.27
+		 )scala/collection/IterableFactory#apply().2#
+		 scala/package.Vector.2/
+ !fractal/application/Music#song().22
+ $fractal/application/Music#getSong().2"
+ scala/Predef.String#2/
+ !fractal/application/Music#song().20
+ "fractal/application/Music#music().2F
+$ 78javax/sound/sampled/AudioSystem#getAudioInputStream(+4).2.
+ # javax/sound/sampled/AudioSystem#2-
+U djava/io/File#getAbsoluteFile().2(
+@ @java/io/File#`<init>`(+2).2
+< @java/io/File#2&
+R Sscala/StringContext#s().2*
+C Cscala/StringContext.apply().2/
+J N!fractal/application/Music#song().2/
+ !fractal/application/Music#clip().28
+# **javax/sound/sampled/AudioSystem#getClip().2.
+ " javax/sound/sampled/AudioSystem#22
+ $fractal/application/Music#shuffle().22
+ $fractal/application/Music#stopped().2
+ scala/Boolean#2(
+* *scala/Boolean#`unary_!`().27
+! *)javax/sound/sampled/DataLine#isRunning().2/
+  !fractal/application/Music#clip().25
+ 'fractal/application/Music#startMusic().2
+ scala/Unit#20
+ "javax/sound/sampled/Clip#open(+1).2/
+ !fractal/application/Music#clip().20
+ "fractal/application/Music#music().23
+ %javax/sound/sampled/DataLine#start().2/
+ !fractal/application/Music#clip().22
+   $fractal/application/Music#restart().2
+   scala/Unit#2'
+!! scala/Predef.println(+1).22
+!! $fractal/application/Music#shuffle().2'
+"" scala/Predef.println(+1).2F
+"" 8scala/collection/StrictOptimizedIterableOps#filterNot().2.
+""  fractal/application/Music#songs.2(
+""" (java/lang/String#equals().2/
+")" -!fractal/application/Music#song().22
+## $fractal/application/Music#shuffle().22
+$$ $fractal/application/Music#newSong().2.
+$$  scala/collection/SeqOps#apply().2.
+$$  fractal/application/Music#songs.2,
+$$ !scala/util/Random#nextInt(+1).2-
+$($ ,scala/collection/SeqOps#size().2.
+$"$ ' fractal/application/Music#songs.2:
+&& !,javax/sound/sampled/Clip#setFramePosition().2/
+&& !fractal/application/Music#clip().23
+'' %javax/sound/sampled/DataLine#start().2/
+'' !fractal/application/Music#clip().25
+** 'fractal/application/Music#chooseSong().2
+** scala/Unit#2
+++ local021
++$+ $#javax/swing/JComboBox#`<init>`(+1).29
++m+ t+scala/collection/IterableOnceOps#toArray().2/
++_+ e!scala/collection/SeqOps#concat().27
++,+ ,)scala/collection/IterableFactory#apply().2#
++&+ ,scala/package.Vector.2.
++f+ k fractal/application/Music#songs.2-
++t+ tscala/reflect/ClassTag.apply().2<
+,, %.javax/swing/JOptionPane#showMessageDialog(+1).2&
+,, javax/swing/JOptionPane#2
+,,, 4local027
+,S, c)javax/swing/JOptionPane#QUESTION_MESSAGE.2&
+,G, Rjavax/swing/JOptionPane#2
+.. local12'
+... :scala/Any#asInstanceOf().26
+.. -(javax/swing/JComboBox#getSelectedItem().2
+.. local02"
+.;. Ascala/Predef.String#2
+// local122
+22 $fractal/application/Music#shuffle().22
+33 $fractal/application/Music#newSong().2.
+33  scala/collection/SeqOps#apply().2.
+33  fractal/application/Music#songs.2,
+33 %scala/util/Random#nextInt(+1).2-
+3,3 0scala/collection/SeqOps#size().2.
+3&3 + fractal/application/Music#songs.22
+55 $fractal/application/Music#shuffle().22
+66 $fractal/application/Music#newSong().2
+66 local122
+99 $fractal/application/Music#newSong().29
+99 +fractal/application/Music#newSong().(nSong)2"
+99 scala/Predef.String#2
+9 9 $scala/Unit#2/
+:: !javax/sound/sampled/Line#close().2/
+:: !fractal/application/Music#clip().2/
+;; !fractal/application/Music#song().29
+;; +fractal/application/Music#newSong().(nSong)2+
+<#< *java/awt/Component#repaint().2=
+<< "/fractal/application/controls/Labels.musicLabel.22
+<< $fractal/application/controls/Labels.2+
+<< fractal/application/controls/2
+>> scala/Any#`!=`().2/
+>> !fractal/application/Music#song().20
+@@ "fractal/application/Music#music().2F
+@ @ 38javax/sound/sampled/AudioSystem#getAudioInputStream(+4).2.
+@@  javax/sound/sampled/AudioSystem#2-
+@Q@ `java/io/File#getAbsoluteFile().2(
+@<@ <java/io/File#`<init>`(+2).2
+@8@ <java/io/File#2&
+@N@ Oscala/StringContext#s().2*
+@?@ ?scala/StringContext.apply().2/
+@F@ J!fractal/application/Music#song().2/
+AA !fractal/application/Music#clip().28
+AA &*javax/sound/sampled/AudioSystem#getClip().2.
+AA  javax/sound/sampled/AudioSystem#25
+BB 'fractal/application/Music#startMusic().PZ 44B99824ADD1C89D6B3CEE383E396013

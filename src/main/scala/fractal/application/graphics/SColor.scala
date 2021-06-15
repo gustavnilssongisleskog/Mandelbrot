@@ -79,7 +79,7 @@ object SColor{
         }
     }
 
-    @main
+    //@main
     def main3(): Unit = {
         val frame = new JFrame("hej")
         val img = new Rainbow
