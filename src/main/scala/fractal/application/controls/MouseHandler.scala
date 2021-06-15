@@ -15,15 +15,15 @@ class MouseHandler extends MouseInputAdapter{
         e.getButton match
             case MouseEvent.BUTTON1 => 
                 zoomIn(getMouseRe, getMouseIm)
-                println("Left")
+                //println("Left")
             
             case MouseEvent.BUTTON2 => 
                 moveTo(getMouseRe, getMouseIm)
-                println("Wheel")
+                //println("Wheel")
             
             case MouseEvent.BUTTON3 => 
                 zoomOut(getMouseRe, getMouseIm)
-                println("Right")
+                //println("Right")
 
             case _ => println("undefined")
         mouseMoved(e)
@@ -38,15 +38,15 @@ class MouseHandler extends MouseInputAdapter{
     }*/
 
     override def mouseEntered(e: MouseEvent): Unit = {
-        println("hej")
+        //println("hej")
     }
 
     override def mouseExited(e: MouseEvent): Unit = {
-        println("hejdå")
+        //println("hejdå")
     }
 
     override def mouseMoved(e: MouseEvent): Unit = {
-        println("moved")
+        //println("moved")
         newPosition(e.getX, e.getY)
         positionLabel.repaint()
     }

@@ -41,13 +41,13 @@ object Buttons{
 
     val resetButton = new JButton("Reset")
     resetButton.addActionListener(e =>
-        println("reset")
+        //println("reset")
         reset
     )
 
     val backButton = new JButton("\u2b9c")
     backButton.addActionListener(e =>
-        println("back")
+        //println("back")
 
         if history.back 
         then
@@ -59,7 +59,7 @@ object Buttons{
 
     val forwardButton = new JButton("\u2b9e")
     forwardButton.addActionListener(e =>
-        println("forward")
+        //println("forward")
         if history.forward 
         then
             updateFrame
@@ -70,7 +70,7 @@ object Buttons{
 
     val musicButton = new JButton("Music")
     musicButton.addActionListener(e =>
-        println("music")
+        //println("music")
         music.chooseSong
     )
 }
