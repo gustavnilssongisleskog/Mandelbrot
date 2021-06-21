@@ -1,7 +1,20 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\Music.scala:51:56 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m51 |[0m                newSong(songs.filterNot(_ == song).apply(nextInt(songs.size - [31m1[0m)))[0m
-[0m[[0m[31merror[0m] [0m[0m   |                        [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                        Found:    String[0m
-[0m[[0m[31merror[0m] [0m[0m   |                        Required: Int[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\mandelbrot\Mandelbrot.scala:48:8 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m48 |[0m        [34m/*for[0m
+[0m[[0m[31merror[0m] [0m[0m   |        [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |        unclosed comment[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Warning: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\mandelbrot\Mandelbrot.scala:127:1 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m127 |[0m}[0m
+[0m[[0m[33mwarn[0m] [0m[0m    | [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m    | Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E040] Syntax Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\mandelbrot\Mandelbrot.scala:127:1 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m127 |[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m    | [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    | '}' expected, but eof found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\mandelbrot\Mandelbrot.scala:30:30 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m30 |[0m            repsArray(x)(y) = repetitions(pixelToComplex(x, imDim - [31m1[0m - y))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                              [31m^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                              Not found: repetitions[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

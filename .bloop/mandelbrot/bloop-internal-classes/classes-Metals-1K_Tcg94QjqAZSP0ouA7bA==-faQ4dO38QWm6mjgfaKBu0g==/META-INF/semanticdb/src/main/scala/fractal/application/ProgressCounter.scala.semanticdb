@@ -1,0 +1,82 @@
+
+ƒ8src/main/scala/fractal/application/ProgressCounter.scala*<
+$fractal/application/ProgressCounter#*ProgressCounter€*A
+/fractal/application/ProgressCounter#`<init>`(). €@*<init>€*B
+5fractal/application/ProgressCounter#`<init>`().(goal)*goal€*9
+)fractal/application/ProgressCounter#goal. €*goal€*C
+/fractal/application/ProgressCounter#progress(). €*progress€*T
+9fractal/application/ProgressCounter#progressPercentage().*progressPercentage€*6
+*fractal/application/ProgressCounter#inc().*inc€*L
+5fractal/application/ProgressCounter#paintComponent().*paintComponent€*B
+8fractal/application/ProgressCounter#paintComponent().(g)*g€*8
+"fractal/application/ProgressFrame#*ProgressFrame€*?
+-fractal/application/ProgressFrame#`<init>`(). €@*<init>€*@
+3fractal/application/ProgressFrame#`<init>`().(goal)*goal€*7
+'fractal/application/ProgressFrame#goal. €*goal€*=
+*fractal/application/ProgressFrame#counter. €*counter€*4
+(fractal/application/ProgressFrame#inc().*inc€2
+ fractal/application/2
+ fractal/2!
+ javax/swing/JLabel.2!
+ javax/swing/JLabel#2
+ javax/swing/2
+ javax/2 
+ java/awt/Graphics.2 
+ java/awt/Graphics#2
+ 	java/awt/2
+ java/2$
+ java/awt/BorderLayout#2
+ 	java/awt/2
+ java/2)
+ !javax/swing/JInternalFrame.2)
+ !javax/swing/JInternalFrame#2
+ javax/swing/2
+ javax/22
+ $fractal/application/ProgressCounter#2=
+ /fractal/application/ProgressCounter#`<init>`().2
+ 
+scala/Int#2.
+/ / javax/swing/JLabel#`<init>`(+5).2!
+) /javax/swing/JLabel#27
+ )fractal/application/ProgressCounter#goal.2=
+ /fractal/application/ProgressCounter#progress().2G
+		 9fractal/application/ProgressCounter#progressPercentage().2
+		 
+scala/Int#2 
+	1	 2scala/Int#`/`(+3).2 
+	+	 ,scala/Int#`*`(+3).2=
+	"	 */fractal/application/ProgressCounter#progress().27
+	3	 7)fractal/application/ProgressCounter#goal.28
+ *fractal/application/ProgressCounter#inc().2
+ scala/Unit#2=
+ /fractal/application/ProgressCounter#progress().2 
+ scala/Int#`+`(+4).2+
+) 0java/awt/Component#repaint().2C
+ 5fractal/application/ProgressCounter#paintComponent().2F
+  !8fractal/application/ProgressCounter#paintComponent().(g)2 
+# +java/awt/Graphics#2+
+ javax/swing/JLabel#setText().2&
+1 2scala/StringContext#s().2*
+ scala/StringContext.apply().2G
+ 09fractal/application/ProgressCounter#progressPercentage().26
+ (javax/swing/JComponent#paintComponent().2F
+ 8fractal/application/ProgressCounter#paintComponent().(g)20
+ "fractal/application/ProgressFrame#2;
+ -fractal/application/ProgressFrame#`<init>`().2
+ 
+scala/Int#26
+5 5(javax/swing/JInternalFrame#`<init>`(+5).2)
+' 5javax/swing/JInternalFrame#25
+ 'fractal/application/ProgressFrame#goal.28
+ *fractal/application/ProgressFrame#counter.2=
+- -/fractal/application/ProgressCounter#`<init>`().22
+ -$fractal/application/ProgressCounter#25
+. 2'fractal/application/ProgressFrame#goal.2)
+ java/awt/Container#add(+3).28
+ *fractal/application/ProgressFrame#counter.2+
+ $java/awt/BorderLayout#CENTER.2$
+ java/awt/BorderLayout#26
+ (fractal/application/ProgressFrame#inc().2
+ scala/Unit#28
+ *fractal/application/ProgressCounter#inc().28
+ *fractal/application/ProgressFrame#counter.PZ 8FD9C2D04772545D28F8BF4CA14A3FD4
