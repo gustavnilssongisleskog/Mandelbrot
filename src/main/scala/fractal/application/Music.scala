@@ -12,7 +12,9 @@ class Music{
         "Belinda Carlisle - Circle In The Sand(elbrot)",
         "Carola - Tommy Tycker Om Mig",
         "John Williams - Duel of the Fates",
+        "Ju(lia)stin Young - On The Run",
         "Michael Sembello - Man(delbrot)iac",
+        "Mån(delbrot)eskin - Zitti E Buoni",
         "Rockwell - Somebody's Watching M(andelbrot)e",
         "Sandra - Ma(ndelbrot)ria Ma(ndelbrot)gdalena",
         "Vanessa Paradis - Joe Le Taxi"

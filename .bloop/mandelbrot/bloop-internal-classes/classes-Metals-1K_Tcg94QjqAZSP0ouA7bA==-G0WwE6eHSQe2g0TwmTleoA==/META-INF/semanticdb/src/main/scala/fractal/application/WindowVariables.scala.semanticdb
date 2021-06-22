@@ -1,0 +1,17 @@
+
+ú8src/main/scala/fractal/application/WindowVariables.scala*>
+$fractal/application/WindowVariables.
+ *WindowVariables€*7
+(fractal/application/WindowVariables.dim. €*dim€*A
+-fractal/application/WindowVariables.initSize. €*initSize€*=
++fractal/application/WindowVariables.initRe. €*initRe€*=
++fractal/application/WindowVariables.initIm. €*initIm€*I
+2fractal/application/WindowVariables.scaleFactor(). €*scaleFactor€2
+ fractal/application/2
+ fractal/22
+ $fractal/application/WindowVariables.26
+ (fractal/application/WindowVariables.dim.2;
+ -fractal/application/WindowVariables.initSize.29
+ +fractal/application/WindowVariables.initRe.29
+ +fractal/application/WindowVariables.initIm.2@
+		 2fractal/application/WindowVariables.scaleFactor().PZ 457DD79A8F659BA7790C61E06C3F707C

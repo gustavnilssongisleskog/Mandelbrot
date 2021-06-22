@@ -1,347 +1,0 @@
-
-›m,src/main/scala/fractal/graphics/SColor.scala*)
-fractal/graphics/SColor.
- *SColorÄ*1
-fractal/graphics/SColor.colors. Ä*colorsÄ*3
- fractal/graphics/SColor.colors2. Ä*colors2Ä*.
- fractal/graphics/SColor.color().*colorÄ*3
-&fractal/graphics/SColor.color().(reps)*repsÄ*,
-fractal/graphics/SColor.many().*manyÄ*,
-"fractal/graphics/SColor.many().[T]	*TÄ*,
-"fractal/graphics/SColor.many().(n)*nÄ*,
-"fractal/graphics/SColor.many().(f)*fÄ*,
-"fractal/graphics/SColor.many().(x)*xÄ*2
-"fractal/graphics/SColor.quadAvg().*quadAvgÄ*1
-&fractal/graphics/SColor.quadAvg().(c1)*c1Ä*1
-&fractal/graphics/SColor.quadAvg().(c2)*c2Ä*2
-"fractal/graphics/SColor.aritAvg().*aritAvgÄ*1
-&fractal/graphics/SColor.aritAvg().(c1)*c1Ä*1
-&fractal/graphics/SColor.aritAvg().(c2)*c2Ä*0
- fractal/graphics/SColor.Rainbow#*RainbowÄ*=
-+fractal/graphics/SColor.Rainbow#`<init>`(). Ä@*<init>Ä*6
-(fractal/graphics/SColor.Rainbow#blend().*blendÄ*7
-,fractal/graphics/SColor.Rainbow#blend().(xs)*xsÄ*
-local0*xÄ*9
-'fractal/graphics/SColor.Rainbow#colors. Ä*colorsÄ*
-local1*xsÄ*H
-1fractal/graphics/SColor.Rainbow#paintComponent().*paintComponentÄ*>
-4fractal/graphics/SColor.Rainbow#paintComponent().(g)*gÄ*
-local2*xÄ*.
- fractal/graphics/SColor.main3().*main3Ä*
-local3 Ä*frameÄ*
-local4 Ä*imgÄ*'
-fractal/graphics/main3# *main3Ä*4
-"fractal/graphics/main3#`<init>`(). Ä@*<init>Ä*.
-fractal/graphics/main3#main(). Ä *mainÄ*1
-$fractal/graphics/main3#main().(args)*argsÄ*
-local5 Ä*errorÄ2
- fractal/graphics/2
- fractal/2 
- java/awt/Graphics.2 
- java/awt/Graphics#2
- 	java/awt/2
- java/2
- javax/swing/2
- javax/2!
- java/awt/Dimension.2!
- java/awt/Dimension#2
- 	java/awt/2
- java/2&
- fractal/graphics/SColor.24
-) 0&fractal/mandelbrot/Mandelbrot.maxReps.2,
- (fractal/mandelbrot/Mandelbrot.2!
- fractal/mandelbrot/2
- fractal/2
- java/awt/Color#2
- 	java/awt/2
- java/2,
-		 $scala/util/Random#nextInt(+1).2*
-		 $scala/util/Random#nextInt().2 
-		 scala/util/Random.2
-		 scala/util/2
-		 scala/2-
- fractal/graphics/SColor.colors.27
- )scala/collection/IterableFactory#apply().2#
- scala/package.Vector.2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
- java/awt/Color#`<init>`().2
- java/awt/Color#2(
-   java/awt/Color#`<init>`().2
-   java/awt/Color#2(
-!! java/awt/Color#`<init>`().2
-!! java/awt/Color#2(
-"" java/awt/Color#`<init>`().2
-"" java/awt/Color#2(
-## java/awt/Color#`<init>`().2
-## java/awt/Color#2.
-&&  fractal/graphics/SColor.colors2.2@
-&& 2scala/collection/StrictOptimizedSeqFactory#fill().2#
-&& scala/package.Vector.2(
-&-& -java/awt/Color#`<init>`().2
-&'& -java/awt/Color#2,
-&.& 5scala/util/Random#nextInt(+1).2,
-&<& Cscala/util/Random#nextInt(+1).2,
-&J& Qscala/util/Random#nextInt(+1).2.
-((  fractal/graphics/SColor.color().24
-(( &fractal/graphics/SColor.color().(reps)2
-(( 
-scala/Int#2
-((  java/awt/Color#24
-)) &fractal/graphics/SColor.color().(reps)24
-** &fractal/mandelbrot/Mandelbrot.maxReps.2#
-*%* *java/awt/Color#black.2
-** $java/awt/Color#2.
-++  scala/collection/SeqOps#apply().2-
-++ fractal/graphics/SColor.colors.2 
-+6+ 7scala/Int#`%`(+3).2 
-+1+ 2scala/Int#`-`(+3).2 
-+#+ $scala/Int#`+`(+4).24
-++ "&fractal/graphics/SColor.color().(reps)2-
-+,+ 0scala/collection/SeqOps#size().2-
-+%+ +fractal/graphics/SColor.colors.2-
-+?+ Cscala/collection/SeqOps#size().2-
-+8+ >fractal/graphics/SColor.colors.2-
-.. fractal/graphics/SColor.many().20
-.. "fractal/graphics/SColor.many().[T]20
-.. "fractal/graphics/SColor.many().(n)2
-.. 
-scala/Int#20
-.. "fractal/graphics/SColor.many().(f)20
-.. "fractal/graphics/SColor.many().[T]20
-. . !"fractal/graphics/SColor.many().[T]20
-.#. $"fractal/graphics/SColor.many().(x)20
-.&. '"fractal/graphics/SColor.many().[T]20
-.*. +"fractal/graphics/SColor.many().[T]2!
-// scala/Int#`==`(+3).20
-// "fractal/graphics/SColor.many().(n)20
-// "fractal/graphics/SColor.many().(x)2-
-// "fractal/graphics/SColor.many().2 
-/%/ &scala/Int#`-`(+3).20
-/#/ $"fractal/graphics/SColor.many().(n)20
-/*/ +"fractal/graphics/SColor.many().(f)2&
-/./ .scala/Function1#apply().20
-/-/ ."fractal/graphics/SColor.many().(f)20
-/// 0"fractal/graphics/SColor.many().(x)20
-22 "fractal/graphics/SColor.quadAvg().24
-22 &fractal/graphics/SColor.quadAvg().(c1)2
-22 java/awt/Color#24
-22 &fractal/graphics/SColor.quadAvg().(c2)2
-2 2 &java/awt/Color#2
-2)2 /java/awt/Color#2(
-33 java/awt/Color#`<init>`().2
-33 java/awt/Color#2#
-3S3 Xscala/Double#toInt().2$
-33 java/lang/Math#sqrt().2
-33 java/lang/Math#2%
-33 scala/Int.int2double().2 
-3N3 Oscala/Int#`/`(+3).2 
-353 6scala/Int#`+`(+4).2 
-3)3 *scala/Int#`*`(+3).2&
-3"3 (java/awt/Color#getRed().24
-33 !&fractal/graphics/SColor.quadAvg().(c1)2&
-3.3 4java/awt/Color#getRed().24
-3+3 -&fractal/graphics/SColor.quadAvg().(c1)2 
-3A3 Bscala/Int#`*`(+3).2&
-3:3 @java/awt/Color#getRed().24
-373 9&fractal/graphics/SColor.quadAvg().(c2)2&
-3F3 Ljava/awt/Color#getRed().24
-3C3 E&fractal/graphics/SColor.quadAvg().(c2)2#
-4[4 `scala/Double#toInt().2$
-44 java/lang/Math#sqrt().2
-44 java/lang/Math#2%
-44 scala/Int.int2double().2 
-4V4 Wscala/Int#`/`(+3).2 
-494 :scala/Int#`+`(+4).2 
-4+4 ,scala/Int#`*`(+3).2(
-4"4 *java/awt/Color#getGreen().24
-44 !&fractal/graphics/SColor.quadAvg().(c1)2(
-404 8java/awt/Color#getGreen().24
-4-4 /&fractal/graphics/SColor.quadAvg().(c1)2 
-4G4 Hscala/Int#`*`(+3).2(
-4>4 Fjava/awt/Color#getGreen().24
-4;4 =&fractal/graphics/SColor.quadAvg().(c2)2(
-4L4 Tjava/awt/Color#getGreen().24
-4I4 K&fractal/graphics/SColor.quadAvg().(c2)2#
-5W5 \scala/Double#toInt().2$
-55 java/lang/Math#sqrt().2
-55 java/lang/Math#2%
-55 scala/Int.int2double().2 
-5R5 Sscala/Int#`/`(+3).2 
-575 8scala/Int#`+`(+4).2 
-5*5 +scala/Int#`*`(+3).2'
-5"5 )java/awt/Color#getBlue().24
-55 !&fractal/graphics/SColor.quadAvg().(c1)2'
-5/5 6java/awt/Color#getBlue().24
-5,5 .&fractal/graphics/SColor.quadAvg().(c1)2 
-5D5 Escala/Int#`*`(+3).2'
-5<5 Cjava/awt/Color#getBlue().24
-595 ;&fractal/graphics/SColor.quadAvg().(c2)2'
-5I5 Pjava/awt/Color#getBlue().24
-5F5 H&fractal/graphics/SColor.quadAvg().(c2)20
-88 "fractal/graphics/SColor.aritAvg().24
-88 &fractal/graphics/SColor.aritAvg().(c1)2
-88 java/awt/Color#24
-88 &fractal/graphics/SColor.aritAvg().(c2)2
-8 8 &java/awt/Color#2
-8)8 /java/awt/Color#2(
-99 java/awt/Color#`<init>`().2
-99 java/awt/Color#2 
-9+9 ,scala/Int#`/`(+3).2 
-99 scala/Int#`+`(+4).2&
-99 java/awt/Color#getRed().24
-99 &fractal/graphics/SColor.aritAvg().(c1)2&
-9#9 )java/awt/Color#getRed().24
-9 9 "&fractal/graphics/SColor.aritAvg().(c2)2 
-9L9 Mscala/Int#`/`(+3).2 
-9=9 >scala/Int#`+`(+4).2(
-949 <java/awt/Color#getGreen().24
-919 3&fractal/graphics/SColor.aritAvg().(c1)2(
-9B9 Jjava/awt/Color#getGreen().24
-9?9 A&fractal/graphics/SColor.aritAvg().(c2)2 
-9k9 lscala/Int#`/`(+3).2 
-9]9 ^scala/Int#`+`(+4).2'
-9U9 \java/awt/Color#getBlue().24
-9R9 T&fractal/graphics/SColor.aritAvg().(c1)2'
-9b9 ijava/awt/Color#getBlue().24
-9_9 a&fractal/graphics/SColor.aritAvg().(c2)2.
-=
-=  fractal/graphics/SColor.Rainbow#29
-== +fractal/graphics/SColor.Rainbow#`<init>`().2.
-= =   javax/swing/JPanel#`<init>`(+3).2!
-==  javax/swing/JPanel#26
-?? (fractal/graphics/SColor.Rainbow#blend().2:
-?? ,fractal/graphics/SColor.Rainbow#blend().(xs)2#
-?? scala/package.Vector#2
-?? #java/awt/Color#2#
-?'? -scala/package.Vector#2
-?.? 4java/awt/Color#2;
-@p@ x-scala/collection/immutable/Vector#appended().2<
-@]@ f.scala/collection/immutable/Vector#prepended().2@
-@?@ B2scala/collection/StrictOptimizedIterableOps#map().2:
-@6@ >,scala/collection/IterableOnceOps#toVector().25
-@+@ 2'scala/collection/IterableOps#sliding().2D
-@#@ *6scala/collection/StrictOptimizedIterableOps#flatten().2:
-@@ ",scala/collection/IterableOnceOps#toVector().25
-@@ 'scala/collection/IterableOps#sliding().2:
-@@ ,fractal/graphics/SColor.Rainbow#blend().(xs)2'
-@*@ *scala/Predef.$conforms().2
-@C@ Dlocal020
-@H@ O"fractal/graphics/SColor.quadAvg().2.
-@Q@ Q scala/collection/SeqOps#apply().2
-@P@ Qlocal02.
-@W@ W scala/collection/SeqOps#apply().2
-@V@ Wlocal027
-@j@ n)scala/collection/immutable/Vector#head().2:
-@g@ i,fractal/graphics/SColor.Rainbow#blend().(xs)28
-	@|@ Ä)scala/collection/immutable/Vector#last().2:
-@y@ {,fractal/graphics/SColor.Rainbow#blend().(xs)25
-CC 'fractal/graphics/SColor.Rainbow#colors.2-
-CC fractal/graphics/SColor.many().26
-CC "(fractal/graphics/SColor.Rainbow#blend().2
-CC local127
-C*C *)scala/collection/IterableFactory#apply().2#
-C$C *scala/package.Vector.2!
-C2C 5java/awt/Color#red.2
-C+C 1java/awt/Color#2$
-C>C Djava/awt/Color#orange.2
-C7C =java/awt/Color#2$
-CMC Sjava/awt/Color#yellow.2
-CFC Ljava/awt/Color#2#
-C\C ajava/awt/Color#green.2
-CUC [java/awt/Color#2"
-CjC njava/awt/Color#blue.2
-CcC ijava/awt/Color#2*
-
-CáC èjava/awt/Color#brighter().2(
-CzC zjava/awt/Color#`<init>`().2
-CtC zjava/awt/Color#2*
-
-CõC õjava/awt/Color#`<init>`().2
-
-CïC õjava/awt/Color#2#
-
-C±C ¥java/awt/Color#red.2
-
-C™C ∞java/awt/Color#2?
-II #1fractal/graphics/SColor.Rainbow#paintComponent().2B
-I$I %4fractal/graphics/SColor.Rainbow#paintComponent().(g)2 
-I'I /java/awt/Graphics#2
-I2I 6scala/Unit#26
-JJ  (javax/swing/JComponent#paintComponent().2B
-J!J "4fractal/graphics/SColor.Rainbow#paintComponent().(g)25
-KK 'javax/swing/JComponent#setBackground().2#
-K&K +java/awt/Color#black.2
-KK %java/awt/Color#29
-MM "+scala/collection/immutable/Range#foreach().20
-MM "scala/collection/SeqOps#indices().25
-MM 'fractal/graphics/SColor.Rainbow#colors.2
-M#M $local22+
-M+M 3java/awt/Graphics#setColor().2B
-M)M *4fractal/graphics/SColor.Rainbow#paintComponent().(g)2.
-M:M : scala/collection/SeqOps#apply().25
-M4M :'fractal/graphics/SColor.Rainbow#colors.2
-M;M <local22+
-MBM Jjava/awt/Graphics#fillRect().2B
-M@M A4fractal/graphics/SColor.Rainbow#paintComponent().(g)2 
-MNM Oscala/Int#`*`(+3).2
-MPM Qlocal22
-RR 	scala/main#2.
-SS  fractal/graphics/SColor.main3().2
-SS scala/Unit#2
-TT local32.
-TT  javax/swing/JFrame#`<init>`(+2).2!
-TT javax/swing/JFrame#2
-UU local429
-UU +fractal/graphics/SColor.Rainbow#`<init>`().2.
-UU  fractal/graphics/SColor.Rainbow#2'
-VV java/awt/Container#add().2
-VV local32
-VV local42(
-WW java/awt/Window#setSize().2
-WW local32.
-W#W # java/awt/Dimension#`<init>`(+2).2!
-WW #java/awt/Dimension#2+
-XX java/awt/Window#setVisible().2
-XX local32%
-RR fractal/graphics/main3#20
-RR "fractal/graphics/main3#`<init>`().2.
-RR  fractal/graphics/SColor.main3().27
-RR )scala/util/CommandLineParser.showError().2
-RR local5PZ 1052733C9C39CA6DCD6EFA1102A055C9

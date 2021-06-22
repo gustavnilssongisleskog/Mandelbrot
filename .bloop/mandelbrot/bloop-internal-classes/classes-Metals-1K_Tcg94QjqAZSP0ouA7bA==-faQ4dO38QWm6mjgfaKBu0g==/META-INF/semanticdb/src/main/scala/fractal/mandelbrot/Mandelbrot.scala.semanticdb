@@ -1,572 +1,0 @@
-
-°™2src/main/scala/fractal/mandelbrot/Mandelbrot.scala*4
-fractal/mandelbrot/Mandelbrot# €*
-Mandelbrot€*;
-)fractal/mandelbrot/Mandelbrot#`<init>`(). €@*<init>€*A
-0fractal/mandelbrot/Mandelbrot#`<init>`().(reDim) €*reDim€*A
-0fractal/mandelbrot/Mandelbrot#`<init>`().(reMid) €*reMid€*C
-1fractal/mandelbrot/Mandelbrot#`<init>`().(reSize) €*reSize€*A
-0fractal/mandelbrot/Mandelbrot#`<init>`().(imMid) €*imMid€*C
-1fractal/mandelbrot/Mandelbrot#`<init>`().(imSize) €*imSize€*5
-$fractal/mandelbrot/Mandelbrot#reDim. €*reDim€*5
-$fractal/mandelbrot/Mandelbrot#reMid. €*reMid€*7
-%fractal/mandelbrot/Mandelbrot#reSize. €*reSize€*5
-$fractal/mandelbrot/Mandelbrot#imMid. €*imMid€*7
-%fractal/mandelbrot/Mandelbrot#imSize. €*imSize€*5
-$fractal/mandelbrot/Mandelbrot#imDim. €*imDim€*5
-$fractal/mandelbrot/Mandelbrot#reInc. €*reInc€*5
-$fractal/mandelbrot/Mandelbrot#imInc. €*imInc€*F
-/fractal/mandelbrot/Mandelbrot#pixelToComplex().*pixelToComplex€*<
-2fractal/mandelbrot/Mandelbrot#pixelToComplex().(x)*x€*<
-2fractal/mandelbrot/Mandelbrot#pixelToComplex().(y)*y€*7
-%fractal/mandelbrot/Mandelbrot#repsss. À*repsss€*
-local0*xs€*=
-(fractal/mandelbrot/Mandelbrot#repsArray. €*	repsArray€*:
-)fractal/mandelbrot/Mandelbrot#evaluate().*evaluate€*
-local1*evaluate€*
-local2*x€*
-local3*y€*
-local4 €*qIn€*
-local5 €*qOut€*
-local6 €*visited€*
-local7*	isOutside€*
-local8*x€*
-local9*y€*
-local10*	neighbors€*
-local11*p€*
-local12*borderTrace€*
-local13*x€*
-local14*y€*
-local15*p€*
-local16*investigate€*
-local17*p€*
-local18 €*xs€*
-local19*x$1€*
-local20*x€*
-local21*y€*
-local22*fill€*
-local23*x$1€*
-local24*x0€*
-local25*y0€*
-local26*x$1€*
-local27*x0€*
-local28*y0€*
-local29*x€*
-local30*y€*<
-*fractal/mandelbrot/Mandelbrot#printGrid().*	printGrid€*
-local31*y€*
-local32*x€*:
-)fractal/mandelbrot/Mandelbrot#toString().*toString€*2
-%fractal/mandelbrot/Mandelbrot#copy().*copy€*:
-,fractal/mandelbrot/Mandelbrot#copy().(reDim)*reDim€*:
-,fractal/mandelbrot/Mandelbrot#copy().(reMid)*reMid€*<
--fractal/mandelbrot/Mandelbrot#copy().(reSize)*reSize€*:
-,fractal/mandelbrot/Mandelbrot#copy().(imMid)*imMid€*<
--fractal/mandelbrot/Mandelbrot#copy().(imSize)*imSize€*F
-/fractal/mandelbrot/Mandelbrot#copy$default$1().*copy$default$1€*F
-/fractal/mandelbrot/Mandelbrot#copy$default$2().*copy$default$2€*F
-/fractal/mandelbrot/Mandelbrot#copy$default$3().*copy$default$3€*F
-/fractal/mandelbrot/Mandelbrot#copy$default$4().*copy$default$4€*F
-/fractal/mandelbrot/Mandelbrot#copy$default$5().*copy$default$5€*.
-#fractal/mandelbrot/Mandelbrot#_1().*_1€*.
-#fractal/mandelbrot/Mandelbrot#_2().*_2€*.
-#fractal/mandelbrot/Mandelbrot#_3().*_3€*.
-#fractal/mandelbrot/Mandelbrot#_4().*_4€*.
-#fractal/mandelbrot/Mandelbrot#_5().*_5€*3
-fractal/mandelbrot/Mandelbrot.
- *
-Mandelbrot€*4
-&fractal/mandelbrot/Mandelbrot.apply().*apply€*;
--fractal/mandelbrot/Mandelbrot.apply().(reDim)*reDim€*;
--fractal/mandelbrot/Mandelbrot.apply().(reMid)*reMid€*=
-.fractal/mandelbrot/Mandelbrot.apply().(reSize)*reSize€*;
--fractal/mandelbrot/Mandelbrot.apply().(imMid)*imMid€*=
-.fractal/mandelbrot/Mandelbrot.apply().(imSize)*imSize€*8
-(fractal/mandelbrot/Mandelbrot.unapply().*unapply€*9
--fractal/mandelbrot/Mandelbrot.unapply().(x$1)*x$1€*:
-)fractal/mandelbrot/Mandelbrot.toString().*toString€*`
-<fractal/mandelbrot/Mandelbrot.$lessinit$greater$default$1().*$lessinit$greater$default$1€*`
-<fractal/mandelbrot/Mandelbrot.$lessinit$greater$default$2().*$lessinit$greater$default$2€*`
-<fractal/mandelbrot/Mandelbrot.$lessinit$greater$default$3().*$lessinit$greater$default$3€*`
-<fractal/mandelbrot/Mandelbrot.$lessinit$greater$default$4().*$lessinit$greater$default$4€*`
-<fractal/mandelbrot/Mandelbrot.$lessinit$greater$default$5().*$lessinit$greater$default$5€*9
-&fractal/mandelbrot/Mandelbrot.maxReps. €*maxReps€*@
-,fractal/mandelbrot/Mandelbrot.repetitions().*repetitions€*9
-/fractal/mandelbrot/Mandelbrot.repetitions().(c)*c€*
-local33 €*res€*
-local34 €*z€2
- fractal/mandelbrot/2
- fractal/2
- fractal/Complex.2
- fractal/Complex#2
- fractal/2-
-! &scala/collection/mutable/Queue.2-
-! &scala/collection/mutable/Queue#2+
-( +scala/collection/mutable/Set.2+
-( +scala/collection/mutable/Set#2'
- scala/collection/mutable/2
- scala/collection/2
- scala/2,
- fractal/mandelbrot/Mandelbrot#27
- )fractal/mandelbrot/Mandelbrot#`<init>`().2
-  
-scala/Int#2
- "scala/Double#2
-3 9scala/Double#2
- "scala/Double#2
-0 6scala/Double#22
- $fractal/mandelbrot/Mandelbrot#reDim.22
- $fractal/mandelbrot/Mandelbrot#reMid.23
-+ 1%fractal/mandelbrot/Mandelbrot#reSize.22
- $fractal/mandelbrot/Mandelbrot#imMid.23
-( .%fractal/mandelbrot/Mandelbrot#imSize.2,
- fractal/mandelbrot/Mandelbrot.22
-		 $fractal/mandelbrot/Mandelbrot#imDim.2#
-	*	 /scala/Double#toInt().2#
-	 	 !scala/Double#`/`(+6).2 
-		 scala/Int#`*`(+6).22
-		 $fractal/mandelbrot/Mandelbrot#reDim.23
-		 %fractal/mandelbrot/Mandelbrot#imSize.23
-	"	 (%fractal/mandelbrot/Mandelbrot#reSize.22
- $fractal/mandelbrot/Mandelbrot#reInc.2#
- scala/Double#`/`(+6).23
- %fractal/mandelbrot/Mandelbrot#reSize.2#
- 'scala/Int#toDouble().22
- $fractal/mandelbrot/Mandelbrot#reDim.22
- $fractal/mandelbrot/Mandelbrot#imInc.2#
- scala/Double#`/`(+6).23
- %fractal/mandelbrot/Mandelbrot#imSize.2#
- 'scala/Int#toDouble().22
- $fractal/mandelbrot/Mandelbrot#imDim.2=
- /fractal/mandelbrot/Mandelbrot#pixelToComplex().2@
- 2fractal/mandelbrot/Mandelbrot#pixelToComplex().(x)2
- 
-scala/Int#2@
-  2fractal/mandelbrot/Mandelbrot#pixelToComplex().(y)2
-" %
-scala/Int#2
-( /fractal/Complex#2&
-9 9fractal/Complex.apply().2
-2 9fractal/Complex.2#
-M Nscala/Double#`+`(+7).2#
-@ Ascala/Double#`-`(+6).22
-: ?$fractal/mandelbrot/Mandelbrot#reMid.2#
-I Jscala/Double#`/`(+3).23
-B H%fractal/mandelbrot/Mandelbrot#reSize.2 
-Q Rscala/Int#`*`(+6).2@
-O P2fractal/mandelbrot/Mandelbrot#pixelToComplex().(x)22
-S X$fractal/mandelbrot/Mandelbrot#reInc.2#
-m nscala/Double#`+`(+7).2#
-` ascala/Double#`-`(+6).22
-Z _$fractal/mandelbrot/Mandelbrot#imMid.2#
-i jscala/Double#`/`(+3).23
-b h%fractal/mandelbrot/Mandelbrot#imSize.2 
-q rscala/Int#`*`(+6).2@
-o p2fractal/mandelbrot/Mandelbrot#pixelToComplex().(y)22
-s x$fractal/mandelbrot/Mandelbrot#imInc.23
- %fractal/mandelbrot/Mandelbrot#repsss.27
- )fractal/mandelbrot/Mandelbrot#evaluate().2@
-6 92scala/collection/StrictOptimizedIterableOps#map().2:
-- 5,scala/collection/IterableOnceOps#toVector().28
-# #*scala/LowPriorityImplicits#wrapRefArray().26
-# ,(fractal/mandelbrot/Mandelbrot#repsArray.2
-: <local02:
-C K,scala/collection/IterableOnceOps#toVector().28
-@ @*scala/LowPriorityImplicits#wrapIntArray().2
-@ Blocal026
- (fractal/mandelbrot/Mandelbrot#repsArray.2!
-" &scala/Array.fill().2
- !scala/Array.22
-' ,$fractal/mandelbrot/Mandelbrot#reDim.2!
-4 8scala/Array.fill().2
-. 3scala/Array.22
-9 >$fractal/mandelbrot/Mandelbrot#imDim.2-
-C Cscala/reflect/ClassTag.apply().2,
-D Dscala/reflect/ClassTag#wrap().27
- )fractal/mandelbrot/Mandelbrot#evaluate().2
-  scala/Unit#2
-<< local12
-<< local22
-<< 
-scala/Int#2
-<< local32
-< < #
-scala/Int#2
-<&< )
-scala/Int#2!
-== !scala/Int#`==`(+3).2"
-== scala/Array#apply().2"
-== scala/Array#apply().26
-== (fractal/mandelbrot/Mandelbrot#repsArray.2
-== local22
-== local32#
->> scala/Array#update().2"
->> scala/Array#apply().26
->> (fractal/mandelbrot/Mandelbrot#repsArray.2
->> local22
->> local32:
->"> -,fractal/mandelbrot/Mandelbrot.repetitions().2=
->.> </fractal/mandelbrot/Mandelbrot#pixelToComplex().2
->=> >local22 
->J> Kscala/Int#`-`(+3).2 
->F> Gscala/Int#`-`(+3).22
->@> E$fractal/mandelbrot/Mandelbrot#imDim.2
->L> Mlocal32"
-?? scala/Array#apply().2"
-?? scala/Array#apply().26
-?? (fractal/mandelbrot/Mandelbrot#repsArray.2
-?? local22
-?? local32
-BB local427
-BB )scala/collection/IterableFactory#apply().2-
-BB scala/collection/mutable/Queue.2
-BB 
-scala/Int#2
-BB !
-scala/Int#2
-CC local527
-CC )scala/collection/IterableFactory#apply().2-
-CC scala/collection/mutable/Queue.2
-CC 
-scala/Int#2
-CC "
-scala/Int#2
-DD local62@
-DD 2scala/collection/IterableFactory.Delegate#apply().2+
-DD scala/collection/mutable/Set.2
-DD 
-scala/Int#2
-D D #
-scala/Int#2
-FF local72
-FF local82
-FF 
-scala/Int#2
-FF local92
-F!F $
-scala/Int#2
-F'F .scala/Boolean#2#
-FNF Pscala/Boolean#`||`().2#
-FEF Gscala/Boolean#`||`().2#
-F7F 9scala/Boolean#`||`().2 
-F3F 4scala/Int#`<`(+3).2
-F1F 2local82!
-F<F >scala/Int#`>=`(+3).2
-F:F ;local822
-F?F D$fractal/mandelbrot/Mandelbrot#reDim.2 
-FJF Kscala/Int#`<`(+3).2
-FHF Ilocal92!
-FSF Uscala/Int#`>=`(+3).2
-FQF Rlocal922
-FVF [$fractal/mandelbrot/Mandelbrot#imDim.2
-HH local102
-HH local112
-HH 
-scala/Int#2
-HH "
-scala/Int#27
-H-H -)scala/collection/IterableFactory#apply().2#
-H'H -scala/package.Vector.2#
-H/H /scala/Tuple2.apply().2 
-H4H 5scala/Int#`-`(+3).2
-H1H 3scala/Tuple2#_1.2
-H/H 0local112 
-H>H ?scala/Int#`-`(+3).2
-H;H =scala/Tuple2#_2.2
-H9H :local112#
-HEH Escala/Tuple2.apply().2
-HGH Iscala/Tuple2#_1.2
-HEH Flocal112 
-HPH Qscala/Int#`-`(+3).2
-HMH Oscala/Tuple2#_2.2
-HKH Llocal112#
-HWH Wscala/Tuple2.apply().2 
-H\H ]scala/Int#`+`(+4).2
-HYH [scala/Tuple2#_1.2
-HWH Xlocal112 
-HfH gscala/Int#`-`(+3).2
-HcH escala/Tuple2#_2.2
-HaH blocal112#
-HmH mscala/Tuple2.apply().2 
-HrH sscala/Int#`-`(+3).2
-HoH qscala/Tuple2#_1.2
-HmH nlocal112
-HyH {scala/Tuple2#_2.2
-HwH xlocal112#
-HH scala/Tuple2.apply().2"
-
-H„H …scala/Int#`+`(+4).2 
-
-HH ƒscala/Tuple2#_1.2
-	HH €local112 
-
-H‹H scala/Tuple2#_2.2
-
-H‰H Šlocal112%
-
-H‘H ‘scala/Tuple2.apply().2"
-
-H–H —scala/Int#`-`(+3).2 
-
-H“H •scala/Tuple2#_1.2
-
-H‘H ’local112"
-
-H H ¡scala/Int#`+`(+4).2 
-
-HH Ÿscala/Tuple2#_2.2
-
-H›H œlocal112%
-
-H§H §scala/Tuple2.apply().2 
-
-H©H «scala/Tuple2#_1.2
-
-H§H ¨local112"
-
-H²H ³scala/Int#`+`(+4).2 
-
-H¯H ±scala/Tuple2#_2.2
-
-H­H ®local112%
-
-H¹H ¹scala/Tuple2.apply().2"
-
-H¾H ¿scala/Int#`+`(+4).2 
-
-H»H ½scala/Tuple2#_1.2
-
-H¹H ºlocal112"
-
-HÈH Éscala/Int#`+`(+4).2 
-
-HÅH Çscala/Tuple2#_2.2
-
-HÃH Älocal112
-JJ local122
-JJ local132
-JJ 
-scala/Int#2
-J J !local142
-J#J &
-scala/Int#2
-J)J -scala/Unit#27
-KK )scala/collection/mutable/Queue#enqueue().2
-KK local52#
-KK scala/Tuple2.apply().2
-KK local132
-KK local1424
-LL &scala/collection/mutable/SetOps#add().2
-LL local62#
-LL scala/Tuple2.apply().2
-LL local132
-LL local142:
-NN ,scala/collection/IterableOnceOps#nonEmpty().2
-NN local52:
-O9O @,scala/collection/immutable/Vector#foreach().2F
-O&O /8scala/collection/StrictOptimizedIterableOps#filterNot().2
-OO local1025
-OO $'scala/collection/mutable/Queue#front().2
-OO local52
-O0O 7local62
-OAO Llocal162
-OAO Alocal1527
-PP )scala/collection/mutable/Queue#dequeue().2
-PP local52
-SS local162
-SS local172
-SS 
-scala/Int#2
-S!S $
-scala/Int#2
-S(S ,scala/Unit#2
-TT local182C
-T"T (5scala/collection/StrictOptimizedIterableOps#filter().2
-TT local102
-TT  local172
-T*T +local202
-T*T *scala/Tuple2#_1.2
-T-T .local212
-T-T -scala/Tuple2#_2.2#
-TDT Fscala/Boolean#`&&`().2(
-TCT Cscala/Boolean#`unary_!`().2
-T4T =local72
-T>T ?local202
-TAT Blocal212!
-TVT Xscala/Int#`==`(+3).2
-TGT Olocal12
-TPT Qlocal202
-TST Tlocal2124
-TYT `&fractal/mandelbrot/Mandelbrot.maxReps.2#
-UU scala/Boolean#`&&`().2:
-UU ,scala/collection/IterableOnceOps#nonEmpty().2
-UU local182#
-U5U 7scala/Boolean#`||`().2
-UU (local72
-U+U -scala/Tuple2#_1.2
-U)U *local172
-U1U 3scala/Tuple2#_2.2
-U/U 0local172!
-UNU Pscala/Int#`!=`(+3).2"
-UGU Gscala/Array#apply().2"
-UAU Ascala/Array#apply().26
-U8U A(fractal/mandelbrot/Mandelbrot#repsArray.2
-UDU Fscala/Tuple2#_1.2
-UBU Clocal172
-UJU Lscala/Tuple2#_2.2
-UHU Ilocal1724
-UQU X&fractal/mandelbrot/Mandelbrot.maxReps.27
-VV )scala/collection/mutable/Queue#enqueue().2
-VV local52
-VV local1724
-WW &scala/collection/mutable/SetOps#add().2
-WW local62
-WW local172;
-XX -scala/collection/mutable/ArrayDeque#addAll().2
-XX local42
-XX local182
-[[ local222
-[[ scala/Unit#2:
-\\ ,scala/collection/IterableOnceOps#nonEmpty().2
-\\ local42:
-]g] n,scala/collection/immutable/Vector#foreach().2C
-]%] +5scala/collection/StrictOptimizedIterableOps#filter().2
-]] local1025
-]] #'scala/collection/mutable/Queue#front().2
-]] local42
-]-] /local242
-]-] -scala/Tuple2#_1.2
-]1] 3local252
-]1] 1scala/Tuple2#_2.2#
-]K] Mscala/Boolean#`&&`().2(
-]J] Jscala/Boolean#`unary_!`().2
-]9] Blocal72
-]C] Elocal242
-]G] Ilocal252!
-]`] bscala/Int#`==`(+3).2"
-][] [scala/Array#apply().2"
-]W] Wscala/Array#apply().26
-]N] W(fractal/mandelbrot/Mandelbrot#repsArray.2
-]X] Zlocal242
-]\] ^local252
-]p] rlocal272
-]p] pscala/Tuple2#_1.2
-]t] vlocal282
-]t] tscala/Tuple2#_2.2#
-^!^ !scala/Array#update().2"
-^^ scala/Array#apply().26
-^^ (fractal/mandelbrot/Mandelbrot#repsArray.2
-^^  local272
-^"^ $local2824
-^(^ /&fractal/mandelbrot/Mandelbrot.maxReps.2;
-__ -scala/collection/mutable/ArrayDeque#addOne().2
-__ local42#
-__ scala/Tuple2.apply().2
-__ !local272
-_#_ %local2827
-aa )scala/collection/mutable/Queue#dequeue().2
-aa local429
-ee +scala/collection/immutable/Range#foreach().2,
-ee scala/runtime/RichInt#until().26
-ee (scala/LowPriorityImplicits#intWrapper().22
-ee $fractal/mandelbrot/Mandelbrot#reDim.2
-ee local2929
-ff +scala/collection/immutable/Range#foreach().2,
-ff scala/runtime/RichInt#until().26
-ff (scala/LowPriorityImplicits#intWrapper().22
-ff $fractal/mandelbrot/Mandelbrot#imDim.2
-ff local302#
-h%h 'scala/Boolean#`&&`().2!
-hh !scala/Int#`==`(+3).2"
-hh scala/Array#apply().2"
-hh scala/Array#apply().26
-hh (fractal/mandelbrot/Mandelbrot#repsArray.2
-hh local292
-hh local302!
-h7h 9scala/Int#`==`(+3).2
-h(h 0local12
-h1h 2local292
-h4h 5local3024
-h:h A&fractal/mandelbrot/Mandelbrot.maxReps.2
-ii local122 
-i"i #scala/Int#`-`(+3).2
-i i !local292
-i'i (local302
-jj local2228
-mm *fractal/mandelbrot/Mandelbrot#printGrid().2
-mm scala/Unit#29
-oo +scala/collection/immutable/Range#foreach().2,
-oo scala/runtime/RichInt#until().26
-oo (scala/LowPriorityImplicits#intWrapper().22
-oo $fractal/mandelbrot/Mandelbrot#imDim.2
-oo local3129
-pp +scala/collection/immutable/Range#foreach().2,
-pp scala/runtime/RichInt#until().26
-pp (scala/LowPriorityImplicits#intWrapper().22
-pp $fractal/mandelbrot/Mandelbrot#reDim.2
-pp local322!
-qq scala/Int#`==`(+3).2.
-qq  scala/collection/SeqOps#apply().2.
-qq  scala/collection/SeqOps#apply().23
-qq %fractal/mandelbrot/Mandelbrot#repsss.2
-qq local322
-qq local3124
-qq &&fractal/mandelbrot/Mandelbrot.maxReps.2#
-q,q 1scala/Predef.print().2#
-q<q Ascala/Predef.print().2!
-rr scala/Int#`==`(+3).2
-rr local322 
-rr scala/Int#`-`(+3).22
-rr $fractal/mandelbrot/Mandelbrot#reDim.2%
-r#r *scala/Predef.println().27
-uu )fractal/mandelbrot/Mandelbrot#toString().2"
-uu !scala/Predef.String#2&
-u`u ascala/StringContext#s().2*
-u&u &scala/StringContext.apply().2&
-u:u :fractal/Complex.apply().2
-u3u :fractal/Complex.22
-u;u @$fractal/mandelbrot/Mandelbrot#reMid.22
-uBu G$fractal/mandelbrot/Mandelbrot#imMid.2#
-uVu Wscala/Double#`/`(+6).23
-uXu ^%fractal/mandelbrot/Mandelbrot#reSize.2,
-ww fractal/mandelbrot/Mandelbrot.24
-xx &fractal/mandelbrot/Mandelbrot.maxReps.2:
-{{ ,fractal/mandelbrot/Mandelbrot.repetitions().2=
-{{ /fractal/mandelbrot/Mandelbrot.repetitions().(c)2
-{{ fractal/Complex#2
-{!{ $
-scala/Int#2
-|| local332
-}} local342&
-}} fractal/Complex.apply().2
-}} fractal/Complex.2%
-
- scala/Boolean#`&&`().2&
-
- scala/Double#`<=`(+3).2)
-
- fractal/Complex#sqrSum().2
-
- local342"
-
-# $scala/Int#`<`(+3).2
-
- "local3326
-
-% ,&fractal/mandelbrot/Mandelbrot.maxReps.2
-
-‚‚ local342&
-
-‚‚ fractal/Complex#`+`().2&
-
-‚‚ fractal/Complex#sqr().2
-
-‚‚ local342?
-
-‚‚ /fractal/mandelbrot/Mandelbrot.repetitions().(c)2
-
-ƒƒ local332"
-
-ƒƒ scala/Int#`+`(+4).2
-
-…… local33PZ 4970D1B20EB4E7E96E90729F93684A48

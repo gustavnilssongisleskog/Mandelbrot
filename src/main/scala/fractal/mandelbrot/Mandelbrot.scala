@@ -103,8 +103,8 @@ case class Mandelbrot(reDim: Int = 700, //reDim: Int = 1000, imDim: Int = 1000,
             y <- 0 until imDim
         do
             if repsArray(x)(y) == -1 && evaluate(x, y) == maxReps then
-                    borderTrace(x - 1, y)
-                    fill()
+                borderTrace(x - 1, y)
+                fill()
     }
 
     def printGrid(): Unit = {

@@ -488,11 +488,11 @@ scala/Int#2
 h1h 2local292
 h4h 5local3024
 h:h A&fractal/mandelbrot/Mandelbrot.maxReps.2
-ii local122 
-i"i #scala/Int#`-`(+3).2
-i i !local292
-i'i (local302
-jj local2228
+ii local122 
+ii scala/Int#`-`(+3).2
+ii local292
+i#i $local302
+jj local2228
 mm *fractal/mandelbrot/Mandelbrot#printGrid().2
 mm scala/Unit#29
 oo +scala/collection/immutable/Range#foreach().2,
@@ -569,4 +569,4 @@ scala/Int#2
 
 ƒƒ scala/Int#`+`(+4).2
 
-…… local33PZ 4970D1B20EB4E7E96E90729F93684A48
+…… local33PZ 0E16BA795ADA7E88387F4469345DAC17
