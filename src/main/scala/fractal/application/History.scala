@@ -1,6 +1,6 @@
 package fractal.application
 
-import fractal.mandelbrot.Mandelbrot
+import fractal.mj.Mandelbrot
 
 class History(first: Mandelbrot){
     import History.StackEntry

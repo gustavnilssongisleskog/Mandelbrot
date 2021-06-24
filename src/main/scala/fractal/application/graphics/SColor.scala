@@ -5,7 +5,7 @@ import javax.swing._
 import java.awt.Dimension
 
 object SColor{
-    import fractal.mandelbrot.Mandelbrot.maxReps
+    import fractal.mj.Mandelbrot.maxReps
     import java.awt.{Color => JColor}
     import scala.util.Random.nextInt
 

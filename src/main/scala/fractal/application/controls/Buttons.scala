@@ -2,7 +2,7 @@ package fractal.application.controls
 
 import fractal.application.GUI._
 import fractal.application.graphics.Picture
-import fractal.mandelbrot.Mandelbrot
+import fractal.mj.Mandelbrot
 
 import javax.swing.JButton
 import javax.swing.JOptionPane

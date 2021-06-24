@@ -1,92 +1,0 @@
-
-»9src/main/scala/fractal/application/controls/Buttons.scala*7
-%fractal/application/controls/Buttons.
- *Buttons€*H
-1fractal/application/controls/Buttons.resetButton. €*resetButton€*
-local0*e€*F
-0fractal/application/controls/Buttons.backButton. €*
-backButton€*
-local1*e€*
-local2 €*panel€*L
-3fractal/application/controls/Buttons.forwardButton. €*forwardButton€*
-local3*e€*
-local4 €*panel€*H
-1fractal/application/controls/Buttons.musicButton. €*musicButton€*
-local5*e€2'
- $fractal/application/controls/2
- fractal/application/2
- fractal/2&
- fractal/application/GUI.2"
- fractal/application/2
- fractal/23
-$ +%fractal/application/graphics/Picture#2+
- #fractal/application/graphics/2"
- fractal/application/2
- fractal/2,
- $fractal/mandelbrot/Mandelbrot.2,
- $fractal/mandelbrot/Mandelbrot#2!
- fractal/mandelbrot/2
- fractal/2"
- javax/swing/JButton.2"
- javax/swing/JButton#2
- javax/swing/2
- javax/2&
- javax/swing/JOptionPane#2
- javax/swing/2
- javax/2!
- javax/swing/JPanel.2!
- javax/swing/JPanel#2
- javax/swing/2
- javax/23
-
-
- %fractal/application/controls/Buttons.2?
-)) 1fractal/application/controls/Buttons.resetButton.2/
-)!) !!javax/swing/JButton#`<init>`(+2).2"
-)) !javax/swing/JButton#2=
-** !/javax/swing/AbstractButton#addActionListener().2?
-** 1fractal/application/controls/Buttons.resetButton.2
-*"* #local02.
-,,  fractal/application/GUI.reset().2>
-// 0fractal/application/controls/Buttons.backButton.2/
-/ /  !javax/swing/JButton#`<init>`(+2).2"
-//  javax/swing/JButton#2=
-00  /javax/swing/AbstractButton#addActionListener().2>
-00 0fractal/application/controls/Buttons.backButton.2
-0!0 "local121
-33 #fractal/application/History#back().2.
-33  fractal/application/GUI.history.24
-55 &fractal/application/GUI.updateFrame().2
-77 local22.
-7"7 " javax/swing/JPanel#`<init>`(+3).2!
-77 "javax/swing/JPanel#2<
-88 ).javax/swing/JOptionPane#showMessageDialog(+1).2&
-88 javax/swing/JOptionPane#2
-8*8 /local226
-8f8 u(javax/swing/JOptionPane#WARNING_MESSAGE.2&
-8Z8 ejavax/swing/JOptionPane#2A
-;; 3fractal/application/controls/Buttons.forwardButton.2/
-;#; #!javax/swing/JButton#`<init>`(+2).2"
-;; #javax/swing/JButton#2=
-<< #/javax/swing/AbstractButton#addActionListener().2A
-<< 3fractal/application/controls/Buttons.forwardButton.2
-<$< %local324
->> &fractal/application/History#forward().2.
->>  fractal/application/GUI.history.24
-@@ &fractal/application/GUI.updateFrame().2
-BB local42.
-B"B " javax/swing/JPanel#`<init>`(+3).2!
-BB "javax/swing/JPanel#2<
-CC ).javax/swing/JOptionPane#showMessageDialog(+1).2&
-CC javax/swing/JOptionPane#2
-C*C /local426
-CiC x(javax/swing/JOptionPane#WARNING_MESSAGE.2&
-C]C hjavax/swing/JOptionPane#2?
-FF 1fractal/application/controls/Buttons.musicButton.2/
-F!F !!javax/swing/JButton#`<init>`(+2).2"
-FF !javax/swing/JButton#2=
-GG !/javax/swing/AbstractButton#addActionListener().2?
-GG 1fractal/application/controls/Buttons.musicButton.2
-G"G #local525
-II 'fractal/application/Music#chooseSong().2,
-II fractal/application/GUI.music.PZ 79AEC3F05EB5FF973AA1334C305D438D

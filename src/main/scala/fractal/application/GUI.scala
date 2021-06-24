@@ -1,14 +1,17 @@
 package fractal.application
 
 import graphics._
-import fractal.mandelbrot.Mandelbrot
+import fractal.mj.{Mandelbrot, Julia}
 import controls._
+import fractal.Complex
 
 import javax.swing._
 import java.awt.Dimension
 import java.awt.FlowLayout
 import java.awt.BorderLayout
 import java.awt.Graphics
+
+import util.Random.nextDouble
 
 
 object GUI{
@@ -19,7 +22,11 @@ object GUI{
     val initIm = 0D
     val standardMandel = Mandelbrot(dim, initRe, initSize, initIm, initSize)
     private var mandel = standardMandel
-    
+    //val standardJulia = Julia(reDim = dim, c = Complex(nextDouble, nextDouble))//-0.532, -0.6))
+    private var julia = Julia(reDim = dim, c = Complex(nextDouble, nextDouble))//standardJulia
+    val music = new Music
+    val history = new History(mandel)
+
     /*private var scaleFactor = 1D
     def zoomIn: Unit = scaleFactor /= 2
     def zoomOut: Unit = scaleFactor *= 2
@@ -37,11 +44,16 @@ object GUI{
         mouseIm = -y * mandel.imSize / dim + mandel.imMid + mandel.imSize / 2
     }
     
-    val music = new Music
+    
 
-    val history = new History(mandel)
-
-    private var picture: Picture = new Picture(mandel.repsss)
+    private var picture: Picture = new Picture(mandel, julia)
+    def newJulia(reC: Double, imC: Double): Unit = {
+        julia = Julia(reDim = dim, c = Complex(reC, imC), reSize = Math.sqrt(scaleFactor) * 3, imSize = Math.sqrt(scaleFactor) * 3)
+        while Math.max(julia.reSize, julia.imSize) < 3 && (julia.repsss.flatten.count(_ == Julia.maxReps) > julia.reDim * julia.imDim / 2 || julia.repsss.flatten.filterNot(_ == Julia.maxReps).groupBy(r => r).map(p => p._2.size).toVector.sortBy(-_).take(2).sum > julia.reDim * julia.imDim / 2) do
+            julia = Julia(reDim = dim, c = julia.c, reSize = julia.reSize * 2, imSize = julia.imSize * 2)
+            println("retry")
+        updateFrame
+    }
     def zoomIn(reMid: Double, imMid: Double): Unit = {   
         history.newEntry(Mandelbrot(dim, reMid, initSize * scaleFactor / 2, imMid, initSize * scaleFactor / 2))
         updateFrame
@@ -61,7 +73,7 @@ object GUI{
     def updateFrame: Unit = {
         mandel = history.getCur
         frame.remove(picture)
-        picture = new Picture(history.getCur.repsss)
+        picture = new Picture(history.getCur, julia)
         picture.addMouseListener(mouse)
         picture.addMouseMotionListener(mouse)
         frame.add(picture, BorderLayout.CENTER)

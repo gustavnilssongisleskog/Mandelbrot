@@ -1,0 +1,163 @@
+
+—/'src/main/scala/fractal/mj/Fractal.scala*%
+fractal/mj/Fractal# *Fractal€*0
+fractal/mj/Fractal#`<init>`(). €@*<init>€*6
+%fractal/mj/Fractal#`<init>`().(reDim) €*reDim€*6
+%fractal/mj/Fractal#`<init>`().(reMid) €*reMid€*8
+&fractal/mj/Fractal#`<init>`().(reSize) €*reSize€*6
+%fractal/mj/Fractal#`<init>`().(imMid) €*imMid€*8
+&fractal/mj/Fractal#`<init>`().(imSize) €*imSize€**
+fractal/mj/Fractal#reDim. €*reDim€**
+fractal/mj/Fractal#reMid. €*reMid€*,
+fractal/mj/Fractal#reSize. €*reSize€**
+fractal/mj/Fractal#imMid. €*imMid€*,
+fractal/mj/Fractal#imSize. €*imSize€**
+fractal/mj/Fractal#imDim. €*imDim€**
+fractal/mj/Fractal#reInc. €*reInc€**
+fractal/mj/Fractal#imInc. €*imInc€*;
+$fractal/mj/Fractal#pixelToComplex().*pixelToComplex€*1
+'fractal/mj/Fractal#pixelToComplex().(x)*x€*1
+'fractal/mj/Fractal#pixelToComplex().(y)*y€*,
+fractal/mj/Fractal#repsss. À*repsss€*
+local0*xs€*2
+fractal/mj/Fractal#repsArray. €*	repsArray€*1
+fractal/mj/Fractal#evaluate(). *evaluate€*1
+fractal/mj/Fractal#printGrid().*	printGrid€*
+local1*y€*
+local2*x€*/
+fractal/mj/Fractal#toString().*toString€*%
+fractal/mj/Fractal.
+ *Fractal€*.
+fractal/mj/Fractal.maxReps. €*maxReps€2
+ fractal/mj/2
+ fractal/2
+ fractal/Complex.2
+ fractal/Complex#2
+ fractal/2)
+ fractal/mj/Fractal.maxReps.2!
+ fractal/mj/Fractal.2!
+ fractal/mj/Fractal#2,
+ fractal/mj/Fractal#`<init>`().2
+" %
+scala/Int#2
+2 8scala/Double#2
+F Lscala/Double#2
+Y _scala/Double#2
+m sscala/Double#2'
+  fractal/mj/Fractal#reDim.2'
++ 0fractal/mj/Fractal#reMid.2(
+> Dfractal/mj/Fractal#reSize.2'
+R Wfractal/mj/Fractal#imMid.2(
+e kfractal/mj/Fractal#imSize.2'
+ fractal/mj/Fractal#imDim.2#
+* /scala/Double#toInt().2#
+  !scala/Double#`/`(+6).2 
+ scala/Int#`*`(+6).2'
+ fractal/mj/Fractal#reDim.2(
+ fractal/mj/Fractal#imSize.2(
+" (fractal/mj/Fractal#reSize.2'
+		 fractal/mj/Fractal#reInc.2#
+		 scala/Double#`/`(+6).2(
+		 fractal/mj/Fractal#reSize.2#
+		 'scala/Int#toDouble().2'
+		 fractal/mj/Fractal#reDim.2'
+
+
+ fractal/mj/Fractal#imInc.2#
+
+
+ scala/Double#`/`(+6).2(
+
+
+ fractal/mj/Fractal#imSize.2#
+
+
+ 'scala/Int#toDouble().2'
+
+
+ fractal/mj/Fractal#imDim.22
+ $fractal/mj/Fractal#pixelToComplex().25
+ 'fractal/mj/Fractal#pixelToComplex().(x)2
+ 
+scala/Int#25
+  'fractal/mj/Fractal#pixelToComplex().(y)2
+" %
+scala/Int#2
+( /fractal/Complex#2&
+9 9fractal/Complex.apply().2
+2 9fractal/Complex.2#
+M Nscala/Double#`+`(+7).2#
+@ Ascala/Double#`-`(+6).2'
+: ?fractal/mj/Fractal#reMid.2#
+I Jscala/Double#`/`(+3).2(
+B Hfractal/mj/Fractal#reSize.2 
+Q Rscala/Int#`*`(+6).25
+O P'fractal/mj/Fractal#pixelToComplex().(x)2'
+S Xfractal/mj/Fractal#reInc.2#
+m nscala/Double#`+`(+7).2#
+` ascala/Double#`-`(+6).2'
+Z _fractal/mj/Fractal#imMid.2#
+i jscala/Double#`/`(+3).2(
+b hfractal/mj/Fractal#imSize.2 
+q rscala/Int#`*`(+6).25
+o p'fractal/mj/Fractal#pixelToComplex().(y)2'
+s xfractal/mj/Fractal#imInc.2(
+ fractal/mj/Fractal#repsss.2,
+ fractal/mj/Fractal#evaluate().2@
+6 92scala/collection/StrictOptimizedIterableOps#map().2:
+- 5,scala/collection/IterableOnceOps#toVector().28
+# #*scala/LowPriorityImplicits#wrapRefArray().2+
+# ,fractal/mj/Fractal#repsArray.2
+: <local02:
+C K,scala/collection/IterableOnceOps#toVector().28
+@ @*scala/LowPriorityImplicits#wrapIntArray().2
+@ Blocal02+
+ fractal/mj/Fractal#repsArray.2!
+$ (scala/Array.fill().2
+ #scala/Array.2'
+) .fractal/mj/Fractal#reDim.2!
+6 :scala/Array.fill().2
+0 5scala/Array.2'
+; @fractal/mj/Fractal#imDim.2-
+E Escala/reflect/ClassTag.apply().2,
+F Fscala/reflect/ClassTag#wrap().2,
+ fractal/mj/Fractal#evaluate().2
+ "scala/Unit#2-
+ fractal/mj/Fractal#printGrid().2
+ scala/Unit#29
+ +scala/collection/immutable/Range#foreach().2,
+ scala/runtime/RichInt#until().26
+ (scala/LowPriorityImplicits#intWrapper().2'
+ fractal/mj/Fractal#imDim.2
+ local129
+ +scala/collection/immutable/Range#foreach().2,
+ scala/runtime/RichInt#until().26
+ (scala/LowPriorityImplicits#intWrapper().2'
+ fractal/mj/Fractal#reDim.2
+ local22!
+ scala/Int#`==`(+3).2.
+  scala/collection/SeqOps#apply().2.
+  scala/collection/SeqOps#apply().2(
+ fractal/mj/Fractal#repsss.2
+ local22
+ local12)
+ &fractal/mj/Fractal.maxReps.2#
+, 1scala/Predef.print().2#
+< Ascala/Predef.print().2!
+ scala/Int#`==`(+3).2
+ local22 
+ scala/Int#`-`(+3).2'
+ fractal/mj/Fractal#reDim.2%
+# *scala/Predef.println().2,
+## fractal/mj/Fractal#toString().2"
+## !scala/Predef.String#2&
+#W# Xscala/StringContext#s().2*
+#&# &scala/StringContext.apply().2&
+#0# 0fractal/Complex.apply().2
+#)# 0fractal/Complex.2'
+#1# 6fractal/mj/Fractal#reMid.2'
+#8# =fractal/mj/Fractal#imMid.2#
+#L# Mscala/Double#`/`(+6).2(
+#N# Tfractal/mj/Fractal#reSize.2!
+%% fractal/mj/Fractal.2)
+&& fractal/mj/Fractal.maxReps.PZ E0FEA9AE6F299BA0B730634EABE22E62

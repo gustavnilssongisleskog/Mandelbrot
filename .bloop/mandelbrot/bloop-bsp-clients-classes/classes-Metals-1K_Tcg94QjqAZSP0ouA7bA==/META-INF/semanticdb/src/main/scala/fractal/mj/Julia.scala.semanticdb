@@ -1,0 +1,153 @@
+
+â.%src/main/scala/fractal/mj/Julia.scala*"
+fractal/mj/Julia# €*Julia€*.
+fractal/mj/Julia#`<init>`(). €@*<init>€*4
+#fractal/mj/Julia#`<init>`().(reDim) €*reDim€*4
+#fractal/mj/Julia#`<init>`().(reMid) €*reMid€*6
+$fractal/mj/Julia#`<init>`().(reSize) €*reSize€*4
+#fractal/mj/Julia#`<init>`().(imMid) €*imMid€*6
+$fractal/mj/Julia#`<init>`().(imSize) €*imSize€*,
+fractal/mj/Julia#`<init>`().(c) €*c€*(
+fractal/mj/Julia#reDim. €*reDim€*(
+fractal/mj/Julia#reMid. €*reMid€**
+fractal/mj/Julia#reSize. €*reSize€*(
+fractal/mj/Julia#imMid. €*imMid€**
+fractal/mj/Julia#imSize. €*imSize€* 
+fractal/mj/Julia#c. €*c€*3
+fractal/mj/Julia#repetitions().*repetitions€*,
+"fractal/mj/Julia#repetitions().(z)*z€*
+local0 €*res€*
+local1 €*cur€*-
+fractal/mj/Julia#evaluate().*evaluate€*
+local2*x€*
+local3*y€*-
+fractal/mj/Julia#toString().*toString€*%
+fractal/mj/Julia#copy().*copy€*-
+fractal/mj/Julia#copy().(reDim)*reDim€*-
+fractal/mj/Julia#copy().(reMid)*reMid€*/
+ fractal/mj/Julia#copy().(reSize)*reSize€*-
+fractal/mj/Julia#copy().(imMid)*imMid€*/
+ fractal/mj/Julia#copy().(imSize)*imSize€*%
+fractal/mj/Julia#copy().(c)*c€*9
+"fractal/mj/Julia#copy$default$1().*copy$default$1€*9
+"fractal/mj/Julia#copy$default$2().*copy$default$2€*9
+"fractal/mj/Julia#copy$default$3().*copy$default$3€*9
+"fractal/mj/Julia#copy$default$4().*copy$default$4€*9
+"fractal/mj/Julia#copy$default$5().*copy$default$5€*9
+"fractal/mj/Julia#copy$default$6().*copy$default$6€*!
+fractal/mj/Julia#_1().*_1€*!
+fractal/mj/Julia#_2().*_2€*!
+fractal/mj/Julia#_3().*_3€*!
+fractal/mj/Julia#_4().*_4€*!
+fractal/mj/Julia#_5().*_5€*!
+fractal/mj/Julia#_6().*_6€*!
+fractal/mj/Julia.
+ *Julia€*'
+fractal/mj/Julia.apply().*apply€*.
+ fractal/mj/Julia.apply().(reDim)*reDim€*.
+ fractal/mj/Julia.apply().(reMid)*reMid€*0
+!fractal/mj/Julia.apply().(reSize)*reSize€*.
+ fractal/mj/Julia.apply().(imMid)*imMid€*0
+!fractal/mj/Julia.apply().(imSize)*imSize€*&
+fractal/mj/Julia.apply().(c)*c€*+
+fractal/mj/Julia.unapply().*unapply€*,
+ fractal/mj/Julia.unapply().(x$1)*x$1€*-
+fractal/mj/Julia.toString().*toString€*S
+/fractal/mj/Julia.$lessinit$greater$default$1().*$lessinit$greater$default$1€*S
+/fractal/mj/Julia.$lessinit$greater$default$2().*$lessinit$greater$default$2€*S
+/fractal/mj/Julia.$lessinit$greater$default$3().*$lessinit$greater$default$3€*S
+/fractal/mj/Julia.$lessinit$greater$default$4().*$lessinit$greater$default$4€*S
+/fractal/mj/Julia.$lessinit$greater$default$5().*$lessinit$greater$default$5€*S
+/fractal/mj/Julia.$lessinit$greater$default$6().*$lessinit$greater$default$6€*,
+fractal/mj/Julia.maxReps. €*maxReps€2
+ fractal/mj/2
+ fractal/2
+ fractal/Complex.2
+ fractal/Complex#2
+ fractal/2
+ fractal/mj/Julia#2*
+ fractal/mj/Julia#`<init>`().2
+% (
+scala/Int#2
+) /scala/Double#2
+J Pscala/Double#2
+) /scala/Double#2
+J Pscala/Double#2
+ fractal/Complex#2,
+< <fractal/mj/Fractal#`<init>`().2!
+5 <fractal/mj/Fractal#2%
+= Bfractal/mj/Julia#reDim.2%
+D Ifractal/mj/Julia#reMid.2&
+K Qfractal/mj/Julia#reSize.2%
+S Xfractal/mj/Julia#imMid.2&
+Z `fractal/mj/Julia#imSize.2%
+ #fractal/mj/Julia#reDim.2%
+" 'fractal/mj/Julia#reMid.2&
+B Hfractal/mj/Julia#reSize.2%
+" 'fractal/mj/Julia#imMid.2&
+B Hfractal/mj/Julia#imSize.2!
+ fractal/mj/Julia#c.2'
+
+
+ fractal/mj/Julia.maxReps.2
+
+
+ fractal/mj/Julia.2-
+ fractal/mj/Julia#repetitions().20
+ "fractal/mj/Julia#repetitions().(z)2
+ fractal/Complex#2
+! $
+scala/Int#2
+ local02
+ local120
+ "fractal/mj/Julia#repetitions().(z)2#
+  scala/Boolean#`&&`().2#
+ scala/Double#`<`(+3).2'
+ fractal/Complex#sqrSum().2
+ local12 
+% &scala/Int#`<`(+3).2
+! $local02'
+' .fractal/mj/Julia.maxReps.2
+ local12$
+ fractal/Complex#`+`().2$
+ fractal/Complex#sqr().2
+ local12!
+ fractal/mj/Julia#c.2
+ local02 
+ scala/Int#`+`(+4).2
+ local02*
+ #fractal/mj/Julia#evaluate().2
+' +scala/Unit#29
+ +scala/collection/immutable/Range#foreach().2,
+ scala/runtime/RichInt#until().26
+ (scala/LowPriorityImplicits#intWrapper().2%
+ fractal/mj/Julia#reDim.2
+ local229
+ +scala/collection/immutable/Range#foreach().2,
+ scala/runtime/RichInt#until().26
+ (scala/LowPriorityImplicits#intWrapper().2'
+ fractal/mj/Fractal#imDim.2
+ local32#
+ scala/Array#update().2"
+ scala/Array#apply().2+
+ fractal/mj/Fractal#repsArray.2
+ local22
+ local32-
+ )fractal/mj/Julia#repetitions().22
+* 8$fractal/mj/Fractal#pixelToComplex().2
+9 :local22 
+F Gscala/Int#`-`(+3).2 
+B Cscala/Int#`-`(+3).2'
+< Afractal/mj/Fractal#imDim.2
+H Ilocal32*
+ fractal/mj/Julia#toString().2"
+ !scala/Predef.String#2&
+B Cscala/StringContext#s().2*
+& &scala/StringContext.apply().2,
+9 Afractal/mj/Fractal#toString().2
+!! fractal/mj/Julia.2&
+) )fractal/Complex.apply().2
+" )fractal/Complex.2'
+"" fractal/mj/Julia.maxReps.2)
+"" !fractal/mj/Fractal.maxReps.2!
+"" fractal/mj/Fractal.PZ 2FB2CEEB114261D755839287CF6C3771

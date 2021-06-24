@@ -1,6 +1,6 @@
 package fractal.graphics
 
-import fractal.mandelbrot.Mandelbrot
+import fractal.mj.Mandelbrot
 import fractal.Complex
 import fractal.application.graphics.SColor
 
