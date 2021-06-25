@@ -89,3 +89,5 @@
 1623798194536:compile
 1624227425822:exit
 1624320481247:compile
+1624580618924:val zoomLabel = new JLabel("Zoom: 1x") {
+1624580684826:compile

@@ -1,96 +1,0 @@
-
-&>src/main/scala/fractal/application/controls/MouseHandler.scala*?
-*fractal/application/controls/MouseHandler#*MouseHandler€*G
-5fractal/application/controls/MouseHandler#`<init>`(). €@*<init>€*N
-9fractal/application/controls/MouseHandler#mouseClicked().*mouseClicked€*F
-<fractal/application/controls/MouseHandler#mouseClicked().(e)*e€*N
-9fractal/application/controls/MouseHandler#mouseEntered().*mouseEntered€*F
-<fractal/application/controls/MouseHandler#mouseEntered().(e)*e€*L
-8fractal/application/controls/MouseHandler#mouseExited().*mouseExited€*E
-;fractal/application/controls/MouseHandler#mouseExited().(e)*e€*J
-7fractal/application/controls/MouseHandler#mouseMoved().*
-mouseMoved€*D
-:fractal/application/controls/MouseHandler#mouseMoved().(e)*e€2'
- $fractal/application/controls/2
- fractal/application/2
- fractal/2*
-  #fractal/application/GUI.dim.24
-% 0&fractal/application/GUI.newPosition().2/
-2 8!fractal/application/GUI.zoomIn().20
-: A"fractal/application/GUI.zoomOut().2/
-C I!fractal/application/GUI.moveTo().23
-K U%fractal/application/GUI.getMouseRe().23
-W a%fractal/application/GUI.getMouseIm().21
-c k#fractal/application/GUI.newJulia().2&
- fractal/application/GUI.2"
- fractal/application/2
- fractal/2@
- 2fractal/application/controls/Labels.positionLabel.22
- $fractal/application/controls/Labels.2>
- 0fractal/application/controls/Panel.commandPanel.21
- #fractal/application/controls/Panel.2+
- #java/awt/event/MouseListener.2+
- #java/awt/event/MouseListener#2
- java/awt/event/2
- 	java/awt/2
- java/2(
-  java/awt/event/MouseEvent#2
- java/awt/event/2
- 	java/awt/2
- java/22
- *$javax/swing/event/MouseInputAdapter.22
- *$javax/swing/event/MouseInputAdapter#2 
- javax/swing/event/2
- javax/swing/2
- javax/28
- *fractal/application/controls/MouseHandler#2C
- 5fractal/application/controls/MouseHandler#`<init>`().2=
-, ,/javax/swing/event/MouseInputAdapter#`<init>`().22
- ,$javax/swing/event/MouseInputAdapter#2G
- 9fractal/application/controls/MouseHandler#mouseClicked().2J
- <fractal/application/controls/MouseHandler#mouseClicked().(e)2(
-! +java/awt/event/MouseEvent#2
-. 2scala/Unit#28
-
- *java/awt/event/MouseEvent#getClickCount().2J
- 	<fractal/application/controls/MouseHandler#mouseClicked().(e)24
- &java/awt/event/MouseEvent#getButton().2J
- <fractal/application/controls/MouseHandler#mouseClicked().(e)20
-$ +"java/awt/event/MouseEvent#BUTTON1.2(
- #java/awt/event/MouseEvent#2/
- !fractal/application/GUI.zoomIn().23
- )%fractal/application/GUI.getMouseRe().23
-+ 5%fractal/application/GUI.getMouseIm().20
-$ +"java/awt/event/MouseEvent#BUTTON2.2(
- #java/awt/event/MouseEvent#2/
- !fractal/application/GUI.moveTo().23
- )%fractal/application/GUI.getMouseRe().23
-+ 5%fractal/application/GUI.getMouseIm().20
-$ +"java/awt/event/MouseEvent#BUTTON3.2(
- #java/awt/event/MouseEvent#20
- "fractal/application/GUI.zoomOut().23
-  *%fractal/application/GUI.getMouseRe().23
-, 6%fractal/application/GUI.getMouseIm().2'
- %scala/Predef.println(+1).21
-   #fractal/application/GUI.newJulia().23
-   #%fractal/application/GUI.getMouseRe().23
- %  /%fractal/application/GUI.getMouseIm().2G
--- 9fractal/application/controls/MouseHandler#mouseEntered().2J
--- <fractal/application/controls/MouseHandler#mouseEntered().(e)2(
--!- +java/awt/event/MouseEvent#2
--.- 2scala/Unit#2F
-11 8fractal/application/controls/MouseHandler#mouseExited().2I
-11 ;fractal/application/controls/MouseHandler#mouseExited().(e)2(
-1 1 *java/awt/event/MouseEvent#2
-1-1 1scala/Unit#2E
-55 7fractal/application/controls/MouseHandler#mouseMoved().2H
-55 :fractal/application/controls/MouseHandler#mouseMoved().(e)2(
-55 )java/awt/event/MouseEvent#2
-5,5 0scala/Unit#24
-77 &fractal/application/GUI.newPosition().2/
-77 !java/awt/event/MouseEvent#getX().2H
-77 :fractal/application/controls/MouseHandler#mouseMoved().(e)2/
-77 "!java/awt/event/MouseEvent#getY().2H
-77 :fractal/application/controls/MouseHandler#mouseMoved().(e)2+
-88 java/awt/Component#repaint().2@
-88 2fractal/application/controls/Labels.positionLabel.PZ 848CFA45885F67E84F0AF337ECB275BF

@@ -5,6 +5,8 @@ import Fractal.maxReps
 
 abstract class Fractal(val reDim: Int, val reMid: Double, val reSize: Double, val imMid: Double, val imSize: Double){
 
+    val scaleFactor: Double
+    
     val imDim = (reDim * imSize / reSize).toInt
 
     val reInc = reSize / reDim.toDouble
@@ -33,8 +35,9 @@ abstract class Fractal(val reDim: Int, val reMid: Double, val reSize: Double, va
     }
 
 
-    override def toString: String = s"(${Complex(reMid, imMid)}, Zoom ${2.5 / reSize}x)"
+    override def toString: String = s"(${Complex(reMid, imMid)}, Zoom ${(10 / scaleFactor).toInt.toDouble / 10}x)"
 }
 object Fractal{
     val maxReps = 1000
+    val dim = 765
 }

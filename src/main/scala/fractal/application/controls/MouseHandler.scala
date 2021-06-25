@@ -1,6 +1,6 @@
 package fractal.application.controls
 
-import fractal.application.GUI.{dim, newPosition, zoomIn, zoomOut, moveTo, getMouseRe, getMouseIm, newJulia}
+import fractal.application.GUI.{dim, newPosition, zoomIn, zoomOut, moveTo, getMouseRe, getMouseIm, newJulia, activateKeyboard}
 import Labels.positionLabel
 import Panel.commandPanel
 
@@ -12,27 +12,12 @@ import javax.swing.event.MouseInputAdapter
 class MouseHandler extends MouseInputAdapter{
 
     override def mouseClicked(e: MouseEvent): Unit = {
-        e.getClickCount match
-            case 1 =>
-                e.getButton match
-                    case MouseEvent.BUTTON1 => 
-                        zoomIn(getMouseRe, getMouseIm)
-                        //println("Left")
-
-                    case MouseEvent.BUTTON2 => 
-                        moveTo(getMouseRe, getMouseIm)
-                        //println("Wheel")
-
-                    case MouseEvent.BUTTON3 => 
-                        zoomOut(getMouseRe, getMouseIm)
-                        //println("Right")
-
-                    case _ => println("undefined")
-            
-            case _ => 
-                newJulia(getMouseRe, getMouseIm)
-
-        //mouseMoved(e)
+        e.getButton match
+            case MouseEvent.BUTTON1 => zoomIn
+            case MouseEvent.BUTTON2 => moveTo
+            case MouseEvent.BUTTON3 => zoomOut
+            case _ => newJulia
+        mouseMoved(e)
     }
 
     /*override def mousePressed(e: MouseEvent): Unit = {
@@ -44,7 +29,7 @@ class MouseHandler extends MouseInputAdapter{
     }*/
 
     override def mouseEntered(e: MouseEvent): Unit = {
-        //println("hej")
+        activateKeyboard
     }
 
     override def mouseExited(e: MouseEvent): Unit = {

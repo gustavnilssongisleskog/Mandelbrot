@@ -1,0 +1,62 @@
+
+ß<src/main/scala/fractal/application/controls/KeyHandler.scala*E
+-fractal/application/controls/KeyBoardHandler#*KeyBoardHandler€*J
+8fractal/application/controls/KeyBoardHandler#`<init>`(). €@*<init>€*I
+8fractal/application/controls/KeyBoardHandler#keyTyped().*keyTyped€*E
+;fractal/application/controls/KeyBoardHandler#keyTyped().(e)*e€*M
+:fractal/application/controls/KeyBoardHandler#keyPressed().*
+keyPressed€*G
+=fractal/application/controls/KeyBoardHandler#keyPressed().(e)*e€*O
+;fractal/application/controls/KeyBoardHandler#keyReleased().*keyReleased€*H
+>fractal/application/controls/KeyBoardHandler#keyReleased().(e)*e€2'
+ $fractal/application/controls/2
+ fractal/application/2
+ fractal/2)
+ !java/awt/event/KeyListener.2)
+ !java/awt/event/KeyListener#2
+ java/awt/event/2
+ 	java/awt/2
+ java/2&
+ java/awt/event/KeyEvent.2&
+ java/awt/event/KeyEvent#2
+ java/awt/event/2
+ 	java/awt/2
+ java/21
+ '#fractal/application/GUI.newJulia().2&
+ fractal/application/GUI.2"
+ fractal/application/2
+ fractal/2;
+ -fractal/application/controls/KeyBoardHandler#2F
+ 8fractal/application/controls/KeyBoardHandler#`<init>`().2)
+ )java/awt/event/KeyListener#2F
+		 8fractal/application/controls/KeyBoardHandler#keyTyped().2I
+		 ;fractal/application/controls/KeyBoardHandler#keyTyped().(e)2&
+		 %java/awt/event/KeyEvent#2
+	(	 ,scala/Unit#2'
+
+
+ scala/Predef.println(+1).23
+
+
+ %java/awt/event/KeyEvent#getKeyChar().2I
+
+
+ ;fractal/application/controls/KeyBoardHandler#keyTyped().(e)2#
+' )scala/Boolean#`||`().2"
+  "scala/Char#`==`(+2).2/
+ !scala/runtime/RichChar#toLower().27
+ )scala/LowPriorityImplicits#charWrapper().23
+ %java/awt/event/KeyEvent#getKeyChar().2I
+ ;fractal/application/controls/KeyBoardHandler#keyTyped().(e)2"
+7 9scala/Char#`==`(+2).23
+, 6%java/awt/event/KeyEvent#getKeyChar().2I
+* +;fractal/application/controls/KeyBoardHandler#keyTyped().(e)21
+C K#fractal/application/GUI.newJulia().2H
+ :fractal/application/controls/KeyBoardHandler#keyPressed().2K
+ =fractal/application/controls/KeyBoardHandler#keyPressed().(e)2&
+ 'java/awt/event/KeyEvent#2
+* .scala/Unit#2I
+ ;fractal/application/controls/KeyBoardHandler#keyReleased().2L
+ >fractal/application/controls/KeyBoardHandler#keyReleased().(e)2&
+  (java/awt/event/KeyEvent#2
++ /scala/Unit#PZ 586BC0CAD408070A006CA553F03C4447

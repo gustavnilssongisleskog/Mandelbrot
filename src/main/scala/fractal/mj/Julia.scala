@@ -1,14 +1,15 @@
 package fractal.mj
 
 import fractal.Complex
+import util.Random.nextDouble
 
-
-case class Julia(override val reDim: Int = 700, //reDim: Int = 1000, imDim: Int = 1000,
-                     override val reMid: Double = 0, override val reSize: Double = 3,
-                     override val imMid: Double = 0, override val imSize: Double = 3,
+import Julia._
+case class Julia(override val reDim: Int = Fractal.dim, //reDim: Int = 1000, imDim: Int = 1000,
+                     override val reMid: Double = initRe, override val reSize: Double = initSize,
+                     override val imMid: Double = initIm, override val imSize: Double = initSize,
                      c: Complex = Complex()) extends Fractal(reDim, reMid, reSize, imMid, imSize){
 
-    import Julia.maxReps
+    override val scaleFactor = reSize / initSize
 
     def repetitions(z: Complex): Int = {
         var res = 0
@@ -33,4 +34,9 @@ case class Julia(override val reDim: Int = 700, //reDim: Int = 1000, imDim: Int 
 }
 object Julia{
     val maxReps = Fractal.maxReps
+    val initSize = 3
+    val initRe = 0D
+    val initIm = 0D
+
+    def random(dim: Int) = Julia(reDim = dim, c = Complex(nextDouble * 0.65 - 1.4, nextDouble * 0.8 - 0.4))
 }

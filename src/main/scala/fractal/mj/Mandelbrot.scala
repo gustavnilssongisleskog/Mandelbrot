@@ -2,10 +2,12 @@ package fractal.mj
 import fractal.Complex
 import scala.collection.mutable.{Queue, Set}
 
-case class Mandelbrot(override val reDim: Int = 700, //reDim: Int = 1000, imDim: Int = 1000,
-                     override val reMid: Double = -0.5, override val reSize: Double = 2,
-                     override val imMid: Double = 0, override val imSize: Double = 2) extends Fractal(reDim, reMid, reSize, imMid, imSize){
-    import Mandelbrot._
+import Mandelbrot._
+case class Mandelbrot(override val reDim: Int = Fractal.dim, //reDim: Int = 1000, imDim: Int = 1000,
+                     override val reMid: Double = initRe, override val reSize: Double = initSize,
+                     override val imMid: Double = initIm, override val imSize: Double = initSize) extends Fractal(reDim, reMid, reSize, imMid, imSize){
+    
+    override val scaleFactor = reSize / initSize
     
     override protected def evaluate(): Unit = {
 
@@ -93,6 +95,9 @@ case class Mandelbrot(override val reDim: Int = 700, //reDim: Int = 1000, imDim:
 }
 object Mandelbrot{
     val maxReps = Fractal.maxReps
+    val initSize = 2.5
+    val initRe = -0.5
+    val initIm = 0D
 
     //Antal iterationer för ett komplext tal c att explodera under f
     def repetitions(c: Complex): Int = {
