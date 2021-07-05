@@ -1,50 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E040] Syntax Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\GUI.scala:31:4 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m31 |[0m    [33mprivate[0m [33mval[0m mouse = [33mnew[0m MouseHandler[0m
-[0m[[0m[31merror[0m] [0m[0m   |    [31m^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |    an identifier expected, but 'private' found[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\GUI.scala:28:52 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m28 |[0m    [33mdef[0m [36mmandelScaleFactor[0m: [35mDouble[0m = mandel.reSize / initSize[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                    [31m^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                    Not found: initSize[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\GUI.scala:70:54 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m70 |[0m            history.newEntry(Mandelbrot(dim, mouseRe, initSize * mandelScaleFactor / [31m2[0m, mouseIm, initSize * mandelScaleFactor / [31m2[0m))[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                      [31m^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                     Not found: initSize[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\GUI.scala:70:97 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m70 |[0m            history.newEntry(Mandelbrot(dim, mouseRe, initSize * mandelScaleFactor / [31m2[0m, mouseIm, initSize * mandelScaleFactor / [31m2[0m))[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                                                                 [31m^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                     Not found: initSize[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\GUI.scala:78:54 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m78 |[0m            history.newEntry(Mandelbrot(dim, mouseRe, initSize * mandelScaleFactor * [31m2[0m, mouseIm, initSize * mandelScaleFactor * [31m2[0m))[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                      [31m^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                     Not found: initSize[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\GUI.scala:78:97 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m78 |[0m            history.newEntry(Mandelbrot(dim, mouseRe, initSize * mandelScaleFactor * [31m2[0m, mouseIm, initSize * mandelScaleFactor * [31m2[0m))[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                                                                 [31m^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                     Not found: initSize[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\GUI.scala:86:54 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m86 |[0m            history.newEntry(Mandelbrot(dim, mouseRe, initSize * mandelScaleFactor, mouseIm, initSize * mandelScaleFactor))[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                      [31m^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                     Not found: initSize[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\GUI.scala:86:93 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m86 |[0m            history.newEntry(Mandelbrot(dim, mouseRe, initSize * mandelScaleFactor, mouseIm, initSize * mandelScaleFactor))[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                                                             [31m^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                     Not found: initSize[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\GUI.scala:101:33 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m101 |[0m        picture.addMouseListener(mouse)[0m
-[0m[[0m[31merror[0m] [0m[0m    |                                 [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |                                 Not found: mouse[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\GUI.scala:102:39 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m102 |[0m        picture.addMouseMotionListener(mouse)[0m
-[0m[[0m[31merror[0m] [0m[0m    |                                       [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |                                       Not found: mouse[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\GUI.scala:114:33 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m114 |[0m        picture.addMouseListener(mouse)[0m
-[0m[[0m[31merror[0m] [0m[0m    |                                 [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |                                 Not found: mouse[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\GUI.scala:115:39 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m115 |[0m        picture.addMouseMotionListener(mouse)[0m
-[0m[[0m[31merror[0m] [0m[0m    |                                       [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |                                       Not found: mouse[0m
-[0m[[0m[31merror[0m] [0m[0m12 errors found[0m
-[0m[[0m[31merror[0m] [0m[0m12 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\GUI.scala:119:62 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m119 |[0m        juliaHistory.newEntry(Julia(reDim = dim, c = newJulia.c, reSize = Julia.initSize, imSize = Julia.initSize))[0m
+[0m[[0m[31merror[0m] [0m[0m    |                                                     [31m^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |                                       value c is not a member of Unit[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

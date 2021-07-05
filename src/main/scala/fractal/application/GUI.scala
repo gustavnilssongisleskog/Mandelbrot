@@ -18,7 +18,8 @@ object GUI{
     private var mandel = standardMandel
     private var julia = Julia.random(dim)
     val music = new Music
-    val history = new History(mandel)
+    val mandelHistory = new History(mandel)
+    val juliaHistory = new History(julia)
 
     def mandelScaleFactor: Double = mandel.scaleFactor
     def juliaScaleFactor: Double = julia.scaleFactor
@@ -69,7 +70,7 @@ object GUI{
                     options(3))
                 n match 
                     case 0 => 
-                        julia = Julia(reDim = dim, c = newJulia.c, reSize = Julia.initSize, imSize = Julia.initSize)
+                        juliaHistory.newEntry(Julia(reDim = dim, c = newJulia.c, reSize = Julia.initSize, imSize = Julia.initSize))
                         updateFrame
                     case 1 => 
                         while newJulia.isBoring do
@@ -88,38 +89,42 @@ object GUI{
     }
     def zoomIn: Unit = {
         if mouseMandel then
-            history.newEntry(Mandelbrot(dim, mouseRe, mandel.reSize / 2, mouseIm, mandel.imSize / 2))
+            mandelHistory.newEntry(Mandelbrot(dim, mouseRe, mandel.reSize / 2, mouseIm, mandel.imSize / 2))
             updateFrame
         else if mouseJulia then
-            julia = Julia(dim, mouseRe, julia.reSize / 2, mouseIm, julia.imSize / 2, julia.c)
+            juliaHistory.newEntry(Julia(dim, mouseRe, julia.reSize / 2, mouseIm, julia.imSize / 2, julia.c))
             updateFrame
     }
     def zoomOut: Unit = {
         if mouseMandel then
-            history.newEntry(Mandelbrot(dim, mouseRe, mandel.reSize * 2, mouseIm, mandel.imSize * 2))
+            mandelHistory.newEntry(Mandelbrot(dim, mouseRe, mandel.reSize * 2, mouseIm, mandel.imSize * 2))
             updateFrame
         else if mouseJulia then
-            julia = Julia(dim, mouseRe, julia.reSize * 2, mouseIm, julia.imSize * 2, julia.c)
+            juliaHistory.newEntry(Julia(dim, mouseRe, julia.reSize * 2, mouseIm, julia.imSize * 2, julia.c))
             updateFrame
     }
     def moveTo: Unit = {
         if mouseMandel then
-            history.newEntry(Mandelbrot(dim, mouseRe, mandel.reSize, mouseIm, mandel.imSize))
+            mandelHistory.newEntry(Mandelbrot(dim, mouseRe, mandel.reSize, mouseIm, mandel.imSize))
             updateFrame
         else if mouseJulia then
-            julia = Julia(dim, mouseRe, julia.reSize, mouseIm, julia.imSize, julia.c)
+            juliaHistory.newEntry(Julia(dim, mouseRe, julia.reSize, mouseIm, julia.imSize, julia.c))
             updateFrame
     }
-    def reset: Unit = {
-        history.newEntry(standardMandel)
-        julia = Julia.random(dim)
+    def mandelReset: Unit = {
+        mandelHistory.newEntry(standardMandel)
+        updateFrame
+    }
+    def juliaReset: Unit = {
+        juliaHistory.newEntry(Julia(reDim = dim, c = julia.c, reSize = Julia.initSize, imSize = Julia.initSize))
         updateFrame
     }
     def updateFrame: Unit = {
         //println(julia.repsss.flatten.filterNot(_ == Julia.maxReps).groupBy(r => r).map(p => p._2.size).toVector.sortBy(-_).take(3).sum.toDouble / (julia.reDim * julia.imDim))
-        mandel = history.getCur
+        mandel = mandelHistory.getCur
+        julia = juliaHistory.getCur
         frame.remove(picture)
-        picture = new Picture(history.getCur, julia)
+        picture = new Picture(mandelHistory.getCur, julia)
         picture.addMouseListener(mouse)
         picture.addMouseMotionListener(mouse)
         picture.addKeyListener(keyboard)

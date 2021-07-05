@@ -1,23 +1,23 @@
 package fractal.application
 
-import fractal.mj.Mandelbrot
+import fractal.mj.Fractal
 
-class History(first: Mandelbrot){
+class History[T](first: T){
     import History.StackEntry
 
     private var cur = new StackEntry(first)
     def back: Boolean = if cur.getPrev != None then {cur = cur.getPrev.get; true} else false
     def forward: Boolean = if cur.getNext != None then {cur = cur.getNext.get; true} else false
-    def newEntry(newMandel: Mandelbrot): Unit = {cur.updateNext(newMandel); forward}
-    def getCur: Mandelbrot = cur.mandel
+    def newEntry(newFractal: T): Unit = {cur.updateNext(newFractal); forward}
+    def getCur: T = cur.fractal
 }
 object History{
-    private class StackEntry(val mandel: Mandelbrot, private val prev: Option[StackEntry] = None){
-        private var next: Option[StackEntry] = None
+    private class StackEntry[T](val fractal: T, private val prev: Option[StackEntry[T]] = None){
+        private var next: Option[StackEntry[T]] = None
 
-        def updateNext(newMandel: Mandelbrot): Unit = next = Some(new StackEntry(newMandel, Some(this)))
-        def getNext: Option[StackEntry] = next
-        def getPrev: Option[StackEntry] = prev
+        def updateNext(newFractal: T): Unit = next = Some(new StackEntry(newFractal, Some(this)))
+        def getNext: Option[StackEntry[T]] = next
+        def getPrev: Option[StackEntry[T]] = prev
     }
     
 }

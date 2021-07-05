@@ -39,17 +39,22 @@ object Buttons{
         newPicture()
     )*/
 
-    val resetButton = new JButton("Reset")
-    resetButton.addActionListener(e =>
+    val mandelResetButton = new JButton("Reset")
+    mandelResetButton.addActionListener(e =>
         //println("reset")
-        reset
+        mandelReset
     )
 
-    val backButton = new JButton("\u2b9c")
-    backButton.addActionListener(e =>
+    val juliaResetButton = new JButton("Reset")
+    juliaResetButton.addActionListener(e =>
+        juliaReset
+    )
+
+    val mandelBackButton = new JButton("\u2b9c")
+    mandelBackButton.addActionListener(e =>
         //println("back")
 
-        if history.back 
+        if mandelHistory.back 
         then
             updateFrame
         else
@@ -57,10 +62,33 @@ object Buttons{
             JOptionPane.showMessageDialog(panel, "Can't go back any further!", "Warning", JOptionPane.WARNING_MESSAGE)
     )
 
-    val forwardButton = new JButton("\u2b9e")
-    forwardButton.addActionListener(e =>
+    val juliaBackButton = new JButton("\u2b9c")
+    juliaBackButton.addActionListener(e =>
+        //println("back")
+
+        if juliaHistory.back 
+        then
+            updateFrame
+        else
+            val panel = new JPanel
+            JOptionPane.showMessageDialog(panel, "Can't go back any further!", "Warning", JOptionPane.WARNING_MESSAGE)
+    )
+
+    val mandelForwardButton = new JButton("\u2b9e")
+    mandelForwardButton.addActionListener(e =>
         //println("forward")
-        if history.forward 
+        if mandelHistory.forward 
+        then
+            updateFrame
+        else
+            val panel = new JPanel
+            JOptionPane.showMessageDialog(panel, "Can't go forward any further!", "Warning", JOptionPane.WARNING_MESSAGE)
+    )
+
+    val juliaForwardButton = new JButton("\u2b9e")
+    juliaForwardButton.addActionListener(e =>
+        //println("forward")
+        if juliaHistory.forward 
         then
             updateFrame
         else

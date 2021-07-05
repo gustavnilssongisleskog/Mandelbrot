@@ -1,5 +1,5 @@
 
-­7src/main/scala/fractal/application/controls/Panel.scala*3
+Í7src/main/scala/fractal/application/controls/Panel.scala*3
 #fractal/application/controls/Panel.
  *Panel€*H
 0fractal/application/controls/Panel.commandPanel. €*commandPanel€2'
@@ -41,23 +41,32 @@
  0fractal/application/controls/Panel.commandPanel.2B
  $4fractal/application/controls/Labels.mandelZoomLabel.2'
  java/awt/Container#add().2>
- 0fractal/application/controls/Panel.commandPanel.2>
- 0fractal/application/controls/Buttons.backButton.2'
+ 0fractal/application/controls/Panel.commandPanel.2D
+ %6fractal/application/controls/Buttons.mandelBackButton.2'
  java/awt/Container#add().2>
- 0fractal/application/controls/Panel.commandPanel.2A
- "3fractal/application/controls/Buttons.forwardButton.2'
+ 0fractal/application/controls/Panel.commandPanel.2G
+ (9fractal/application/controls/Buttons.mandelForwardButton.2'
  java/awt/Container#add().2>
- 0fractal/application/controls/Panel.commandPanel.2?
-  1fractal/application/controls/Buttons.resetButton.2'
+ 0fractal/application/controls/Panel.commandPanel.2E
+ &7fractal/application/controls/Buttons.mandelResetButton.2'
  java/awt/Container#add().2>
  0fractal/application/controls/Panel.commandPanel.2=
  /fractal/application/controls/Labels.musicLabel.2'
  java/awt/Container#add().2>
  0fractal/application/controls/Panel.commandPanel.2?
   1fractal/application/controls/Buttons.musicButton.2'
- java/awt/Container#add().2>
- 0fractal/application/controls/Panel.commandPanel.2@
- "2fractal/application/controls/Labels.positionLabel.2'
  java/awt/Container#add().2>
  0fractal/application/controls/Panel.commandPanel.2A
- #3fractal/application/controls/Labels.juliaZoomLabel.PZ FBE9496D80E29D510A5A1CEEA43DD159
+ #3fractal/application/controls/Labels.juliaZoomLabel.2'
+ java/awt/Container#add().2>
+ 0fractal/application/controls/Panel.commandPanel.2C
+ $5fractal/application/controls/Buttons.juliaBackButton.2'
+ java/awt/Container#add().2>
+ 0fractal/application/controls/Panel.commandPanel.2F
+ '8fractal/application/controls/Buttons.juliaForwardButton.2'
+ java/awt/Container#add().2>
+ 0fractal/application/controls/Panel.commandPanel.2D
+ %6fractal/application/controls/Buttons.juliaResetButton.2'
+ java/awt/Container#add().2>
+ 0fractal/application/controls/Panel.commandPanel.2@
+ "2fractal/application/controls/Labels.positionLabel.PZ 4674CADBD70DC6760F779BA86623234E

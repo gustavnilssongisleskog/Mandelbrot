@@ -12,19 +12,22 @@ object Panel{
     commandPanel.add(mandelZoomLabel)
     
     
-    commandPanel.add(backButton)
-    commandPanel.add(forwardButton)
-    commandPanel.add(resetButton)
+    commandPanel.add(mandelBackButton)
+    commandPanel.add(mandelForwardButton)
+    commandPanel.add(mandelResetButton)
     
     commandPanel.add(musicLabel)
     commandPanel.add(musicButton)
 
-    commandPanel.add(positionLabel)
+    
     
     
     commandPanel.add(juliaZoomLabel)
+    commandPanel.add(juliaBackButton)
+    commandPanel.add(juliaForwardButton)
+    commandPanel.add(juliaResetButton)
     
     
-    
+    commandPanel.add(positionLabel)
 
 }
