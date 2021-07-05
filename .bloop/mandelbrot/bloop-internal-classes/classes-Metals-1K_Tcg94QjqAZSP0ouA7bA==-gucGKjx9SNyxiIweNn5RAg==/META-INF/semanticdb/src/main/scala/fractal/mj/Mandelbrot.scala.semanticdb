@@ -1,481 +1,0 @@
-
-õx*src/main/scala/fractal/mj/Mandelbrot.scala*,
-fractal/mj/Mandelbrot# Ä*
-MandelbrotÄ*3
-!fractal/mj/Mandelbrot#`<init>`(). Ä@*<init>Ä*9
-(fractal/mj/Mandelbrot#`<init>`().(reDim) Ä*reDimÄ*9
-(fractal/mj/Mandelbrot#`<init>`().(reMid) Ä*reMidÄ*;
-)fractal/mj/Mandelbrot#`<init>`().(reSize) Ä*reSizeÄ*9
-(fractal/mj/Mandelbrot#`<init>`().(imMid) Ä*imMidÄ*;
-)fractal/mj/Mandelbrot#`<init>`().(imSize) Ä*imSizeÄ*-
-fractal/mj/Mandelbrot#reDim. Ä*reDimÄ*-
-fractal/mj/Mandelbrot#reMid. Ä*reMidÄ*/
-fractal/mj/Mandelbrot#reSize. Ä*reSizeÄ*-
-fractal/mj/Mandelbrot#imMid. Ä*imMidÄ*/
-fractal/mj/Mandelbrot#imSize. Ä*imSizeÄ*9
-"fractal/mj/Mandelbrot#scaleFactor. Ä*scaleFactorÄ*2
-!fractal/mj/Mandelbrot#evaluate().*evaluateÄ*
-local0*evaluateÄ*
-local1*xÄ*
-local2*yÄ*
-local3 Ä*qInÄ*
-local4 Ä*qOutÄ*
-local5 Ä*visitedÄ*
-local6*	isOutsideÄ*
-local7*xÄ*
-local8*yÄ*
-local9*	neighborsÄ*
-local10*pÄ*
-local11*borderTraceÄ*
-local12*xÄ*
-local13*yÄ*
-local14*pÄ*
-local15*investigateÄ*
-local16*pÄ*
-local17 Ä*xsÄ*
-local18*x$1Ä*
-local19*xÄ*
-local20*yÄ*
-local21*fillÄ*
-local22*x$1Ä*
-local23*x0Ä*
-local24*y0Ä*
-local25*x$1Ä*
-local26*x0Ä*
-local27*y0Ä*
-local28*xÄ*
-local29*yÄ*2
-!fractal/mj/Mandelbrot#toString().*toStringÄ**
-fractal/mj/Mandelbrot#copy().*copyÄ*2
-$fractal/mj/Mandelbrot#copy().(reDim)*reDimÄ*2
-$fractal/mj/Mandelbrot#copy().(reMid)*reMidÄ*4
-%fractal/mj/Mandelbrot#copy().(reSize)*reSizeÄ*2
-$fractal/mj/Mandelbrot#copy().(imMid)*imMidÄ*4
-%fractal/mj/Mandelbrot#copy().(imSize)*imSizeÄ*>
-'fractal/mj/Mandelbrot#copy$default$1().*copy$default$1Ä*>
-'fractal/mj/Mandelbrot#copy$default$2().*copy$default$2Ä*>
-'fractal/mj/Mandelbrot#copy$default$3().*copy$default$3Ä*>
-'fractal/mj/Mandelbrot#copy$default$4().*copy$default$4Ä*>
-'fractal/mj/Mandelbrot#copy$default$5().*copy$default$5Ä*&
-fractal/mj/Mandelbrot#_1().*_1Ä*&
-fractal/mj/Mandelbrot#_2().*_2Ä*&
-fractal/mj/Mandelbrot#_3().*_3Ä*&
-fractal/mj/Mandelbrot#_4().*_4Ä*&
-fractal/mj/Mandelbrot#_5().*_5Ä*+
-fractal/mj/Mandelbrot.
- *
-MandelbrotÄ*,
-fractal/mj/Mandelbrot.apply().*applyÄ*3
-%fractal/mj/Mandelbrot.apply().(reDim)*reDimÄ*3
-%fractal/mj/Mandelbrot.apply().(reMid)*reMidÄ*5
-&fractal/mj/Mandelbrot.apply().(reSize)*reSizeÄ*3
-%fractal/mj/Mandelbrot.apply().(imMid)*imMidÄ*5
-&fractal/mj/Mandelbrot.apply().(imSize)*imSizeÄ*0
- fractal/mj/Mandelbrot.unapply().*unapplyÄ*1
-%fractal/mj/Mandelbrot.unapply().(x$1)*x$1Ä*2
-!fractal/mj/Mandelbrot.toString().*toStringÄ*X
-4fractal/mj/Mandelbrot.$lessinit$greater$default$1().*$lessinit$greater$default$1Ä*X
-4fractal/mj/Mandelbrot.$lessinit$greater$default$2().*$lessinit$greater$default$2Ä*X
-4fractal/mj/Mandelbrot.$lessinit$greater$default$3().*$lessinit$greater$default$3Ä*X
-4fractal/mj/Mandelbrot.$lessinit$greater$default$4().*$lessinit$greater$default$4Ä*X
-4fractal/mj/Mandelbrot.$lessinit$greater$default$5().*$lessinit$greater$default$5Ä*1
-fractal/mj/Mandelbrot.maxReps. Ä*maxRepsÄ*3
-fractal/mj/Mandelbrot.initSize. Ä*initSizeÄ*/
-fractal/mj/Mandelbrot.initRe. Ä*initReÄ*/
-fractal/mj/Mandelbrot.initIm. Ä*initImÄ*8
-$fractal/mj/Mandelbrot.repetitions().*repetitionsÄ*1
-'fractal/mj/Mandelbrot.repetitions().(c)*cÄ*
-local30 Ä*resÄ*
-local31 Ä*zÄ2
- fractal/mj/2
- fractal/2
- fractal/Complex.2
- fractal/Complex#2
- fractal/2-
-! &scala/collection/mutable/Queue.2-
-! &scala/collection/mutable/Queue#2+
-( +scala/collection/mutable/Set.2+
-( +scala/collection/mutable/Set#2'
- scala/collection/mutable/2
- scala/collection/2
- scala/2$
- fractal/mj/Mandelbrot.2$
- fractal/mj/Mandelbrot#2/
- !fractal/mj/Mandelbrot#`<init>`().2
-* -
-scala/Int#2
-) /scala/Double#2
-O Uscala/Double#2
-) /scala/Double#2
-O Uscala/Double#2,
-q qfractal/mj/Fractal#`<init>`().2!
-j qfractal/mj/Fractal#2*
-r wfractal/mj/Mandelbrot#reDim.2*
-y ~fractal/mj/Mandelbrot#reMid.2-
-
-Ä Üfractal/mj/Mandelbrot#reSize.2,
-
-à çfractal/mj/Mandelbrot#imMid.2-
-
-è ïfractal/mj/Mandelbrot#imSize.2*
-# (fractal/mj/Mandelbrot#reDim.2*
-" 'fractal/mj/Mandelbrot#reMid.2+
-G Mfractal/mj/Mandelbrot#reSize.2*
-" 'fractal/mj/Mandelbrot#imMid.2+
-G Mfractal/mj/Mandelbrot#imSize.20
-		 "fractal/mj/Mandelbrot#scaleFactor.2#
-	&	 'scala/Double#`/`(+6).2+
-		 %fractal/mj/Mandelbrot#reSize.2-
-	(	 0fractal/mj/Mandelbrot.initSize.2/
- #!fractal/mj/Mandelbrot#evaluate().2
-' +scala/Unit#2
-,, local02
-,, local12
-,, 
-scala/Int#2
-,, local22
-, , #
-scala/Int#2
-,&, )
-scala/Int#2!
--- !scala/Int#`==`(+3).2"
--- scala/Array#apply().2"
--- scala/Array#apply().2+
--- fractal/mj/Fractal#repsArray.2
--- local12
--- local22#
-.. scala/Array#update().2"
-.. scala/Array#apply().2+
-.. fractal/mj/Fractal#repsArray.2
-.. local12
-.. local222
-.". -$fractal/mj/Mandelbrot.repetitions().22
-... <$fractal/mj/Fractal#pixelToComplex().2
-.=. >local12 
-.J. Kscala/Int#`-`(+3).2 
-.F. Gscala/Int#`-`(+3).2'
-.@. Efractal/mj/Fractal#imDim.2
-.L. Mlocal22"
-// scala/Array#apply().2"
-// scala/Array#apply().2+
-// fractal/mj/Fractal#repsArray.2
-// local12
-// local22
-22 local327
-22 )scala/collection/IterableFactory#apply().2-
-22 scala/collection/mutable/Queue.2
-22 
-scala/Int#2
-22 !
-scala/Int#2
-33 local427
-33 )scala/collection/IterableFactory#apply().2-
-33 scala/collection/mutable/Queue.2
-33 
-scala/Int#2
-33 "
-scala/Int#2
-44 local52@
-44 2scala/collection/IterableFactory.Delegate#apply().2+
-44 scala/collection/mutable/Set.2
-44 
-scala/Int#2
-4 4 #
-scala/Int#2
-66 local62
-66 local72
-66 
-scala/Int#2
-66 local82
-6!6 $
-scala/Int#2
-6'6 .scala/Boolean#2#
-6N6 Pscala/Boolean#`||`().2#
-6E6 Gscala/Boolean#`||`().2#
-676 9scala/Boolean#`||`().2 
-636 4scala/Int#`<`(+3).2
-616 2local72!
-6<6 >scala/Int#`>=`(+3).2
-6:6 ;local72*
-6?6 Dfractal/mj/Mandelbrot#reDim.2 
-6J6 Kscala/Int#`<`(+3).2
-6H6 Ilocal82!
-6S6 Uscala/Int#`>=`(+3).2
-6Q6 Rlocal82'
-6V6 [fractal/mj/Fractal#imDim.2
-88 local92
-88 local102
-88 
-scala/Int#2
-88 "
-scala/Int#27
-8-8 -)scala/collection/IterableFactory#apply().2#
-8'8 -scala/package.Vector.2#
-8/8 /scala/Tuple2.apply().2 
-848 5scala/Int#`-`(+3).2
-818 3scala/Tuple2#_1.2
-8/8 0local102 
-8>8 ?scala/Int#`-`(+3).2
-8;8 =scala/Tuple2#_2.2
-898 :local102#
-8E8 Escala/Tuple2.apply().2
-8G8 Iscala/Tuple2#_1.2
-8E8 Flocal102 
-8P8 Qscala/Int#`-`(+3).2
-8M8 Oscala/Tuple2#_2.2
-8K8 Llocal102#
-8W8 Wscala/Tuple2.apply().2 
-8\8 ]scala/Int#`+`(+4).2
-8Y8 [scala/Tuple2#_1.2
-8W8 Xlocal102 
-8f8 gscala/Int#`-`(+3).2
-8c8 escala/Tuple2#_2.2
-8a8 blocal102#
-8m8 mscala/Tuple2.apply().2 
-8r8 sscala/Int#`-`(+3).2
-8o8 qscala/Tuple2#_1.2
-8m8 nlocal102
-8y8 {scala/Tuple2#_2.2
-8w8 xlocal102#
-88 scala/Tuple2.apply().2"
-
-8Ñ8 Öscala/Int#`+`(+4).2 
-
-8Å8 Éscala/Tuple2#_1.2
-	88 Älocal102 
-
-8ã8 çscala/Tuple2#_2.2
-
-8â8 älocal102%
-
-8ë8 ëscala/Tuple2.apply().2"
-
-8ñ8 óscala/Int#`-`(+3).2 
-
-8ì8 ïscala/Tuple2#_1.2
-
-8ë8 ílocal102"
-
-8†8 °scala/Int#`+`(+4).2 
-
-8ù8 üscala/Tuple2#_2.2
-
-8õ8 úlocal102%
-
-8ß8 ßscala/Tuple2.apply().2 
-
-8©8 ´scala/Tuple2#_1.2
-
-8ß8 ®local102"
-
-8≤8 ≥scala/Int#`+`(+4).2 
-
-8Ø8 ±scala/Tuple2#_2.2
-
-8≠8 Ælocal102%
-
-8π8 πscala/Tuple2.apply().2"
-
-8æ8 øscala/Int#`+`(+4).2 
-
-8ª8 Ωscala/Tuple2#_1.2
-
-8π8 ∫local102"
-
-8»8 …scala/Int#`+`(+4).2 
-
-8≈8 «scala/Tuple2#_2.2
-
-8√8 ƒlocal102
-:: local112
-:: local122
-:: 
-scala/Int#2
-: : !local132
-:#: &
-scala/Int#2
-:): -scala/Unit#27
-;; )scala/collection/mutable/Queue#enqueue().2
-;; local42#
-;; scala/Tuple2.apply().2
-;; local122
-;; local1324
-<< &scala/collection/mutable/SetOps#add().2
-<< local52#
-<< scala/Tuple2.apply().2
-<< local122
-<< local132:
->> ,scala/collection/IterableOnceOps#nonEmpty().2
->> local42:
-?9? @,scala/collection/immutable/Vector#foreach().2F
-?&? /8scala/collection/StrictOptimizedIterableOps#filterNot().2
-?? local925
-?? $'scala/collection/mutable/Queue#front().2
-?? local42
-?0? 7local52
-?A? Llocal152
-?A? Alocal1427
-@@ )scala/collection/mutable/Queue#dequeue().2
-@@ local42
-CC local152
-CC local162
-CC 
-scala/Int#2
-C!C $
-scala/Int#2
-C(C ,scala/Unit#2
-DD local172C
-D"D (5scala/collection/StrictOptimizedIterableOps#filter().2
-DD local92
-DD  local162
-D*D +local192
-D*D *scala/Tuple2#_1.2
-D-D .local202
-D-D -scala/Tuple2#_2.2#
-DDD Fscala/Boolean#`&&`().2(
-DCD Cscala/Boolean#`unary_!`().2
-D4D =local62
-D>D ?local192
-DAD Blocal202!
-DVD Xscala/Int#`==`(+3).2
-DGD Olocal02
-DPD Qlocal192
-DSD Tlocal202,
-DYD `fractal/mj/Mandelbrot.maxReps.2#
-EE scala/Boolean#`&&`().2:
-EE ,scala/collection/IterableOnceOps#nonEmpty().2
-EE local172#
-E5E 7scala/Boolean#`||`().2
-EE (local62
-E+E -scala/Tuple2#_1.2
-E)E *local162
-E1E 3scala/Tuple2#_2.2
-E/E 0local162!
-ENE Pscala/Int#`!=`(+3).2"
-EGE Gscala/Array#apply().2"
-EAE Ascala/Array#apply().2+
-E8E Afractal/mj/Fractal#repsArray.2
-EDE Fscala/Tuple2#_1.2
-EBE Clocal162
-EJE Lscala/Tuple2#_2.2
-EHE Ilocal162,
-EQE Xfractal/mj/Mandelbrot.maxReps.27
-FF )scala/collection/mutable/Queue#enqueue().2
-FF local42
-FF local1624
-GG &scala/collection/mutable/SetOps#add().2
-GG local52
-GG local162;
-HH -scala/collection/mutable/ArrayDeque#addAll().2
-HH local32
-HH local172
-KK local212
-KK scala/Unit#2:
-LL ,scala/collection/IterableOnceOps#nonEmpty().2
-LL local32:
-MgM n,scala/collection/immutable/Vector#foreach().2C
-M%M +5scala/collection/StrictOptimizedIterableOps#filter().2
-MM local925
-MM #'scala/collection/mutable/Queue#front().2
-MM local32
-M-M /local232
-M-M -scala/Tuple2#_1.2
-M1M 3local242
-M1M 1scala/Tuple2#_2.2#
-MKM Mscala/Boolean#`&&`().2(
-MJM Jscala/Boolean#`unary_!`().2
-M9M Blocal62
-MCM Elocal232
-MGM Ilocal242!
-M`M bscala/Int#`==`(+3).2"
-M[M [scala/Array#apply().2"
-MWM Wscala/Array#apply().2+
-MNM Wfractal/mj/Fractal#repsArray.2
-MXM Zlocal232
-M\M ^local242
-MpM rlocal262
-MpM pscala/Tuple2#_1.2
-MtM vlocal272
-MtM tscala/Tuple2#_2.2#
-N!N !scala/Array#update().2"
-NN scala/Array#apply().2+
-NN fractal/mj/Fractal#repsArray.2
-NN  local262
-N"N $local272,
-N(N /fractal/mj/Mandelbrot.maxReps.2;
-OO -scala/collection/mutable/ArrayDeque#addOne().2
-OO local32#
-OO scala/Tuple2.apply().2
-OO !local262
-O#O %local2727
-QQ )scala/collection/mutable/Queue#dequeue().2
-QQ local329
-UU +scala/collection/immutable/Range#foreach().2,
-UU scala/runtime/RichInt#until().26
-UU (scala/LowPriorityImplicits#intWrapper().2*
-UU fractal/mj/Mandelbrot#reDim.2
-UU local2829
-VV +scala/collection/immutable/Range#foreach().2,
-VV scala/runtime/RichInt#until().26
-VV (scala/LowPriorityImplicits#intWrapper().2'
-VV fractal/mj/Fractal#imDim.2
-VV local292#
-X%X 'scala/Boolean#`&&`().2!
-XX !scala/Int#`==`(+3).2"
-XX scala/Array#apply().2"
-XX scala/Array#apply().2+
-XX fractal/mj/Fractal#repsArray.2
-XX local282
-XX local292!
-X7X 9scala/Int#`==`(+3).2
-X(X 0local02
-X1X 2local282
-X4X 5local292,
-X:X Afractal/mj/Mandelbrot.maxReps.2
-YY local112 
-YY scala/Int#`-`(+3).2
-YY local282
-Y#Y $local292
-ZZ local212/
-]] !fractal/mj/Mandelbrot#toString().2"
-]] !scala/Predef.String#2&
-]B] Cscala/StringContext#s().2*
-]&] &scala/StringContext.apply().2,
-]9] Afractal/mj/Fractal#toString().2$
-__ fractal/mj/Mandelbrot.2%
-8 ;fractal/mj/Fractal.dim.2!
-0 7fractal/mj/Fractal.2+
-2 8fractal/mj/Mandelbrot.initRe.2-
-X `fractal/mj/Mandelbrot.initSize.2+
-2 8fractal/mj/Mandelbrot.initIm.2-
-X `fractal/mj/Mandelbrot.initSize.2,
-`` fractal/mj/Mandelbrot.maxReps.2)
-`` !fractal/mj/Fractal.maxReps.2!
-`` fractal/mj/Fractal.2-
-aa fractal/mj/Mandelbrot.initSize.2+
-bb fractal/mj/Mandelbrot.initRe.2+
-cc fractal/mj/Mandelbrot.initIm.22
-ff $fractal/mj/Mandelbrot.repetitions().25
-ff 'fractal/mj/Mandelbrot.repetitions().(c)2
-ff fractal/Complex#2
-f!f $
-scala/Int#2
-gg local302
-hh local312&
-hh fractal/Complex.apply().2
-hh fractal/Complex.2#
-ll scala/Boolean#`&&`().2$
-ll scala/Double#`<=`(+3).2'
-ll fractal/Complex#sqrSum().2
-ll local312 
-l#l $scala/Int#`<`(+3).2
-ll "local302,
-l%l ,fractal/mj/Mandelbrot.maxReps.2
-mm local312$
-mm fractal/Complex#`+`().2$
-mm fractal/Complex#sqr().2
-mm local3125
-mm 'fractal/mj/Mandelbrot.repetitions().(c)2
-nn local302 
-nn scala/Int#`+`(+4).2
-pp local30PZ 5B0C7D0ECE85185F30DCF8CE1AB24CC1

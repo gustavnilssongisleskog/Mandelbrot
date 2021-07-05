@@ -11,7 +11,9 @@ case class Julia(override val reDim: Int = Fractal.dim, //reDim: Int = 1000, imD
 
     override val scaleFactor = reSize / initSize
 
-    def repetitions(z: Complex): Int = {
+    def isBoring: Boolean = Math.max(reSize, imSize) < initSize && (preview.flatten.count(_ == maxReps) > reDim * imDim / 100 / 2 || preview.flatten.filterNot(_ == maxReps).groupBy(r => r).map(p => p._2.size).toVector.sortBy(-_).take(3).sum > reDim * imDim / 100 * 0.55)
+
+    override def repetitions(z: Complex): Int = {
         var res = 0
         var cur = z
         while cur.sqrSum < 64 && res < maxReps do
@@ -21,15 +23,6 @@ case class Julia(override val reDim: Int = Fractal.dim, //reDim: Int = 1000, imD
         res
     }
     
-
-    override protected def evaluate(): Unit = {
-        for
-            x <- 0 until reDim
-            y <- 0 until imDim
-        do
-            repsArray(x)(y) = repetitions(pixelToComplex(x, imDim - 1 - y))
-    }
-
     override def toString: String = s"Julia at c ${super.toString}"
 }
 object Julia{

@@ -53,11 +53,38 @@ object GUI{
 
     private var picture: Picture = new Picture(mandel, julia)
     def newJulia: Unit = {
-        julia = Julia(reDim = dim, c = Complex(mouseRe, mouseIm), reSize = Math.sqrt(mandelScaleFactor) * Julia.initSize, imSize = Math.sqrt(mandelScaleFactor) * Julia.initSize)
-        while Math.max(julia.reSize, julia.imSize) < Julia.initSize && (julia.repsss.flatten.count(_ == Julia.maxReps) > julia.reDim * julia.imDim / 2 || julia.repsss.flatten.filterNot(_ == Julia.maxReps).groupBy(r => r).map(p => p._2.size).toVector.sortBy(-_).take(2).sum > julia.reDim * julia.imDim / 2) do
-            julia = Julia(reDim = dim, c = julia.c, reSize = julia.reSize * 2, imSize = julia.imSize * 2)
-            println("retry")
-        updateFrame
+        if mouseOnFractal then
+            var newJulia = Julia(reDim = dim, c = Complex(mouseRe, mouseIm), reSize = Math.sqrt(mandelScaleFactor) * Julia.initSize / 2, imSize = Math.sqrt(mandelScaleFactor) * Julia.initSize / 2)
+            if newJulia.isBoring then 
+                val options = Array("Zoom 1x", "Find a nice zoom automatically", "Don't make a new Julia set", "Show me the boring picture").map(_.asInstanceOf[Object])
+                val n = JOptionPane.showOptionDialog(frame,
+                    "This Julia set will probably be pretty boring at the current zoom level.\n" +
+                      "You can either view the fractal 1x zoom, let the computer try to find a nice zoom automatically, \n" +
+                      "not make a new Julia set and just keep the old one, or just view the boring picture.",
+                    "Oopsie Daisy",
+                    JOptionPane.YES_NO_CANCEL_OPTION,
+                    JOptionPane.QUESTION_MESSAGE,
+                    null,
+                    options,
+                    options(3))
+                n match 
+                    case 0 => 
+                        julia = Julia(reDim = dim, c = newJulia.c, reSize = Julia.initSize, imSize = Julia.initSize)
+                        updateFrame
+                    case 1 => 
+                        while newJulia.isBoring do
+                            newJulia = Julia(reDim = dim, c = newJulia.c, reSize = newJulia.reSize * 2, imSize = newJulia.imSize * 2)
+                            println("retry")
+                        julia = newJulia
+                        updateFrame
+                    case 2 => 
+                    case 3 =>
+                        julia = newJulia
+                        updateFrame
+                    case -1 => 
+            else
+                julia = newJulia
+                updateFrame
     }
     def zoomIn: Unit = {
         if mouseMandel then
@@ -89,6 +116,7 @@ object GUI{
         updateFrame
     }
     def updateFrame: Unit = {
+        //println(julia.repsss.flatten.filterNot(_ == Julia.maxReps).groupBy(r => r).map(p => p._2.size).toVector.sortBy(-_).take(3).sum.toDouble / (julia.reDim * julia.imDim))
         mandel = history.getCur
         frame.remove(picture)
         picture = new Picture(history.getCur, julia)

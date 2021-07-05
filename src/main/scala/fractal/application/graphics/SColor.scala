@@ -38,10 +38,12 @@ object SColor{
 
     val colors2 = Vector.fill(100)(new JColor(nextInt(256), nextInt(256), nextInt(256)))
 
+    val colors3 = many(2, blend, Vector(JColor.red, JColor.orange, JColor.yellow, JColor.green, JColor.blue, new JColor(75, 0, 130).brighter, new JColor(148, 0, 211), JColor.red))//many(3, blend, Vector(JColor.YELLOW, new JColor(0,0,128), JColor.YELLOW)).reverse.tail.reverse
+
     def color(reps: Int): JColor = {
         reps match
             case `maxReps` => JColor.black
-            case _ => colors((reps + colors.size - 1) % colors.size)
+            case _ => colors3((reps + colors3.size - 1) % colors3.size)
     }
 
     def many[T](n: Int, f: T => T, x: T): T = {

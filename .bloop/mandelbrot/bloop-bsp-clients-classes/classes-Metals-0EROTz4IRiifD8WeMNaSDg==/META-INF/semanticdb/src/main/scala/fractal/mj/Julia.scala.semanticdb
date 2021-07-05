@@ -1,0 +1,251 @@
+
+ìE%src/main/scala/fractal/mj/Julia.scala*"
+fractal/mj/Julia# €*Julia€*.
+fractal/mj/Julia#`<init>`(). €@*<init>€*4
+#fractal/mj/Julia#`<init>`().(reDim) €*reDim€*4
+#fractal/mj/Julia#`<init>`().(reMid) €*reMid€*6
+$fractal/mj/Julia#`<init>`().(reSize) €*reSize€*4
+#fractal/mj/Julia#`<init>`().(imMid) €*imMid€*6
+$fractal/mj/Julia#`<init>`().(imSize) €*imSize€*,
+fractal/mj/Julia#`<init>`().(c) €*c€*(
+fractal/mj/Julia#reDim. €*reDim€*(
+fractal/mj/Julia#reMid. €*reMid€**
+fractal/mj/Julia#reSize. €*reSize€*(
+fractal/mj/Julia#imMid. €*imMid€**
+fractal/mj/Julia#imSize. €*imSize€* 
+fractal/mj/Julia#c. €*c€*4
+fractal/mj/Julia#scaleFactor. €*scaleFactor€*-
+fractal/mj/Julia#isBoring().*isBoring€*
+local0*r€*
+local1*p€*3
+fractal/mj/Julia#repetitions().*repetitions€*,
+"fractal/mj/Julia#repetitions().(z)*z€*
+local2 €*res€*
+local3 €*cur€*-
+fractal/mj/Julia#toString().*toString€*%
+fractal/mj/Julia#copy().*copy€*-
+fractal/mj/Julia#copy().(reDim)*reDim€*-
+fractal/mj/Julia#copy().(reMid)*reMid€*/
+ fractal/mj/Julia#copy().(reSize)*reSize€*-
+fractal/mj/Julia#copy().(imMid)*imMid€*/
+ fractal/mj/Julia#copy().(imSize)*imSize€*%
+fractal/mj/Julia#copy().(c)*c€*9
+"fractal/mj/Julia#copy$default$1().*copy$default$1€*9
+"fractal/mj/Julia#copy$default$2().*copy$default$2€*9
+"fractal/mj/Julia#copy$default$3().*copy$default$3€*9
+"fractal/mj/Julia#copy$default$4().*copy$default$4€*9
+"fractal/mj/Julia#copy$default$5().*copy$default$5€*9
+"fractal/mj/Julia#copy$default$6().*copy$default$6€*!
+fractal/mj/Julia#_1().*_1€*!
+fractal/mj/Julia#_2().*_2€*!
+fractal/mj/Julia#_3().*_3€*!
+fractal/mj/Julia#_4().*_4€*!
+fractal/mj/Julia#_5().*_5€*!
+fractal/mj/Julia#_6().*_6€*!
+fractal/mj/Julia.
+ *Julia€*'
+fractal/mj/Julia.apply().*apply€*.
+ fractal/mj/Julia.apply().(reDim)*reDim€*.
+ fractal/mj/Julia.apply().(reMid)*reMid€*0
+!fractal/mj/Julia.apply().(reSize)*reSize€*.
+ fractal/mj/Julia.apply().(imMid)*imMid€*0
+!fractal/mj/Julia.apply().(imSize)*imSize€*&
+fractal/mj/Julia.apply().(c)*c€*+
+fractal/mj/Julia.unapply().*unapply€*,
+ fractal/mj/Julia.unapply().(x$1)*x$1€*-
+fractal/mj/Julia.toString().*toString€*S
+/fractal/mj/Julia.$lessinit$greater$default$1().*$lessinit$greater$default$1€*S
+/fractal/mj/Julia.$lessinit$greater$default$2().*$lessinit$greater$default$2€*S
+/fractal/mj/Julia.$lessinit$greater$default$3().*$lessinit$greater$default$3€*S
+/fractal/mj/Julia.$lessinit$greater$default$4().*$lessinit$greater$default$4€*S
+/fractal/mj/Julia.$lessinit$greater$default$5().*$lessinit$greater$default$5€*S
+/fractal/mj/Julia.$lessinit$greater$default$6().*$lessinit$greater$default$6€*,
+fractal/mj/Julia.maxReps. €*maxReps€*.
+fractal/mj/Julia.initSize. €*initSize€**
+fractal/mj/Julia.initRe. €*initRe€**
+fractal/mj/Julia.initIm. €*initIm€*)
+fractal/mj/Julia.random().*random€*+
+fractal/mj/Julia.random().(dim)*dim€*
+local4 €*c$1€*
+local5 €*reMid$1€*
+local6 €*reSize$1€*
+local7 €*imMid$1€*
+local8 €*imSize$1€2
+ fractal/mj/2
+ fractal/2
+ fractal/Complex.2
+ fractal/Complex#2
+ fractal/2-
+ scala/util/Random#nextDouble().2 
+ scala/util/Random.2
+ scala/util/2
+ fractal/mj/Julia.2
+ fractal/mj/Julia#2*
+ fractal/mj/Julia#`<init>`().2
+% (
+scala/Int#2
+) /scala/Double#2
+O Uscala/Double#2
+) /scala/Double#2
+O Uscala/Double#2
+		 fractal/Complex#2,
+	<	 <fractal/mj/Fractal#`<init>`().2!
+	5	 <fractal/mj/Fractal#2%
+	=	 Bfractal/mj/Julia#reDim.2%
+	D	 Ifractal/mj/Julia#reMid.2&
+	K	 Qfractal/mj/Julia#reSize.2%
+	S	 Xfractal/mj/Julia#imMid.2&
+	Z	 `fractal/mj/Julia#imSize.2%
+ #fractal/mj/Julia#reDim.2%
+" 'fractal/mj/Julia#reMid.2&
+G Mfractal/mj/Julia#reSize.2%
+" 'fractal/mj/Julia#imMid.2&
+G Mfractal/mj/Julia#imSize.2!
+		 fractal/mj/Julia#c.2+
+ fractal/mj/Julia#scaleFactor.2#
+& 'scala/Double#`/`(+3).2&
+ %fractal/mj/Julia#reSize.2(
+( 0fractal/mj/Julia.initSize.2*
+ fractal/mj/Julia#isBoring().2
+ scala/Boolean#2#
+@ Bscala/Boolean#`&&`().2#
+5 6scala/Double#`<`(+3).2%
+! $java/lang/Math#max(+3).2
+  java/lang/Math#2&
+% +fractal/mj/Julia#reSize.2&
+- 3fractal/mj/Julia#imSize.2(
+7 ?fractal/mj/Julia.initSize.2%
+
+‚ „scala/Boolean#`||`().2 
+h iscala/Int#`>`(+3).27
+T Y)scala/collection/IterableOnceOps#count().2D
+L S6scala/collection/StrictOptimizedIterableOps#flatten().2)
+D Kfractal/mj/Fractal#preview.2'
+S Sscala/Predef.$conforms().2!
+\ ^scala/Int#`==`(+3).2'
+_ ffractal/mj/Julia.maxReps.2 
+~ scala/Int#`/`(+3).2 
+x yscala/Int#`/`(+3).2 
+p qscala/Int#`*`(+3).2%
+j ofractal/mj/Julia#reDim.2'
+r wfractal/mj/Fractal#imDim.2"
+
+ñ òscala/Int#`>`(+6).27
+
+í ð'scala/collection/IterableOnceOps#sum().29
+
+å é)scala/collection/immutable/Vector#take().21
+
+Ú à!scala/collection/SeqOps#sortBy().2<
+
+Ñ Ù,scala/collection/IterableOnceOps#toVector().23
+
+½ À#scala/collection/IterableOps#map().27
+
+­ ´'scala/collection/IterableOps#groupBy().2H
+
+• ž8scala/collection/StrictOptimizedIterableOps#filterNot().2F
+
+ ”6scala/collection/StrictOptimizedIterableOps#flatten().2+
+
+… Œfractal/mj/Fractal#preview.2)
+
+” ”scala/Predef.$conforms().2#
+
+¡ £scala/Int#`==`(+3).2)
+
+¤ «fractal/mj/Julia.maxReps.2
+
+µ ¶local02
+
+º »local02
+
+Á Âlocal12/
+
+Ë Ïscala/collection/SeqOps#size().2 
+
+È Êscala/Tuple2#_2.2
+
+Æ Çlocal12&
+
+ã ãscala/Int#`unary_-`().2(
+
+ä äscala/math/Ordering.Int.21
+
+ð ð!scala/math/Numeric.IntIsIntegral.2"
+
+‡ ˆscala/Int#`*`(+6).2"
+
+ ‚scala/Int#`/`(+3).2"
+
+ù úscala/Int#`*`(+3).2'
+
+ó øfractal/mj/Julia#reDim.2)
+
+û €fractal/mj/Fractal#imDim.2-
+ fractal/mj/Julia#repetitions().20
+ "fractal/mj/Julia#repetitions().(z)2
+  'fractal/Complex#2
+* -
+scala/Int#2
+ local22
+ local320
+ "fractal/mj/Julia#repetitions().(z)2#
+  scala/Boolean#`&&`().2#
+ scala/Double#`<`(+3).2'
+ fractal/Complex#sqrSum().2
+ local32 
+% &scala/Int#`<`(+3).2
+! $local22'
+' .fractal/mj/Julia.maxReps.2
+ local32$
+ fractal/Complex#`+`().2$
+ fractal/Complex#sqr().2
+ local32!
+ fractal/mj/Julia#c.2
+ local22 
+ scala/Int#`+`(+4).2
+ local22*
+ fractal/mj/Julia#toString().2"
+ !scala/Predef.String#2&
+B Cscala/StringContext#s().2*
+& &scala/StringContext.apply().2,
+9 Afractal/mj/Fractal#toString().2
+ fractal/mj/Julia.2%
+3 6fractal/mj/Fractal.dim.2!
++ 2fractal/mj/Fractal.2&
+2 8fractal/mj/Julia.initRe.2%
+X Xscala/Int.int2double().2(
+X `fractal/mj/Julia.initSize.2&
+2 8fractal/mj/Julia.initIm.2%
+X Xscala/Int.int2double().2(
+X `fractal/mj/Julia.initSize.2&
+	)	 )fractal/Complex.apply().2
+	"	 )fractal/Complex.2'
+ fractal/mj/Julia.maxReps.2)
+ !fractal/mj/Fractal.maxReps.2!
+ fractal/mj/Fractal.2(
+ fractal/mj/Julia.initSize.2&
+ fractal/mj/Julia.initRe.2&
+ fractal/mj/Julia.initIm.2(
+!! fractal/mj/Julia.random().2-
+!! fractal/mj/Julia.random().(dim)2
+!! 
+scala/Int#2'
+! !  fractal/mj/Julia.apply().2
+!!  fractal/mj/Julia.2.
+!!! & fractal/mj/Julia.apply().(reDim)2-
+!)! ,fractal/mj/Julia.random().(dim)2
+!! local52
+!! local62
+!! local72
+!! local82*
+!.! /fractal/mj/Julia.apply().(c)2&
+!9! 9fractal/Complex.apply().2
+!2! 9fractal/Complex.2#
+!L! Mscala/Double#`-`(+6).2#
+!E! Fscala/Double#`*`(+6).2-
+!:! Dscala/util/Random#nextDouble().2#
+!d! escala/Double#`-`(+6).2#
+!^! _scala/Double#`*`(+6).2-
+!S! ]scala/util/Random#nextDouble().PZ 3E92D6CF46CDACE1B826905F254F644B
