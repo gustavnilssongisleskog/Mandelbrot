@@ -15,6 +15,7 @@ class Music{
         "Ju(lia)stin Young - On The Run",
         "Michael Sembello - Man(delbrot)iac",
         "Mån(delbrot)eskin - Zitti E Buoni",
+        "Novi Fosili - J(uli)a Sam(andelbrot) Za Ples",
         "Rockwell - Somebody's Watching M(andelbrot)e",
         "Sandra - Ma(ndelbrot)ria Ma(ndelbrot)gdalena",
         "Vanessa Paradis - Joe Le Taxi"

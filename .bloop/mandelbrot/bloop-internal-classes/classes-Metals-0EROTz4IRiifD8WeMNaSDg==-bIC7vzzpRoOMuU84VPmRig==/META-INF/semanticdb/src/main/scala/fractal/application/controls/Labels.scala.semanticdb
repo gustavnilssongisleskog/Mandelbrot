@@ -1,114 +1,0 @@
-
-´!8src/main/scala/fractal/application/controls/Labels.scala*5
-$fractal/application/controls/Labels.
- *Labels€*O
-4fractal/application/controls/Labels.mandelZoomLabel. €*mandelZoomLabel€*
-local0 *$anon€*
-local1*paintComponent€*
-local2*g€*M
-3fractal/application/controls/Labels.juliaZoomLabel. €*juliaZoomLabel€*
-local3 *$anon€*
-local4*paintComponent€*
-local5*g€*K
-2fractal/application/controls/Labels.positionLabel. €*positionLabel€*
-local6 *$anon€*
-local7*paintComponent€*
-local8*g€*E
-/fractal/application/controls/Labels.musicLabel. €*
-musicLabel€*
-local9 *$anon€*
-local10*paintComponent€*
-local11*g€2'
- $fractal/application/controls/2
- fractal/application/2
- fractal/2:
-  1,fractal/application/GUI.mandelScaleFactor().29
-3 C+fractal/application/GUI.juliaScaleFactor().23
-E O%fractal/application/GUI.getMouseRe().23
-Q [%fractal/application/GUI.getMouseIm().2,
-] bfractal/application/GUI.music.27
-d r)fractal/application/GUI.mouseOnFractal().2&
- fractal/application/GUI.2"
- fractal/application/2
- fractal/2!
- javax/swing/JLabel.2!
- javax/swing/JLabel#2
- javax/swing/2
- javax/2 
- java/awt/Graphics.2 
- java/awt/Graphics#2
- 	java/awt/2
- java/22
- $fractal/application/controls/Labels.2B
-		 4fractal/application/controls/Labels.mandelZoomLabel.2.
-	$	 $ javax/swing/JLabel#`<init>`(+2).2!
-		 $javax/swing/JLabel#2
-
-
- #local12
-
-$
- %local22 
-
-'
- /java/awt/Graphics#2+
- javax/swing/JLabel#setText().2&
-B Cscala/StringContext#s().2*
- scala/StringContext.apply().2 
-, -scala/Int#`/`(+6).2:
-. ?,fractal/application/GUI.mandelScaleFactor().26
-  (javax/swing/JComponent#paintComponent().2
-! "local22A
- 3fractal/application/controls/Labels.juliaZoomLabel.2.
-# # javax/swing/JLabel#`<init>`(+2).2!
- #javax/swing/JLabel#2
- #local42
-$ %local52 
-' /java/awt/Graphics#2#
-  !scala/Double#`<`(+3).29
- +fractal/application/GUI.juliaScaleFactor().2+
- javax/swing/JLabel#setText().2&
-U Vscala/StringContext#s().2*
- scala/StringContext.apply().2#
-O Pscala/Double#`/`(+3).2#
-F Nscala/Int#toDouble().2#
-@ Escala/Double#toInt().2 
-, -scala/Int#`/`(+6).29
-. >+fractal/application/GUI.juliaScaleFactor().2+
- javax/swing/JLabel#setText().2&
-> ?scala/StringContext#s().2*
- scala/StringContext.apply().2 
-* +scala/Int#`/`(+6).29
-, <+fractal/application/GUI.juliaScaleFactor().26
-  (javax/swing/JComponent#paintComponent().2
-! "local52@
- 2fractal/application/controls/Labels.positionLabel.2.
-" " javax/swing/JLabel#`<init>`(+2).2!
- "javax/swing/JLabel#2
- #local72
-$ %local82 
-' /java/awt/Graphics#27
- )fractal/application/GUI.mouseOnFractal().2+
- javax/swing/JLabel#setText().2)
-@ Hfractal/Complex#toString().2&
-' 'fractal/Complex.apply().2
-  'fractal/Complex.2
- fractal/23
-( 2%fractal/application/GUI.getMouseRe().23
-4 >%fractal/application/GUI.getMouseIm().2+
-   javax/swing/JLabel#setText().26
-!!  (javax/swing/JComponent#paintComponent().2
-!!! "local82=
-%% /fractal/application/controls/Labels.musicLabel.2.
-%%  javax/swing/JLabel#`<init>`(+2).2!
-%% javax/swing/JLabel#2
-&& #local102
-&$& %local112 
-&'& /java/awt/Graphics#2+
-'' javax/swing/JLabel#setText().2&
-'?' @scala/StringContext#s().2*
-'' scala/StringContext.apply().22
-'4' ;$fractal/application/Music#getSong().2,
-'.' 3fractal/application/GUI.music.26
-((  (javax/swing/JComponent#paintComponent().2
-(!( "local11PZ 61691878591CC2D53658AB06975BF942
