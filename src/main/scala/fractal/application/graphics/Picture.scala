@@ -1,10 +1,10 @@
 package fractal.application.graphics
 
-import java.awt._
-import java.awt.event._
-import javax.swing._
 import fractal.application.GUI._
 import fractal.mj.{Mandelbrot, Julia}
+import javax.swing.JPanel
+import java.awt.Graphics
+import java.awt.Color
 
 class Picture(mandel: Mandelbrot, julia: Julia) extends JPanel{
 

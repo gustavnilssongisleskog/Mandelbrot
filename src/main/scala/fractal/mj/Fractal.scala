@@ -22,7 +22,7 @@ abstract class Fractal(val reDim: Int, val reMid: Double, val reSize: Double, va
         Vector.tabulate(imDim / 10)(y =>
             repetitions(pixelToComplex(10 * x, 10 * y))))
 
-    lazy val repsss = {println(maxReps); evaluate(); repsArray.toVector.map(xs => xs.toVector)}
+    lazy val repsss = {evaluate(); repsArray.toVector.map(xs => xs.toVector)}
     /*val repsss = Vector.tabulate(reDim)(x => 
                              Vector.tabulate(imDim)(y => 
                              repetitions(pixelToComplex(x, imDim - 1 - y))))*/

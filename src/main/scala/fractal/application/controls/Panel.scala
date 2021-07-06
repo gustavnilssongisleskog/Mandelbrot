@@ -19,8 +19,8 @@ object Panel{
     commandPanel.add(musicLabel)
     commandPanel.add(musicButton)
 
-    commandPanel.add(Settings.maxIterationButton)
-    
+    //commandPanel.add(Settings.maxIterationButton)
+    commandPanel.add(settingsButton)
     
     
     commandPanel.add(juliaZoomLabel)

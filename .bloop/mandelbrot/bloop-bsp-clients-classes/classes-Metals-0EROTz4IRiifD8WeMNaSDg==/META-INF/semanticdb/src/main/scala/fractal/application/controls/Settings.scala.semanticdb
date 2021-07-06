@@ -1,77 +1,0 @@
-
-¦:src/main/scala/fractal/application/controls/Settings.scala*9
-&fractal/application/controls/Settings.
- *Settings€*:
--fractal/application/controls/Settings.open().*open€*=
-,fractal/application/controls/Settings.frame. €*frame€*W
-9fractal/application/controls/Settings.maxIterationButton. €*maxIterationButton€*
-local0*e€*
-local1 €*newMax€*
-local2 €*e€2'
- $fractal/application/controls/2
- fractal/application/2
- fractal/2.
- % fractal/mj/Fractal.getMaxReps().2.
-' 1 fractal/mj/Fractal.newMaxReps().2!
- fractal/mj/Fractal.2
- fractal/mj/2
- fractal/29
- /+fractal/application/GUI.reloadIterations().2&
- fractal/application/GUI.2"
- fractal/application/2
- fractal/2"
- javax/swing/JButton.2"
- javax/swing/JButton#2
- javax/swing/2
- javax/2!
- javax/swing/JFrame.2!
- javax/swing/JFrame#2
- javax/swing/2
- javax/2&
- javax/swing/JOptionPane#2
- javax/swing/2
- javax/24
-		 &fractal/application/controls/Settings.2;
-
-
- -fractal/application/controls/Settings.open().2
-
-
- scala/Unit#2:
- ,fractal/application/controls/Settings.frame.2.
-" " javax/swing/JFrame#`<init>`(+2).2!
- "javax/swing/JFrame#2G
- 9fractal/application/controls/Settings.maxIterationButton.2/
-( (!javax/swing/JButton#`<init>`(+2).2"
-! (javax/swing/JButton#2&
-F Gscala/StringContext#s().2*
-+ +scala/StringContext.apply().2.
-< F fractal/mj/Fractal.getMaxReps().2=
- (/javax/swing/AbstractButton#addActionListener().2G
- 9fractal/application/controls/Settings.maxIterationButton.2
-) *local02
- local128
-! 0*javax/swing/JOptionPane#showInputDialog().2&
-  javax/swing/JOptionPane#2
- scala/Any#`!=`().2
- local12.
-  fractal/mj/Fractal.newMaxReps().21
-" '#scala/collection/StringOps#toInt().2+
- scala/Predef.augmentString().2
- !local123
-# *%javax/swing/AbstractButton#setText().2G
- "9fractal/application/controls/Settings.maxIterationButton.2&
-L Mscala/StringContext#s().2*
-- -scala/StringContext.apply().21
-F K#scala/collection/StringOps#toInt().2+
-? ?scala/Predef.augmentString().2
-? Elocal129
-  +fractal/application/GUI.reloadIterations().2
- local22&
- !scala/package.Exception#2<
-1 B.javax/swing/JOptionPane#showMessageDialog(+1).2&
-% 0javax/swing/JOptionPane#2:
-C H,fractal/application/controls/Settings.frame.26
-
-„ ‘&javax/swing/JOptionPane#ERROR_MESSAGE.2'
-	x ƒjavax/swing/JOptionPane#PZ A601CD7B2E01C3972E29862950086ACC

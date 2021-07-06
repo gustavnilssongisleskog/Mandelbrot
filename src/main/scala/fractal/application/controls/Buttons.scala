@@ -101,4 +101,9 @@ object Buttons{
         //println("music")
         music.chooseSong
     )
+
+    val settingsButton = new JButton("Settings")
+    settingsButton.addActionListener(e =>
+        Settings.open
+    )
 }

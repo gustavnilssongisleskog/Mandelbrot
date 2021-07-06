@@ -5,11 +5,14 @@ import fractal.mj.{Mandelbrot, Julia, Fractal}
 import controls._
 import fractal.Complex
 
-import javax.swing._
+//import javax.swing
 import java.awt.Dimension
 import java.awt.FlowLayout
 import java.awt.BorderLayout
 import java.awt.Graphics
+import javax.swing.JFrame
+import javax.swing.JOptionPane
+import javax.swing.WindowConstants
 
 object GUI{
     val frame = new JFrame("Salta mandlar")
@@ -57,7 +60,7 @@ object GUI{
             var newJulia = Julia(reDim = dim, c = Complex(mouseRe, mouseIm), reSize = Math.sqrt(mandelScaleFactor) * Julia.initSize / 2, imSize = Math.sqrt(mandelScaleFactor) * Julia.initSize / 2)
             if newJulia.isBoring then 
                 val options = Array("Zoom 1x", "Find a nice zoom automatically", "Don't make a new Julia set", "Show me the boring picture").map(_.asInstanceOf[Object])
-                val n = JOptionPane.showOptionDialog(frame,
+                val n = if Settings.getPreferece == 4 then JOptionPane.showOptionDialog(frame,
                     "This Julia set will probably be pretty boring at the current zoom level.\n" +
                       "You can either view the fractal 1x zoom, let the computer try to find a nice zoom automatically, \n" +
                       "not make a new Julia set and just keep the old one, or just view the boring picture.",
@@ -67,6 +70,7 @@ object GUI{
                     null,
                     options,
                     options(3))
+                else Settings.getPreferece
                 n match 
                     case 0 => 
                         juliaHistory.newEntry(Julia(reDim = dim, c = newJulia.c, reSize = Julia.initSize, imSize = Julia.initSize))
@@ -141,7 +145,7 @@ object GUI{
     @main
     def createWindow: Unit = {
 
-        frame.setDefaultCloseOperation(3)
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE)
         frame.add(Panel.commandPanel, BorderLayout.SOUTH)
         picture.addMouseListener(mouse)
         picture.addMouseMotionListener(mouse)
