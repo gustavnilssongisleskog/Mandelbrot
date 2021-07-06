@@ -13,12 +13,12 @@ class Picture(mandel: Mandelbrot, julia: Julia) extends JPanel{
         this.setBackground(Color.black)
 
         //Mandelbrot
-        val mreps = mandel.repsss
+        val mcolors = SColor.color(mandel)
         for
-            x <- 0 until mreps.size
-            y <- 0 until mreps(0).size
+            x <- 0 until mcolors.size
+            y <- 0 until mcolors(0).size
         do 
-            g.setColor(SColor.color(mreps(x)(y)))
+            g.setColor(mcolors(x)(y))
             g.fillRect(x, y, 1, 1)//g.drawLine(x, y, x, y)
 
         //Border
@@ -29,16 +29,16 @@ class Picture(mandel: Mandelbrot, julia: Julia) extends JPanel{
             x % 2 match
                 case 0 => g.setColor(Color.BLACK)
                 case 1 => g.setColor(Color.WHITE)
-            g.fillRect(x + mreps.size, x, borderWidth - 2 * x, mreps(0).size - 2 * x)
+            g.fillRect(x + mcolors.size, x, borderWidth - 2 * x, mcolors(0).size - 2 * x)
 
         //Julia
-        val jreps = julia.repsss
+        val jcolors = SColor.color(julia)
         for
-            x <- 0 until jreps.size
-            y <- 0 until jreps(0).size
+            x <- 0 until jcolors.size
+            y <- 0 until jcolors(0).size
         do 
-            g.setColor(SColor.color(jreps(x)(y)))
-            g.fillRect(mreps.size + borderWidth + x, y, 1, 1)//g.drawLine(x, y, x, y)
+            g.setColor(jcolors(x)(y))
+            g.fillRect(mcolors.size + borderWidth + x, y, 1, 1)//g.drawLine(x, y, x, y)
     }
 }
 object Picture{

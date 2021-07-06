@@ -1,534 +1,0 @@
-
-á„'src/main/scala/fractal/mj/Fractal.scala*%
-fractal/mj/Fractal# *Fractal€*0
-fractal/mj/Fractal#`<init>`(). €@*<init>€*6
-%fractal/mj/Fractal#`<init>`().(reDim) €*reDim€*6
-%fractal/mj/Fractal#`<init>`().(reMid) €*reMid€*8
-&fractal/mj/Fractal#`<init>`().(reSize) €*reSize€*6
-%fractal/mj/Fractal#`<init>`().(imMid) €*imMid€*8
-&fractal/mj/Fractal#`<init>`().(imSize) €*imSize€**
-fractal/mj/Fractal#reDim. €*reDim€**
-fractal/mj/Fractal#reMid. €*reMid€*,
-fractal/mj/Fractal#reSize. €*reSize€**
-fractal/mj/Fractal#imMid. €*imMid€*,
-fractal/mj/Fractal#imSize. €*imSize€*6
-fractal/mj/Fractal#scaleFactor. „*scaleFactor€**
-fractal/mj/Fractal#imDim. €*imDim€**
-fractal/mj/Fractal#reInc. €*reInc€**
-fractal/mj/Fractal#imInc. €*imInc€*;
-$fractal/mj/Fractal#pixelToComplex().*pixelToComplex€*1
-'fractal/mj/Fractal#pixelToComplex().(x)*x€*1
-'fractal/mj/Fractal#pixelToComplex().(y)*y€*.
-fractal/mj/Fractal#preview. À*preview€*
-local0*x€*
-local1*y€*,
-fractal/mj/Fractal#repsss. À*repsss€*
-local2*xs€*2
-fractal/mj/Fractal#repsArray. €*	repsArray€*/
-fractal/mj/Fractal#evaluate().*evaluate€*
-local3*evaluate€*
-local4*x€*
-local5*y€*
-local6 €*qIn€*
-local7 €*qOut€*
-local8 €*visited€*
-local9*	isOutside€*
-local10*x€*
-local11*y€*
-local12*	neighbors€*
-local13*p€*
-local14*borderTrace€*
-local15*x€*
-local16*y€*
-local17*p€*
-local18*investigate€*
-local19*p€*
-local20 €*xs€*
-local21*x$1€*
-local22*x€*
-local23*y€*
-local24*fill€*
-local25*x$1€*
-local26*x0€*
-local27*y0€*
-local28*x$1€*
-local29*x0€*
-local30*y0€*
-local31*x€*
-local32*y€*7
-!fractal/mj/Fractal#repetitions(). *repetitions€*.
-$fractal/mj/Fractal#repetitions().(z)*z€*1
-fractal/mj/Fractal#printGrid().*	printGrid€*
-local33*y€*
-local34*x€*/
-fractal/mj/Fractal#toString().*toString€*%
-fractal/mj/Fractal.
- *Fractal€*.
-fractal/mj/Fractal.maxReps. €*maxReps€*&
-fractal/mj/Fractal.dim. €*dim€2
- fractal/mj/2
- fractal/2
- fractal/Complex.2
- fractal/Complex#2
- fractal/2)
- fractal/mj/Fractal.maxReps.2!
- fractal/mj/Fractal.2-
-! &scala/collection/mutable/Queue.2-
-! &scala/collection/mutable/Queue#2+
-( +scala/collection/mutable/Set.2+
-( +scala/collection/mutable/Set#2'
- scala/collection/mutable/2
- scala/collection/2
- scala/2!
- fractal/mj/Fractal#2,
- fractal/mj/Fractal#`<init>`().2
-" %
-scala/Int#2
-2 8scala/Double#2
-F Lscala/Double#2
-Y _scala/Double#2
-m sscala/Double#2'
-  fractal/mj/Fractal#reDim.2'
-+ 0fractal/mj/Fractal#reMid.2(
-> Dfractal/mj/Fractal#reSize.2'
-R Wfractal/mj/Fractal#imMid.2(
-e kfractal/mj/Fractal#imSize.2-
-		 fractal/mj/Fractal#scaleFactor.2
-		 scala/Double#2'
- fractal/mj/Fractal#imDim.2#
-* /scala/Double#toInt().2#
-  !scala/Double#`/`(+6).2 
- scala/Int#`*`(+6).2'
- fractal/mj/Fractal#reDim.2(
- fractal/mj/Fractal#imSize.2(
-" (fractal/mj/Fractal#reSize.2'
- fractal/mj/Fractal#reInc.2#
- scala/Double#`/`(+6).2(
- fractal/mj/Fractal#reSize.2#
- 'scala/Int#toDouble().2'
- fractal/mj/Fractal#reDim.2'
- fractal/mj/Fractal#imInc.2#
- scala/Double#`/`(+6).2(
- fractal/mj/Fractal#imSize.2#
- 'scala/Int#toDouble().2'
- fractal/mj/Fractal#imDim.22
- $fractal/mj/Fractal#pixelToComplex().25
- 'fractal/mj/Fractal#pixelToComplex().(x)2
- 
-scala/Int#25
-  'fractal/mj/Fractal#pixelToComplex().(y)2
-" %
-scala/Int#2
-( /fractal/Complex#2&
-9 9fractal/Complex.apply().2
-2 9fractal/Complex.2#
-M Nscala/Double#`+`(+7).2#
-@ Ascala/Double#`-`(+6).2'
-: ?fractal/mj/Fractal#reMid.2#
-I Jscala/Double#`/`(+3).2(
-B Hfractal/mj/Fractal#reSize.2 
-Q Rscala/Int#`*`(+6).25
-O P'fractal/mj/Fractal#pixelToComplex().(x)2'
-S Xfractal/mj/Fractal#reInc.2#
-m nscala/Double#`+`(+7).2#
-` ascala/Double#`-`(+6).2'
-Z _fractal/mj/Fractal#imMid.2#
-i jscala/Double#`/`(+3).2(
-b hfractal/mj/Fractal#imSize.2 
-q rscala/Int#`*`(+6).25
-o p'fractal/mj/Fractal#pixelToComplex().(y)2'
-s xfractal/mj/Fractal#imInc.2)
- fractal/mj/Fractal#preview.2D
- &6scala/collection/StrictOptimizedSeqFactory#tabulate().2#
- scala/package.Vector.2 
-- .scala/Int#`/`(+3).2'
-' ,fractal/mj/Fractal#reDim.2
-3 4local02D
- 6scala/collection/StrictOptimizedSeqFactory#tabulate().2#
- scala/package.Vector.2 
- scala/Int#`/`(+3).2'
- fractal/mj/Fractal#imDim.2
-$ %local12/
- !fractal/mj/Fractal#repetitions().22
- &$fractal/mj/Fractal#pixelToComplex().2 
-* +scala/Int#`*`(+3).2
-, -local02 
-2 3scala/Int#`*`(+3).2
-4 5local12(
- fractal/mj/Fractal#repsss.2,
- fractal/mj/Fractal#evaluate().2@
-6 92scala/collection/StrictOptimizedIterableOps#map().2:
-- 5,scala/collection/IterableOnceOps#toVector().28
-# #*scala/LowPriorityImplicits#wrapRefArray().2+
-# ,fractal/mj/Fractal#repsArray.2
-: <local22:
-C K,scala/collection/IterableOnceOps#toVector().28
-@ @*scala/LowPriorityImplicits#wrapIntArray().2
-@ Blocal22+
- fractal/mj/Fractal#repsArray.2!
-$ (scala/Array.fill().2
- #scala/Array.2'
-) .fractal/mj/Fractal#reDim.2!
-6 :scala/Array.fill().2
-0 5scala/Array.2'
-; @fractal/mj/Fractal#imDim.2-
-E Escala/reflect/ClassTag.apply().2,
-F Fscala/reflect/ClassTag#wrap().2,
- fractal/mj/Fractal#evaluate().2
- "scala/Unit#2
-?? local32
-?? local42
-?? 
-scala/Int#2
-?? local52
-? ? #
-scala/Int#2
-?&? )
-scala/Int#2!
-@@ !scala/Int#`==`(+3).2"
-@@ scala/Array#apply().2"
-@@ scala/Array#apply().2+
-@@ fractal/mj/Fractal#repsArray.2
-@@ local42
-@@ local52#
-AA scala/Array#update().2"
-AA scala/Array#apply().2+
-AA fractal/mj/Fractal#repsArray.2
-AA local42
-AA local52/
-A"A -!fractal/mj/Fractal#repetitions().22
-A.A <$fractal/mj/Fractal#pixelToComplex().2
-A=A >local42 
-AJA Kscala/Int#`-`(+3).2 
-AFA Gscala/Int#`-`(+3).2'
-A@A Efractal/mj/Fractal#imDim.2
-ALA Mlocal52"
-BB scala/Array#apply().2"
-BB scala/Array#apply().2+
-BB fractal/mj/Fractal#repsArray.2
-BB local42
-BB local52
-EE local627
-EE )scala/collection/IterableFactory#apply().2-
-EE scala/collection/mutable/Queue.2
-EE 
-scala/Int#2
-EE !
-scala/Int#2
-FF local727
-FF )scala/collection/IterableFactory#apply().2-
-FF scala/collection/mutable/Queue.2
-FF 
-scala/Int#2
-FF "
-scala/Int#2
-GG local82@
-GG 2scala/collection/IterableFactory.Delegate#apply().2+
-GG scala/collection/mutable/Set.2
-GG 
-scala/Int#2
-G G #
-scala/Int#2
-II local92
-II local102
-II 
-scala/Int#2
-II local112
-I!I $
-scala/Int#2
-I'I .scala/Boolean#2#
-INI Pscala/Boolean#`||`().2#
-IEI Gscala/Boolean#`||`().2#
-I7I 9scala/Boolean#`||`().2 
-I3I 4scala/Int#`<`(+3).2
-I1I 2local102!
-I<I >scala/Int#`>=`(+3).2
-I:I ;local102'
-I?I Dfractal/mj/Fractal#reDim.2 
-IJI Kscala/Int#`<`(+3).2
-IHI Ilocal112!
-ISI Uscala/Int#`>=`(+3).2
-IQI Rlocal112'
-IVI [fractal/mj/Fractal#imDim.2
-KK local122
-KK local132
-KK 
-scala/Int#2
-KK "
-scala/Int#27
-K-K -)scala/collection/IterableFactory#apply().2#
-K'K -scala/package.Vector.2#
-K/K /scala/Tuple2.apply().2 
-K4K 5scala/Int#`-`(+3).2
-K1K 3scala/Tuple2#_1.2
-K/K 0local132 
-K>K ?scala/Int#`-`(+3).2
-K;K =scala/Tuple2#_2.2
-K9K :local132#
-KEK Escala/Tuple2.apply().2
-KGK Iscala/Tuple2#_1.2
-KEK Flocal132 
-KPK Qscala/Int#`-`(+3).2
-KMK Oscala/Tuple2#_2.2
-KKK Llocal132#
-KWK Wscala/Tuple2.apply().2 
-K\K ]scala/Int#`+`(+4).2
-KYK [scala/Tuple2#_1.2
-KWK Xlocal132 
-KfK gscala/Int#`-`(+3).2
-KcK escala/Tuple2#_2.2
-KaK blocal132#
-KmK mscala/Tuple2.apply().2 
-KrK sscala/Int#`-`(+3).2
-KoK qscala/Tuple2#_1.2
-KmK nlocal132
-KyK {scala/Tuple2#_2.2
-KwK xlocal132#
-KK scala/Tuple2.apply().2"
-
-K„K …scala/Int#`+`(+4).2 
-
-KK ƒscala/Tuple2#_1.2
-	KK €local132 
-
-K‹K scala/Tuple2#_2.2
-
-K‰K Šlocal132%
-
-K‘K ‘scala/Tuple2.apply().2"
-
-K–K —scala/Int#`-`(+3).2 
-
-K“K •scala/Tuple2#_1.2
-
-K‘K ’local132"
-
-K K ¡scala/Int#`+`(+4).2 
-
-KK Ÿscala/Tuple2#_2.2
-
-K›K œlocal132%
-
-K§K §scala/Tuple2.apply().2 
-
-K©K «scala/Tuple2#_1.2
-
-K§K ¨local132"
-
-K²K ³scala/Int#`+`(+4).2 
-
-K¯K ±scala/Tuple2#_2.2
-
-K­K ®local132%
-
-K¹K ¹scala/Tuple2.apply().2"
-
-K¾K ¿scala/Int#`+`(+4).2 
-
-K»K ½scala/Tuple2#_1.2
-
-K¹K ºlocal132"
-
-KÈK Éscala/Int#`+`(+4).2 
-
-KÅK Çscala/Tuple2#_2.2
-
-KÃK Älocal132
-MM local142
-MM local152
-MM 
-scala/Int#2
-M M !local162
-M#M &
-scala/Int#2
-M)M -scala/Unit#27
-NN )scala/collection/mutable/Queue#enqueue().2
-NN local72#
-NN scala/Tuple2.apply().2
-NN local152
-NN local1624
-OO &scala/collection/mutable/SetOps#add().2
-OO local82#
-OO scala/Tuple2.apply().2
-OO local152
-OO local162:
-QQ ,scala/collection/IterableOnceOps#nonEmpty().2
-QQ local72:
-R9R @,scala/collection/immutable/Vector#foreach().2F
-R&R /8scala/collection/StrictOptimizedIterableOps#filterNot().2
-RR local1225
-RR $'scala/collection/mutable/Queue#front().2
-RR local72
-R0R 7local82
-RAR Llocal182
-RAR Alocal1727
-SS )scala/collection/mutable/Queue#dequeue().2
-SS local72
-VV local182
-VV local192
-VV 
-scala/Int#2
-V!V $
-scala/Int#2
-V(V ,scala/Unit#2
-WW local202C
-W"W (5scala/collection/StrictOptimizedIterableOps#filter().2
-WW local122
-WW  local192
-W*W +local222
-W*W *scala/Tuple2#_1.2
-W-W .local232
-W-W -scala/Tuple2#_2.2#
-WDW Fscala/Boolean#`&&`().2(
-WCW Cscala/Boolean#`unary_!`().2
-W4W =local92
-W>W ?local222
-WAW Blocal232!
-WVW Xscala/Int#`==`(+3).2
-WGW Olocal32
-WPW Qlocal222
-WSW Tlocal232)
-WYW `fractal/mj/Fractal.maxReps.2#
-XX scala/Boolean#`&&`().2:
-XX ,scala/collection/IterableOnceOps#nonEmpty().2
-XX local202#
-X5X 7scala/Boolean#`||`().2
-XX (local92
-X+X -scala/Tuple2#_1.2
-X)X *local192
-X1X 3scala/Tuple2#_2.2
-X/X 0local192!
-XNX Pscala/Int#`!=`(+3).2"
-XGX Gscala/Array#apply().2"
-XAX Ascala/Array#apply().2+
-X8X Afractal/mj/Fractal#repsArray.2
-XDX Fscala/Tuple2#_1.2
-XBX Clocal192
-XJX Lscala/Tuple2#_2.2
-XHX Ilocal192)
-XQX Xfractal/mj/Fractal.maxReps.27
-YY )scala/collection/mutable/Queue#enqueue().2
-YY local72
-YY local1924
-ZZ &scala/collection/mutable/SetOps#add().2
-ZZ local82
-ZZ local192;
-[[ -scala/collection/mutable/ArrayDeque#addAll().2
-[[ local62
-[[ local202
-^^ local242
-^^ scala/Unit#2:
-__ ,scala/collection/IterableOnceOps#nonEmpty().2
-__ local62:
-`g` n,scala/collection/immutable/Vector#foreach().2C
-`%` +5scala/collection/StrictOptimizedIterableOps#filter().2
-`` local1225
-`` #'scala/collection/mutable/Queue#front().2
-`` local62
-`-` /local262
-`-` -scala/Tuple2#_1.2
-`1` 3local272
-`1` 1scala/Tuple2#_2.2#
-`K` Mscala/Boolean#`&&`().2(
-`J` Jscala/Boolean#`unary_!`().2
-`9` Blocal92
-`C` Elocal262
-`G` Ilocal272!
-``` bscala/Int#`==`(+3).2"
-`[` [scala/Array#apply().2"
-`W` Wscala/Array#apply().2+
-`N` Wfractal/mj/Fractal#repsArray.2
-`X` Zlocal262
-`\` ^local272
-`p` rlocal292
-`p` pscala/Tuple2#_1.2
-`t` vlocal302
-`t` tscala/Tuple2#_2.2#
-a!a !scala/Array#update().2"
-aa scala/Array#apply().2+
-aa fractal/mj/Fractal#repsArray.2
-aa  local292
-a"a $local302)
-a(a /fractal/mj/Fractal.maxReps.2;
-bb -scala/collection/mutable/ArrayDeque#addOne().2
-bb local62#
-bb scala/Tuple2.apply().2
-bb !local292
-b#b %local3027
-dd )scala/collection/mutable/Queue#dequeue().2
-dd local629
-hh +scala/collection/immutable/Range#foreach().2,
-hh scala/runtime/RichInt#until().26
-hh (scala/LowPriorityImplicits#intWrapper().2'
-hh fractal/mj/Fractal#reDim.2
-hh local3129
-ii +scala/collection/immutable/Range#foreach().2,
-ii scala/runtime/RichInt#until().26
-ii (scala/LowPriorityImplicits#intWrapper().2'
-ii fractal/mj/Fractal#imDim.2
-ii local322#
-k%k 'scala/Boolean#`&&`().2!
-kk !scala/Int#`==`(+3).2"
-kk scala/Array#apply().2"
-kk scala/Array#apply().2+
-kk fractal/mj/Fractal#repsArray.2
-kk local312
-kk local322!
-k7k 9scala/Int#`==`(+3).2
-k(k 0local32
-k1k 2local312
-k4k 5local322)
-k:k Afractal/mj/Fractal.maxReps.2
-ll local142 
-ll scala/Int#`-`(+3).2
-ll local312
-l#l $local322
-mm local242/
-pp !fractal/mj/Fractal#repetitions().22
-pp $fractal/mj/Fractal#repetitions().(z)2
-pp fractal/Complex#2
-p!p $
-scala/Int#2-
-ss fractal/mj/Fractal#printGrid().2
-ss scala/Unit#29
-uu +scala/collection/immutable/Range#foreach().2,
-uu scala/runtime/RichInt#until().26
-uu (scala/LowPriorityImplicits#intWrapper().2'
-uu fractal/mj/Fractal#imDim.2
-uu local3329
-vv +scala/collection/immutable/Range#foreach().2,
-vv scala/runtime/RichInt#until().26
-vv (scala/LowPriorityImplicits#intWrapper().2'
-vv fractal/mj/Fractal#reDim.2
-vv local342!
-ww scala/Int#`==`(+3).2.
-ww  scala/collection/SeqOps#apply().2.
-ww  scala/collection/SeqOps#apply().2(
-ww fractal/mj/Fractal#repsss.2
-ww local342
-ww local332)
-ww &fractal/mj/Fractal.maxReps.2#
-w,w 1scala/Predef.print().2#
-w<w Ascala/Predef.print().2!
-xx scala/Int#`==`(+3).2
-xx local342 
-xx scala/Int#`-`(+3).2'
-xx fractal/mj/Fractal#reDim.2%
-x#x *scala/Predef.println().2,
-|| fractal/mj/Fractal#toString().2"
-|| !scala/Predef.String#2&
-|q| rscala/StringContext#s().2*
-|&| &scala/StringContext.apply().2&
-|0| 0fractal/Complex.apply().2
-|)| 0fractal/Complex.2'
-|1| 6fractal/mj/Fractal#reMid.2'
-|8| =fractal/mj/Fractal#imMid.2#
-|j| kscala/Double#`/`(+3).2#
-|a| iscala/Int#toDouble().2#
-|[| `scala/Double#toInt().2 
-|L| Mscala/Int#`/`(+6).2-
-|N| Yfractal/mj/Fractal#scaleFactor.2!
-~~ fractal/mj/Fractal.2)
- fractal/mj/Fractal.maxReps.2'
-
-€€ fractal/mj/Fractal.dim.PZ CB26C5ECE97EA88562BABF4A5375E765

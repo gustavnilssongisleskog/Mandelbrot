@@ -26,7 +26,6 @@ case class Julia(override val reDim: Int = Fractal.dim, //reDim: Int = 1000, imD
     override def toString: String = s"Julia at c ${super.toString}"
 }
 object Julia{
-    val maxReps = Fractal.maxReps
     val initSize = 3
     val initRe = 0D
     val initIm = 0D

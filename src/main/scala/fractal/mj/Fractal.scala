@@ -14,13 +14,15 @@ abstract class Fractal(val reDim: Int, val reMid: Double, val reSize: Double, va
     val reInc = reSize / reDim.toDouble
     val imInc = imSize / imDim.toDouble
 
+    val maxReps = Fractal.maxReps
+
     def pixelToComplex(x: Int, y: Int): Complex = Complex(reMid - reSize / 2 + x * reInc, imMid - imSize / 2 + y * imInc)
 
     lazy val preview = Vector.tabulate(reDim / 10)(x => 
         Vector.tabulate(imDim / 10)(y =>
             repetitions(pixelToComplex(10 * x, 10 * y))))
 
-    lazy val repsss = {evaluate(); repsArray.toVector.map(xs => xs.toVector)}
+    lazy val repsss = {println(maxReps); evaluate(); repsArray.toVector.map(xs => xs.toVector)}
     /*val repsss = Vector.tabulate(reDim)(x => 
                              Vector.tabulate(imDim)(y => 
                              repetitions(pixelToComplex(x, imDim - 1 - y))))*/
@@ -125,6 +127,11 @@ abstract class Fractal(val reDim: Int, val reMid: Double, val reSize: Double, va
     override def toString: String = s"(${Complex(reMid, imMid)}, Zoom ${(10 / scaleFactor).toInt.toDouble / 10}x)"
 }
 object Fractal{
-    val maxReps = 1000
+    private var maxReps = 1000
+    def newMaxReps(reps: Int): Unit = {
+        require(reps > 0)
+        maxReps = reps
+    }
+    def getMaxReps = maxReps
     val dim = 765
 }

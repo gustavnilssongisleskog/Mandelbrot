@@ -1,11 +1,12 @@
 package fractal.application.graphics
 
 import java.awt.Graphics
-import javax.swing._
 import java.awt.Dimension
+import fractal.mj.Fractal
+import javax.swing.JPanel
 
 object SColor{
-    import fractal.mj.Mandelbrot.maxReps
+    //import fractal.mj.Mandelbrot.maxReps
     import java.awt.{Color => JColor}
     import scala.util.Random.nextInt
 
@@ -40,10 +41,15 @@ object SColor{
 
     val colors3 = many(2, blend, Vector(JColor.red, JColor.orange, JColor.yellow, JColor.green, JColor.blue, new JColor(75, 0, 130).brighter, new JColor(148, 0, 211), JColor.red))//many(3, blend, Vector(JColor.YELLOW, new JColor(0,0,128), JColor.YELLOW)).reverse.tail.reverse
 
-    def color(reps: Int): JColor = {
-        reps match
-            case `maxReps` => JColor.black
-            case _ => colors3((reps + colors3.size - 1) % colors3.size)
+    def color(fractal: Fractal): Vector[Vector[JColor]] = {
+
+        fractal.repsss.map(_.map(reps => if reps == fractal.maxReps then JColor.BLACK else colors3((reps + colors3.size - 1) % colors3.size)))
+
+        //if reps >= maxReps
+        //then
+        //    JColor.BLACK
+        //else
+        //    colors3((reps + colors3.size - 1) % colors3.size)
     }
 
     def many[T](n: Int, f: T => T, x: T): T = {
@@ -64,7 +70,7 @@ object SColor{
         xs.sliding(2).toVector.flatten.sliding(2).toVector.map(x => quadAvg(x(0), x(1))).prepended(xs.head).appended(xs.last)
     }
 
-    class Rainbow extends JPanel{
+    /*class Rainbow extends JPanel{
         
         val colors = many(2, blend, Vector(JColor.red, JColor.orange, JColor.yellow, JColor.green, JColor.blue, new JColor(75, 0, 130).brighter, new JColor(148, 0, 211), JColor.red))
         //val colors = many(10, blend, Vector(JColor.red, JColor.blue))
@@ -81,7 +87,7 @@ object SColor{
         }
     }
 
-    //@main
+    @main
     def main3(): Unit = {
         val frame = new JFrame("hej")
         val img = new Rainbow
@@ -89,7 +95,7 @@ object SColor{
         frame.setSize(new Dimension(800, 800))
         frame.setDefaultCloseOperation(3)
         frame.setVisible(true)
-    }
+    }*/
 
 
 

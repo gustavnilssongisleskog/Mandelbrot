@@ -14,8 +14,7 @@ import java.awt.Graphics
 object GUI{
     val frame = new JFrame("Salta mandlar")
     val dim = Fractal.dim
-    val standardMandel = Mandelbrot()
-    private var mandel = standardMandel
+    private var mandel = Mandelbrot()
     private var julia = Julia.random(dim)
     val music = new Music
     val mandelHistory = new History(mandel)
@@ -76,15 +75,15 @@ object GUI{
                         while newJulia.isBoring do
                             newJulia = Julia(reDim = dim, c = newJulia.c, reSize = newJulia.reSize * 2, imSize = newJulia.imSize * 2)
                             println("retry")
-                        julia = newJulia
+                        juliaHistory.newEntry(newJulia)
                         updateFrame
                     case 2 => 
                     case 3 =>
-                        julia = newJulia
+                        juliaHistory.newEntry(newJulia)
                         updateFrame
                     case -1 => 
             else
-                julia = newJulia
+                juliaHistory.newEntry(newJulia)
                 updateFrame
     }
     def zoomIn: Unit = {
@@ -112,11 +111,16 @@ object GUI{
             updateFrame
     }
     def mandelReset: Unit = {
-        mandelHistory.newEntry(standardMandel)
+        mandelHistory.newEntry(Mandelbrot(dim))
         updateFrame
     }
     def juliaReset: Unit = {
         juliaHistory.newEntry(Julia(reDim = dim, c = julia.c, reSize = Julia.initSize, imSize = Julia.initSize))
+        updateFrame
+    }
+    def reloadIterations: Unit = {
+        mandelHistory.newEntry(Mandelbrot(dim, mandel.reMid, mandel.reSize, mandel.imMid, mandel.imSize))
+        juliaHistory.newEntry(Julia(dim, julia.reMid, julia.reSize, julia.imMid, julia.imSize, julia.c))
         updateFrame
     }
     def updateFrame: Unit = {

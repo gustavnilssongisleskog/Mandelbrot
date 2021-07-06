@@ -10,7 +10,7 @@ import javax.imageio.ImageIO
 
 object FractalImage{
 
-    def createBufferedImage(
+    /*def createBufferedImage(
         reDim: Int = 1000,
         reMid: Double = -0.5, reSize: Double = 2,
         imMid: Double = 0, imSize: Double = 2): BufferedImage = {
@@ -46,5 +46,5 @@ object FractalImage{
             case e: Exception => println(e)
         }
     }
-
+*/
 }

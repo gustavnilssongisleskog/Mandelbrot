@@ -24,9 +24,7 @@ case class Mandelbrot(override val reDim: Int = Fractal.dim, //reDim: Int = 1000
     override def toString: String = s"Mandelbrot ${super.toString}"
 }
 object Mandelbrot{
-    val maxReps = Fractal.maxReps
     val initSize = 2.5
     val initRe = -0.5
     val initIm = 0D
-
 }
