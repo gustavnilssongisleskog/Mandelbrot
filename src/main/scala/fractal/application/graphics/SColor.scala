@@ -10,6 +10,8 @@ object SColor{
     import java.awt.{Color => JColor}
     import scala.util.Random.nextInt
 
+    val black = JColor.BLACK
+
     val colors = Vector(
         new JColor(255, 0, 0),
         new JColor(255, 64, 0),
@@ -39,18 +41,29 @@ object SColor{
 
     val colors2 = Vector.fill(100)(new JColor(nextInt(256), nextInt(256), nextInt(256)))
 
-    val colors3 = many(2, blend, Vector(JColor.red, JColor.orange, JColor.yellow, JColor.green, JColor.blue, new JColor(75, 0, 130).brighter, new JColor(148, 0, 211), JColor.red))//many(3, blend, Vector(JColor.YELLOW, new JColor(0,0,128), JColor.YELLOW)).reverse.tail.reverse
+    //val colors3 = many(2, blend, Vector(JColor.red, JColor.orange, JColor.yellow, JColor.green, JColor.blue, new JColor(75, 0, 130).brighter, new JColor(148, 0, 211), JColor.red)).dropRight(1)//many(3, blend, Vector(JColor.YELLOW, new JColor(0,0,128), JColor.YELLOW)).reverse.tail.reverse
 
-    def color(fractal: Fractal): Vector[Vector[JColor]] = {
+    val colors3 = many(8, blend, Vector(
+        new JColor(9,1,47),
+        new JColor(4,4,73),
+        new JColor(0,7,100),
+        new JColor(12,44,138),
+        new JColor(24,82,177),
+        new JColor(57,125,209),
+        new JColor(134,181,229),
+        new JColor(211,236,248),
+        new JColor(241,233,191),
+        new JColor(248,201,95),
+        new JColor(255,170,0),
+        new JColor(204,128,0),
+        new JColor(153,87,0),
+        new JColor(106,52,3),
+        new JColor(66,30,15),
+        new JColor(25,7,26),
+        new JColor(9,1,47)
+    )).dropRight(1)
 
-        fractal.repsss.map(_.map(reps => if reps == fractal.maxReps then JColor.BLACK else colors3((reps + colors3.size - 1) % colors3.size)))
-
-        //if reps >= maxReps
-        //then
-        //    JColor.BLACK
-        //else
-        //    colors3((reps + colors3.size - 1) % colors3.size)
-    }
+    def color(reps: Double): JColor = if reps == -1 then JColor.BLACK else colors3(((reps * 100).toInt + colors3.size - 1) % colors3.size)
 
     def many[T](n: Int, f: T => T, x: T): T = {
         if n == 0 then x else many(n - 1, f, f(x))

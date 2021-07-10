@@ -13,7 +13,7 @@ class Picture(mandel: Mandelbrot, julia: Julia) extends JPanel{
         this.setBackground(Color.black)
 
         //Mandelbrot
-        val mcolors = SColor.color(mandel)
+        val mcolors = mandel.colors
         for
             x <- 0 until mcolors.size
             y <- 0 until mcolors(0).size
@@ -32,7 +32,7 @@ class Picture(mandel: Mandelbrot, julia: Julia) extends JPanel{
             g.fillRect(x + mcolors.size, x, borderWidth - 2 * x, mcolors(0).size - 2 * x)
 
         //Julia
-        val jcolors = SColor.color(julia)
+        val jcolors = julia.colors
         for
             x <- 0 until jcolors.size
             y <- 0 until jcolors(0).size

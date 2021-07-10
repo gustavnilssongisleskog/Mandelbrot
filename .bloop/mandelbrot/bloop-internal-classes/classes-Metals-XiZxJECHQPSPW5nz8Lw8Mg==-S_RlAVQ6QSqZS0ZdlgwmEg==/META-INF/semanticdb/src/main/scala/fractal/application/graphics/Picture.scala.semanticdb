@@ -1,0 +1,164 @@
+
+Â29src/main/scala/fractal/application/graphics/Picture.scala*5
+%fractal/application/graphics/Picture#*Picture€*B
+0fractal/application/graphics/Picture#`<init>`(). €@*<init>€*G
+8fractal/application/graphics/Picture#`<init>`().(mandel)*mandel€*E
+7fractal/application/graphics/Picture#`<init>`().(julia)*julia€*>
+,fractal/application/graphics/Picture#mandel. €*mandel€*<
++fractal/application/graphics/Picture#julia. €*julia€*M
+6fractal/application/graphics/Picture#paintComponent().*paintComponent€*C
+9fractal/application/graphics/Picture#paintComponent().(g)*g€*
+local0 €*mcolors€*
+local1*x€*
+local2*y€*
+local3*x€*
+local4 €*jcolors€*
+local5*x€*
+local6*y€*7
+%fractal/application/graphics/Picture.
+ *Picture€*H
+1fractal/application/graphics/Picture.borderWidth. €*borderWidth€2'
+ $fractal/application/graphics/2
+ fractal/application/2
+ fractal/2&
+ fractal/application/GUI.2"
+ fractal/application/2
+ fractal/2$
+ fractal/mj/Mandelbrot.2$
+ fractal/mj/Mandelbrot#2
+ $fractal/mj/Julia.2
+ $fractal/mj/Julia#2
+ fractal/mj/2
+ fractal/2!
+ javax/swing/JPanel.2!
+ javax/swing/JPanel#2
+ javax/swing/2
+ javax/2 
+ java/awt/Graphics.2 
+ java/awt/Graphics#2
+ 	java/awt/2
+ java/2
+ java/awt/Color#2
+ 	java/awt/2
+ java/23
+ %fractal/application/graphics/Picture#2>
+ 0fractal/application/graphics/Picture#`<init>`().2$
+  fractal/mj/Mandelbrot#2
+) .fractal/mj/Julia#2.
+> > javax/swing/JPanel#`<init>`(+3).2!
+8 >javax/swing/JPanel#2:
+ ,fractal/application/graphics/Picture#mandel.29
+" '+fractal/application/graphics/Picture#julia.2D
+
+
+ 6fractal/application/graphics/Picture#paintComponent().2G
+
+ 
+ !9fractal/application/graphics/Picture#paintComponent().(g)2 
+
+#
+ +java/awt/Graphics#2
+
+.
+ 2scala/Unit#26
+ (javax/swing/JComponent#paintComponent().2G
+ 9fractal/application/graphics/Picture#paintComponent().(g)25
+ 'javax/swing/JComponent#setBackground().2#
+! &java/awt/Color#black.2
+  java/awt/Color#2
+ local02(
+ #fractal/mj/Fractal#colors.2:
+ ,fractal/application/graphics/Picture#mandel.29
+% %+scala/collection/immutable/Range#foreach().2,
+ scala/runtime/RichInt#until().26
+ (scala/LowPriorityImplicits#intWrapper().2-
+! %scala/collection/SeqOps#size().2
+  local02
+ local129
+( (+scala/collection/immutable/Range#foreach().2,
+ scala/runtime/RichInt#until().26
+ (scala/LowPriorityImplicits#intWrapper().2-
+$ (scala/collection/SeqOps#size().2.
+    scala/collection/SeqOps#apply().2
+  local02
+ local22+
+ java/awt/Graphics#setColor().2G
+ 9fractal/application/graphics/Picture#paintComponent().(g)2.
+! ! scala/collection/SeqOps#apply().2.
+  scala/collection/SeqOps#apply().2
+ local02
+  local12
+" #local22+
+ java/awt/Graphics#fillRect().2G
+ 9fractal/application/graphics/Picture#paintComponent().(g)2
+ local12
+ local22?
+ "1fractal/application/graphics/Picture.borderWidth.23
+ %fractal/application/graphics/Picture.29
+( (+scala/collection/immutable/Range#foreach().2,
+ scala/runtime/RichInt#until().26
+ (scala/LowPriorityImplicits#intWrapper().2 
+% &scala/Int#`/`(+3).2?
+ $1fractal/application/graphics/Picture.borderWidth.2
+ local32 
+ scala/Int#`%`(+3).2
+ local32+
+ $java/awt/Graphics#setColor().2G
+ 9fractal/application/graphics/Picture#paintComponent().(g)2#
++ 0java/awt/Color#BLACK.2
+% *java/awt/Color#2+
+ $java/awt/Graphics#setColor().2G
+ 9fractal/application/graphics/Picture#paintComponent().(g)2#
++ 0java/awt/Color#WHITE.2
+% *java/awt/Color#2+
+ java/awt/Graphics#fillRect().2G
+ 9fractal/application/graphics/Picture#paintComponent().(g)2 
+ scala/Int#`+`(+4).2
+ local32-
+# 'scala/collection/SeqOps#size().2
+ "local02
+) *local32 
+8 9scala/Int#`-`(+3).2?
+, 71fractal/application/graphics/Picture.borderWidth.2 
+< =scala/Int#`*`(+3).2
+> ?local32 
+Q Rscala/Int#`-`(+3).2-
+L Pscala/collection/SeqOps#size().2.
+H H scala/collection/SeqOps#apply().2
+A Hlocal02 
+U Vscala/Int#`*`(+3).2
+W Xlocal32
+"" local42(
+"" "fractal/mj/Fractal#colors.29
+"" +fractal/application/graphics/Picture#julia.29
+$%$ %+scala/collection/immutable/Range#foreach().2,
+$$ scala/runtime/RichInt#until().26
+$$ (scala/LowPriorityImplicits#intWrapper().2-
+$!$ %scala/collection/SeqOps#size().2
+$$  local42
+$$ local529
+%(% (+scala/collection/immutable/Range#foreach().2,
+%% scala/runtime/RichInt#until().26
+%% (scala/LowPriorityImplicits#intWrapper().2-
+%$% (scala/collection/SeqOps#size().2.
+% %   scala/collection/SeqOps#apply().2
+%%  local42
+%% local62+
+'' java/awt/Graphics#setColor().2G
+'' 9fractal/application/graphics/Picture#paintComponent().(g)2.
+'!' ! scala/collection/SeqOps#apply().2.
+''  scala/collection/SeqOps#apply().2
+'' local42
+''  local52
+'"' #local62+
+(( java/awt/Graphics#fillRect().2G
+(( 9fractal/application/graphics/Picture#paintComponent().(g)2 
+(2( 3scala/Int#`+`(+4).2 
+($( %scala/Int#`+`(+4).2-
+(( #scala/collection/SeqOps#size().2
+(( local02?
+(&( 11fractal/application/graphics/Picture.borderWidth.2
+(4( 5local52
+(7( 8local623
+++ %fractal/application/graphics/Picture.2?
+,, 1fractal/application/graphics/Picture.borderWidth.PZ 668C1E2F3C752BF7113841A36E463381

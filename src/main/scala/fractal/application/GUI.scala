@@ -57,7 +57,7 @@ object GUI{
     private var picture: Picture = new Picture(mandel, julia)
     def newJulia: Unit = {
         if mouseOnFractal then
-            var newJulia = Julia(reDim = dim, c = Complex(mouseRe, mouseIm), reSize = Math.sqrt(mandelScaleFactor) * Julia.initSize / 2, imSize = Math.sqrt(mandelScaleFactor) * Julia.initSize / 2)
+            var newJulia = Julia(reDim = dim, c = Complex(mouseRe, mouseIm), reSize = Math.sqrt(mandelScaleFactor) * Julia.initSize, imSize = Math.sqrt(mandelScaleFactor) * Julia.initSize)
             if newJulia.isBoring then 
                 val options = Array("Zoom 1x", "Find a nice zoom automatically", "Don't make a new Julia set", "Show me the boring picture").map(_.asInstanceOf[Object])
                 val n = if Settings.getPreferece == 4 then JOptionPane.showOptionDialog(frame,

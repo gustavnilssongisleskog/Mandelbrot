@@ -13,14 +13,14 @@ case class Julia(override val reDim: Int = Fractal.dim, //reDim: Int = 1000, imD
 
     def isBoring: Boolean = Math.max(reSize, imSize) < initSize && (preview.flatten.count(_ == maxReps) > reDim * imDim / 100 / 2 || preview.flatten.filterNot(_ == maxReps).groupBy(r => r).map(p => p._2.size).toVector.sortBy(-_).take(3).sum > reDim * imDim / 100 * 0.55)
 
-    override def repetitions(z: Complex): Int = {
+    override def repetitions(z: Complex): (Int, Complex) = {
         var res = 0
         var cur = z
-        while cur.sqrSum < 64 && res < maxReps do
+        while cur.sqrSum < 256 && res < maxReps do
             cur = cur.sqr + c
             res += 1
 
-        res
+        (res, cur)
     }
     
     override def toString: String = s"Julia at c ${super.toString}"

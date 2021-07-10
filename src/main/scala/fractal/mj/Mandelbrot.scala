@@ -9,16 +9,16 @@ case class Mandelbrot(override val reDim: Int = Fractal.dim, //reDim: Int = 1000
     
     override val scaleFactor = reSize / initSize
 
-    override def repetitions(c: Complex): Int = {
+    override def repetitions(c: Complex): (Int, Complex) = {
         var res = 0
         var z = Complex()
 
         //z.abs <= 2
-        while z.sqrSum <= 4 && res < maxReps do 
+        while z.sqrSum <= 256 && res < maxReps do 
             z = z.sqr + c
             res += 1
 
-        res
+        (res, z)
     }
 
     override def toString: String = s"Mandelbrot ${super.toString}"
