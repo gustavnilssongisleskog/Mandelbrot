@@ -1,0 +1,33 @@
+
+þ>src/main/scala/fractal/application/graphics/FractalImage.scala*5
+fractal/graphics/FractalImage.
+ *FractalImage€2
+ fractal/graphics/2
+ fractal/2$
+ fractal/mj/Mandelbrot.2$
+ fractal/mj/Mandelbrot#2
+ fractal/mj/2
+ fractal/2
+ fractal/Complex.2
+ fractal/Complex#2
+ fractal/22
+$ *$fractal/application/graphics/SColor.2+
+ #fractal/application/graphics/2"
+ fractal/application/2
+ fractal/2+
+ #java/awt/image/BufferedImage.2+
+ #java/awt/image/BufferedImage#2
+ java/awt/image/2
+ 	java/awt/2
+ java/2
+ java/io/File.2
+ java/io/File#2
+ java/io/2
+ java/2$
+ javax/imageio/ImageIO.2$
+ javax/imageio/ImageIO#2
+ javax/imageio/2
+ javax/2,
+
+
+ fractal/graphics/FractalImage.PZ 7387FE3A4697137E5058387930BBF413

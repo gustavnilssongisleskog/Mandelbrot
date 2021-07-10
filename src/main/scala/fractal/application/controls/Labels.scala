@@ -37,7 +37,10 @@ object Labels{
 
     val musicLabel = new JLabel("Currently playing: "){
         override def paintComponent(g: Graphics) = {
-            setText(s"🎵 Currently playing: ${music.getSong} 🎵")
+            if music.getSong == "Secret" then
+                setText("🎵 Currently losing: The Game 🎵")
+            else
+                setText(s"🎵 Currently playing: ${music.getSong} 🎵")
             super.paintComponent(g)
         }
     }

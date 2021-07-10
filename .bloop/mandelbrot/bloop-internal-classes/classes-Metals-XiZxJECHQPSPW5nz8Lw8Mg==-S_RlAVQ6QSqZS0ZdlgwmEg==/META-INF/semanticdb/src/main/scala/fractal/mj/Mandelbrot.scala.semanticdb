@@ -1,132 +1,0 @@
-
-ß+*src/main/scala/fractal/mj/Mandelbrot.scala*,
-fractal/mj/Mandelbrot# Ä*
-MandelbrotÄ*3
-!fractal/mj/Mandelbrot#`<init>`(). Ä@*<init>Ä*9
-(fractal/mj/Mandelbrot#`<init>`().(reDim) Ä*reDimÄ*9
-(fractal/mj/Mandelbrot#`<init>`().(reMid) Ä*reMidÄ*;
-)fractal/mj/Mandelbrot#`<init>`().(reSize) Ä*reSizeÄ*9
-(fractal/mj/Mandelbrot#`<init>`().(imMid) Ä*imMidÄ*;
-)fractal/mj/Mandelbrot#`<init>`().(imSize) Ä*imSizeÄ*-
-fractal/mj/Mandelbrot#reDim. Ä*reDimÄ*-
-fractal/mj/Mandelbrot#reMid. Ä*reMidÄ*/
-fractal/mj/Mandelbrot#reSize. Ä*reSizeÄ*-
-fractal/mj/Mandelbrot#imMid. Ä*imMidÄ*/
-fractal/mj/Mandelbrot#imSize. Ä*imSizeÄ*9
-"fractal/mj/Mandelbrot#scaleFactor. Ä*scaleFactorÄ*8
-$fractal/mj/Mandelbrot#repetitions().*repetitionsÄ*1
-'fractal/mj/Mandelbrot#repetitions().(c)*cÄ*
-local0 Ä*resÄ*
-local1 Ä*zÄ*2
-!fractal/mj/Mandelbrot#toString().*toStringÄ**
-fractal/mj/Mandelbrot#copy().*copyÄ*2
-$fractal/mj/Mandelbrot#copy().(reDim)*reDimÄ*2
-$fractal/mj/Mandelbrot#copy().(reMid)*reMidÄ*4
-%fractal/mj/Mandelbrot#copy().(reSize)*reSizeÄ*2
-$fractal/mj/Mandelbrot#copy().(imMid)*imMidÄ*4
-%fractal/mj/Mandelbrot#copy().(imSize)*imSizeÄ*>
-'fractal/mj/Mandelbrot#copy$default$1().*copy$default$1Ä*>
-'fractal/mj/Mandelbrot#copy$default$2().*copy$default$2Ä*>
-'fractal/mj/Mandelbrot#copy$default$3().*copy$default$3Ä*>
-'fractal/mj/Mandelbrot#copy$default$4().*copy$default$4Ä*>
-'fractal/mj/Mandelbrot#copy$default$5().*copy$default$5Ä*&
-fractal/mj/Mandelbrot#_1().*_1Ä*&
-fractal/mj/Mandelbrot#_2().*_2Ä*&
-fractal/mj/Mandelbrot#_3().*_3Ä*&
-fractal/mj/Mandelbrot#_4().*_4Ä*&
-fractal/mj/Mandelbrot#_5().*_5Ä*+
-fractal/mj/Mandelbrot.
- *
-MandelbrotÄ*,
-fractal/mj/Mandelbrot.apply().*applyÄ*3
-%fractal/mj/Mandelbrot.apply().(reDim)*reDimÄ*3
-%fractal/mj/Mandelbrot.apply().(reMid)*reMidÄ*5
-&fractal/mj/Mandelbrot.apply().(reSize)*reSizeÄ*3
-%fractal/mj/Mandelbrot.apply().(imMid)*imMidÄ*5
-&fractal/mj/Mandelbrot.apply().(imSize)*imSizeÄ*0
- fractal/mj/Mandelbrot.unapply().*unapplyÄ*1
-%fractal/mj/Mandelbrot.unapply().(x$1)*x$1Ä*2
-!fractal/mj/Mandelbrot.toString().*toStringÄ*X
-4fractal/mj/Mandelbrot.$lessinit$greater$default$1().*$lessinit$greater$default$1Ä*X
-4fractal/mj/Mandelbrot.$lessinit$greater$default$2().*$lessinit$greater$default$2Ä*X
-4fractal/mj/Mandelbrot.$lessinit$greater$default$3().*$lessinit$greater$default$3Ä*X
-4fractal/mj/Mandelbrot.$lessinit$greater$default$4().*$lessinit$greater$default$4Ä*X
-4fractal/mj/Mandelbrot.$lessinit$greater$default$5().*$lessinit$greater$default$5Ä*3
-fractal/mj/Mandelbrot.initSize. Ä*initSizeÄ*/
-fractal/mj/Mandelbrot.initRe. Ä*initReÄ*/
-fractal/mj/Mandelbrot.initIm. Ä*initImÄ2
- fractal/mj/2
- fractal/2
- fractal/Complex.2
- fractal/Complex#2
- fractal/2$
- fractal/mj/Mandelbrot.2$
- fractal/mj/Mandelbrot#2/
- !fractal/mj/Mandelbrot#`<init>`().2
-* -
-scala/Int#2
-) /scala/Double#2
-O Uscala/Double#2
-) /scala/Double#2
-O Uscala/Double#2,
-q qfractal/mj/Fractal#`<init>`().2!
-j qfractal/mj/Fractal#2*
-r wfractal/mj/Mandelbrot#reDim.2*
-y ~fractal/mj/Mandelbrot#reMid.2-
-
-Ä Üfractal/mj/Mandelbrot#reSize.2,
-
-à çfractal/mj/Mandelbrot#imMid.2-
-
-è ïfractal/mj/Mandelbrot#imSize.2*
-# (fractal/mj/Mandelbrot#reDim.2*
-" 'fractal/mj/Mandelbrot#reMid.2+
-G Mfractal/mj/Mandelbrot#reSize.2*
-" 'fractal/mj/Mandelbrot#imMid.2+
-G Mfractal/mj/Mandelbrot#imSize.20
-		 "fractal/mj/Mandelbrot#scaleFactor.2#
-	&	 'scala/Double#`/`(+6).2+
-		 %fractal/mj/Mandelbrot#reSize.2-
-	(	 0fractal/mj/Mandelbrot.initSize.22
- $fractal/mj/Mandelbrot#repetitions().25
- 'fractal/mj/Mandelbrot#repetitions().(c)2
-  'fractal/Complex#2
-+ .
-scala/Int#2
-0 7fractal/Complex#2
- local02
- local12&
- fractal/Complex.apply().2
- fractal/Complex.2#
-  scala/Boolean#`&&`().2$
- scala/Double#`<=`(+3).2'
- fractal/Complex#sqrSum().2
- local12 
-% &scala/Int#`<`(+3).2
-! $local02)
-' .fractal/mj/Fractal#maxReps.2
- local12$
- fractal/Complex#`+`().2$
- fractal/Complex#sqr().2
- local125
- 'fractal/mj/Mandelbrot#repetitions().(c)2
- local02 
- scala/Int#`+`(+4).2#
-	 	scala/Tuple2.apply().2
-	 local02
- local12/
- !fractal/mj/Mandelbrot#toString().2"
- !scala/Predef.String#2&
-B Cscala/StringContext#s().2*
-& &scala/StringContext.apply().2,
-9 Afractal/mj/Fractal#toString().2$
- fractal/mj/Mandelbrot.2%
-8 ;fractal/mj/Fractal.dim.2!
-0 7fractal/mj/Fractal.2+
-2 8fractal/mj/Mandelbrot.initRe.2-
-X `fractal/mj/Mandelbrot.initSize.2+
-2 8fractal/mj/Mandelbrot.initIm.2-
-X `fractal/mj/Mandelbrot.initSize.2-
- fractal/mj/Mandelbrot.initSize.2+
- fractal/mj/Mandelbrot.initRe.2+
- fractal/mj/Mandelbrot.initIm.PZ ACA0DDCF85DE182E421ABCBA88BBE034

@@ -1,5 +1,5 @@
 
-´!8src/main/scala/fractal/application/controls/Labels.scala*5
+ä"8src/main/scala/fractal/application/controls/Labels.scala*5
 $fractal/application/controls/Labels.
  *Labels€*O
 4fractal/application/controls/Labels.mandelZoomLabel. €*mandelZoomLabel€*
@@ -104,11 +104,15 @@ musicLabel€*
 %% javax/swing/JLabel#2
 && #local102
 &$& %local112 
-&'& /java/awt/Graphics#2+
-'' javax/swing/JLabel#setText().2&
-'?' @scala/StringContext#s().2*
-'' scala/StringContext.apply().22
-'4' ;$fractal/application/Music#getSong().2,
-'.' 3fractal/application/GUI.music.26
-((  (javax/swing/JComponent#paintComponent().2
-(!( "local11PZ 61691878591CC2D53658AB06975BF942
+&'& /java/awt/Graphics#2
+'' scala/Any#`==`().22
+'' $fractal/application/Music#getSong().2,
+'' fractal/application/GUI.music.2+
+(( javax/swing/JLabel#setText().2+
+** javax/swing/JLabel#setText().2&
+*C* Dscala/StringContext#s().2*
+** scala/StringContext.apply().22
+*8* ?$fractal/application/Music#getSong().2,
+*2* 7fractal/application/GUI.music.26
+++  (javax/swing/JComponent#paintComponent().2
++!+ "local11PZ D5A51BD0286678ABDC7ECF75E5A57F0A

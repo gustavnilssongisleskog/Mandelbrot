@@ -1,7 +1,7 @@
 package fractal.application.controls
 
 import fractal.mj.Fractal.{getMaxReps, newMaxReps}
-import fractal.application.GUI.reloadIterations
+import fractal.application.GUI.{reloadIterations, music}
 
 import javax.swing.JButton
 import javax.swing.JFrame
@@ -50,32 +50,11 @@ object Settings{
     )
     panel.add(standardBoringButton)
 
-    /*private var standardBoringJulia = -2
-    def getStandardBoringJulia = standardBoringJulia
-    private val boringJuliaGroup = new ButtonGroup
-    private val ask = new JRadioButton("Always ask")
-    private val zoom1 = new JRadioButton("Zoom 1x")
-    private val automatic = new JRadioButton("Find a nice zoom automatically")
-    private val nojulia = new JRadioButton("Don't make a new Julia set")
-    private val boringjulia = new JRadioButton("Show me the boring picture")
-
-    ask.setBounds(50, 150, 300, 200)
-    zoom1.setBounds(50, 250, 300, 300)
-    automatic.setBounds(50, 350, 300, 400)
-    nojulia.setBounds(50, 450, 300, 500)
-    boringjulia.setBounds(50, 550, 300, 600)
-
-    boringJuliaGroup.add(ask)
-    boringJuliaGroup.add(zoom1)
-    boringJuliaGroup.add(automatic)
-    boringJuliaGroup.add(nojulia)
-    boringJuliaGroup.add(boringjulia)
-    
-
-    panel2.add(ask)
-    panel2.add(zoom1)
-    panel2.add(automatic)
-    panel2.add(nojulia)
-    panel2.add(boringjulia)*/
+    private val secretButton = new JButton("Secret, do not open")
+    secretButton.addActionListener(e =>
+        music.newSong("Secret")
+        JOptionPane.showMessageDialog(frame, "You just lost The Game!", "Loser", JOptionPane.PLAIN_MESSAGE)
+    )
+    panel.add(secretButton)
     
 }
