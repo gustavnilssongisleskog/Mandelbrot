@@ -1,274 +1,0 @@
-
-ƒH)src/main/scala/fractal/graphics/GUI.scala*#
-fractal/graphics/GUI.
- *GUI€*(
-fractal/graphics/GUI.dim. €*dim€*2
-fractal/graphics/GUI.initSize. €*initSize€*.
-fractal/graphics/GUI.initRe. €*initRe€*.
-fractal/graphics/GUI.initIm. €*initIm€*:
-#fractal/graphics/GUI.scaleFactor(). €*scaleFactor€*)
-fractal/graphics/GUI.main().*main€*
-local0 €*frame€*
-local1 €*mandel€*
-local2 €*picture€*
-local3 €*	zoomLabel€*
-local4 *$anon€*
-local5*paintComponent€*
-local6*g€*
-local7*
-newPicture€*
-local8*reMid€*
-local9*imMid€*
-local10*scale€*$
-local11*newPicture$default$1€*$
-local12*newPicture$default$2€*$
-local13*newPicture$default$3€*
-local14 €*inButton€*
-local15*e€*
-local16 €*scale$1€*
-local17 €*reMid$1€*
-local18 €*imMid$1€*
-local19 €*	outButton€*
-local20*e€*
-local21 €*scale$2€*
-local22 €*reMid$2€*
-local23 €*imMid$2€* 
-local24 €*zoomDirection€*#
-local25 €*zoomChangeButton€*
-local26*e€*
-local27 €*
-zoomButton€*
-local28*e€*
-local29 €*scale$3€*
-local30 €*reMid$3€*
-local31 €*imMid$3€*
-local32 €*resetButton€*
-local33*e€*
-local34 €*scale$4€*
-local35 €*reMid$4€*
-local36 €*imMid$4€*
-local37 €*commandPanel€*%
-fractal/graphics/main# *main€*3
-!fractal/graphics/main#`<init>`(). €@*<init>€*-
-fractal/graphics/main#main(). € *main€*0
-#fractal/graphics/main#main().(args)*args€*
-local38 €*error€2
- fractal/graphics/2
- fractal/2
- javax/swing/2
- javax/2!
- java/awt/Dimension.2!
- java/awt/Dimension#2
- 	java/awt/2
- java/2,
- $fractal/mandelbrot/Mandelbrot.2,
- $fractal/mandelbrot/Mandelbrot#2!
- fractal/mandelbrot/2
- fractal/2"
- java/awt/FlowLayout#2
- 	java/awt/2
- java/2$
- java/awt/BorderLayout#2
- 	java/awt/2
- java/2 
- java/awt/Graphics.2 
- java/awt/Graphics#2
- 	java/awt/2
- java/2#
-		 
-fractal/graphics/GUI.2'
-
-
- fractal/graphics/GUI.dim.2,
- fractal/graphics/GUI.initSize.2*
- fractal/graphics/GUI.initRe.2*
- fractal/graphics/GUI.initIm.21
- #fractal/graphics/GUI.scaleFactor().2
- 	scala/main#2*
- fractal/graphics/GUI.main().2
- scala/Unit#2
- local02.
-  javax/swing/JFrame#`<init>`(+2).2!
- javax/swing/JFrame#2<
- &.javax/swing/JFrame#setDefaultCloseOperation().2
- local02
- local124
- &fractal/mandelbrot/Mandelbrot.apply().2,
- fractal/mandelbrot/Mandelbrot.2'
-  #fractal/graphics/GUI.dim.2;
-% *-fractal/mandelbrot/Mandelbrot.apply().(reMid)2*
-- 3fractal/graphics/GUI.initRe.2;
-5 :-fractal/mandelbrot/Mandelbrot.apply().(imMid)2*
-= Cfractal/graphics/GUI.initIm.2
- local222
-! !$fractal/graphics/Picture#`<init>`().2'
- !fractal/graphics/Picture#23
-) /%fractal/mandelbrot/Mandelbrot#repsss.2
-" (local12
- local32.
-" " javax/swing/JLabel#`<init>`(+2).2!
- "javax/swing/JLabel#2
- 'local52
-( )local62 
-+ 3java/awt/Graphics#2+
- javax/swing/JLabel#setText().2&
-5 6scala/StringContext#s().2*
- scala/StringContext.apply().2 
-% &scala/Int#`/`(+6).21
-' 2#fractal/graphics/GUI.scaleFactor().26
- $(javax/swing/JComponent#paintComponent().2
-% &local62
- local72
- local82
- $scala/Double#2
-/ 4local92
-6 <scala/Double#2
-G Llocal102
-N Tscala/Double#2
-[ _scala/Unit#2*
-   javax/swing/JFrame#remove().2
-   local02
-    local22
-!! local222
-!!! !$fractal/graphics/Picture#`<init>`().2'
-!! !fractal/graphics/Picture#23
-!d! j%fractal/mandelbrot/Mandelbrot#repsss.24
-!,! ,&fractal/mandelbrot/Mandelbrot.apply().2,
-!"! ,fractal/mandelbrot/Mandelbrot.2'
-!-! 0fractal/graphics/GUI.dim.2
-!2! 7local82#
-!B! Cscala/Double#`*`(+6).2,
-!9! Afractal/graphics/GUI.initSize.2
-!D! Ilocal102
-!K! Plocal92#
-![! \scala/Double#`*`(+6).2,
-!R! Zfractal/graphics/GUI.initSize.2
-!]! blocal102'
-"" java/awt/Container#add().2
-"" local02
-"" local22.
-##  java/awt/Component#revalidate().2
-## local02+
-%% java/awt/Component#repaint().2
-%% local32*
-' -fractal/graphics/GUI.initRe.2*
-? Efractal/graphics/GUI.initIm.2
-++ local142/
-+"+ "!javax/swing/JButton#`<init>`(+2).2"
-++ "javax/swing/JButton#2=
-,, "/javax/swing/AbstractButton#addActionListener().2
-,, local142
-,#, $local152'
--- scala/Predef.println(+1).21
-.. #fractal/graphics/GUI.scaleFactor().2#
-.. scala/Double#`/`(+3).2
-00 local72
-00 local172
-00 local182
-00 localval scale21
-00 *#fractal/graphics/GUI.scaleFactor().2
-33 local192/
-3#3 #!javax/swing/JButton#`<init>`(+2).2"
-33 #javax/swing/JButton#2=
-44 #/javax/swing/AbstractButton#addActionListener().2
-44 local192
-4$4 %local202'
-55 scala/Predef.println(+1).21
-66 #fractal/graphics/GUI.scaleFactor().2#
-66 scala/Double#`*`(+3).2
-88 local72
-88 local222
-88 local232
-88 localval scale21
-88 *#fractal/graphics/GUI.scaleFactor().2
-:: local242
-;; local252/
-;*; *!javax/swing/JButton#`<init>`(+2).2"
-;#; *javax/swing/JButton#2=
-<< */javax/swing/AbstractButton#addActionListener().2
-<< local252
-<+< ,local262'
-== scala/Predef.println(+1).2
-?? local242 
-?? scala/Int#`/`(+6).2
-? ? -local242$
-@@ scala/Double#`==`(+3).2
-@@ local2423
-@8@ ?%javax/swing/AbstractButton#setText().2
-@'@ 7local2523
-@d@ k%javax/swing/AbstractButton#setText().2
-@S@ clocal252
-CC local272/
-C$C $!javax/swing/JButton#`<init>`(+2).2"
-CC $javax/swing/JButton#2=
-DD $/javax/swing/AbstractButton#addActionListener().2
-DD local272
-D%D &local282'
-EE scala/Predef.println(+1).21
-FF #fractal/graphics/GUI.scaleFactor().2#
-FF scala/Double#`*`(+6).2
-FF (local242
-HH local72
-HH local302
-HH local312
-HH localval scale21
-HH *#fractal/graphics/GUI.scaleFactor().2
-KK local322/
-K%K %!javax/swing/JButton#`<init>`(+2).2"
-KK %javax/swing/JButton#2=
-LL %/javax/swing/AbstractButton#addActionListener().2
-LL local322
-L&L 'local332'
-MM scala/Predef.println(+1).21
-NN #fractal/graphics/GUI.scaleFactor().2
-PP local72
-PP local352
-PP local362
-PP localval scale21
-PP *#fractal/graphics/GUI.scaleFactor().2
-SS local372.
-S%S % javax/swing/JPanel#`<init>`(+1).2!
-SS %javax/swing/JPanel#2/
-S4S 4!java/awt/FlowLayout#`<init>`(+1).2"
-S*S 4java/awt/FlowLayout#2)
-S@S Fjava/awt/FlowLayout#CENTER.2"
-S5S ?java/awt/FlowLayout#2'
-VV java/awt/Container#add().2
-VV local372
-VV )local252'
-WW java/awt/Container#add().2
-WW local372
-WW #local272'
-XX java/awt/Container#add().2
-XX local372
-XX $local322'
-\\ java/awt/Container#add().2
-\\ local372
-\\ "local32)
-__ java/awt/Container#add(+3).2
-__ local02
-__ local372*
-_-_ 2java/awt/BorderLayout#SOUTH.2$
-_ _ ,java/awt/BorderLayout#2)
-`` java/awt/Container#add(+3).2
-`` local02
-`` local22+
-`(` .java/awt/BorderLayout#CENTER.2$
-`` 'java/awt/BorderLayout#2(
-aa java/awt/Window#setSize().2
-aa local02.
-a#a # java/awt/Dimension#`<init>`(+2).2!
-aa #java/awt/Dimension#22
-a+a 0$fractal/mandelbrot/Mandelbrot#reDim.2
-a$a *local122
-a9a >$fractal/mandelbrot/Mandelbrot#imDim.2
-a2a 8local126
-bb #(java/awt/Window#setLocationRelativeTo().2
-bb local02+
-cc java/awt/Window#setVisible().2
-cc local02$
- fractal/graphics/main#2/
- !fractal/graphics/main#`<init>`().2*
- fractal/graphics/GUI.main().27
- )scala/util/CommandLineParser.showError().2
- local38PZ 09D3E0FB614BFA3D178BD1C14F1ECF45

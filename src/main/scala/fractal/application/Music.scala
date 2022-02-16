@@ -38,7 +38,8 @@ class Music{
         clip.start
     }
     def restart: Unit = {
-        if shuffle then
+        if song == "Secret" || shuffle then
+            shuffle = true
             newSong(randomSong(songs diff recentSongs))
         else
             clip.setFramePosition(0)

@@ -122,7 +122,7 @@ object GUI{
         juliaHistory.newEntry(Julia(reDim = dim, c = julia.c, reSize = Julia.initSize, imSize = Julia.initSize))
         updateFrame
     }
-    def reloadIterations: Unit = {
+    def reload: Unit = {
         mandelHistory.newEntry(Mandelbrot(dim, mandel.reMid, mandel.reSize, mandel.imMid, mandel.imSize))
         juliaHistory.newEntry(Julia(dim, julia.reMid, julia.reSize, julia.imMid, julia.imSize, julia.c))
         updateFrame

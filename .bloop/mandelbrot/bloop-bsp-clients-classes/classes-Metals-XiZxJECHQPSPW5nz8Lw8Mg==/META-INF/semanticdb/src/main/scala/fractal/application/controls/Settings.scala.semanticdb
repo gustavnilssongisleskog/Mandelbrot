@@ -1,183 +1,0 @@
-
-à>:src/main/scala/fractal/application/controls/Settings.scala*9
-&fractal/application/controls/Settings.
- *Settings€*:
--fractal/application/controls/Settings.open().*open€*=
-,fractal/application/controls/Settings.frame. €*frame€*=
-,fractal/application/controls/Settings.panel. €*panel€*W
-9fractal/application/controls/Settings.maxIterationButton. €*maxIterationButton€*
-local0*e€*
-local1 €*newMax€*
-local2 €*e€*I
-3fractal/application/controls/Settings.preference(). €*
-preference€*J
-5fractal/application/controls/Settings.getPreferece().*getPreferece€*A
-.fractal/application/controls/Settings.options. €*options€*[
-;fractal/application/controls/Settings.standardBoringButton. €*standardBoringButton€*
-local3*e€*K
-3fractal/application/controls/Settings.secretButton. €*secretButton€*
-local4*e€2'
- $fractal/application/controls/2
- fractal/application/2
- fractal/2.
- % fractal/mj/Fractal.getMaxReps().2.
-' 1 fractal/mj/Fractal.newMaxReps().2!
- fractal/mj/Fractal.2
- fractal/mj/2
- fractal/29
-  0+fractal/application/GUI.reloadIterations().2,
-2 7fractal/application/GUI.music.2&
- fractal/application/GUI.2"
- fractal/application/2
- fractal/2"
- javax/swing/JButton.2"
- javax/swing/JButton#2
- javax/swing/2
- javax/2!
- javax/swing/JFrame.2!
- javax/swing/JFrame#2
- javax/swing/2
- javax/2&
- javax/swing/JOptionPane#2
- javax/swing/2
- javax/2!
- javax/swing/JPanel.2!
- javax/swing/JPanel#2
- javax/swing/2
- javax/2"
-		 java/awt/FlowLayout#2
-		 	java/awt/2
-		 java/2$
-
-
- java/awt/BorderLayout#2
-
-
- 	java/awt/2
-
-
- java/2*
- "javax/swing/WindowConstants#2
- javax/swing/2
- javax/24
- &fractal/application/controls/Settings.2;
- -fractal/application/controls/Settings.open().2
- scala/Unit#2*
- java/awt/Window#setSize(+1).2:
- ,fractal/application/controls/Settings.frame.2)
- java/awt/Container#add(+3).2:
- ,fractal/application/controls/Settings.frame.2:
- ,fractal/application/controls/Settings.panel.2+
-& ,java/awt/BorderLayout#CENTER.2$
- %java/awt/BorderLayout#26
- #(java/awt/Window#setLocationRelativeTo().2:
- ,fractal/application/controls/Settings.frame.2<
- &.javax/swing/JFrame#setDefaultCloseOperation().2:
- ,fractal/application/controls/Settings.frame.2;
-7 G-javax/swing/WindowConstants#DISPOSE_ON_CLOSE.2*
-' 6javax/swing/WindowConstants#2,
- java/awt/Frame#setResizable().2:
- ,fractal/application/controls/Settings.frame.20
- "java/awt/Component#requestFocus().2:
- ,fractal/application/controls/Settings.frame.2+
- java/awt/Window#setVisible().2:
- ,fractal/application/controls/Settings.frame.2:
- ,fractal/application/controls/Settings.frame.2.
-" " javax/swing/JFrame#`<init>`(+2).2!
- "javax/swing/JFrame#2:
- ,fractal/application/controls/Settings.panel.2.
-" " javax/swing/JPanel#`<init>`(+1).2!
- "javax/swing/JPanel#2/
-1 1!java/awt/FlowLayout#`<init>`(+1).2"
-' 1java/awt/FlowLayout#2)
-= Cjava/awt/FlowLayout#CENTER.2"
-2 <java/awt/FlowLayout#2G
- "9fractal/application/controls/Settings.maxIterationButton.2/
-0 0!javax/swing/JButton#`<init>`(+2).2"
-) 0javax/swing/JButton#2&
-N Oscala/StringContext#s().2*
-3 3scala/StringContext.apply().2.
-D N fractal/mj/Fractal.getMaxReps().2=
- (/javax/swing/AbstractButton#addActionListener().2G
- 9fractal/application/controls/Settings.maxIterationButton.2
-) *local02
- local128
-! 0*javax/swing/JOptionPane#showInputDialog().2&
-  javax/swing/JOptionPane#2
- scala/Any#`!=`().2
- local12.
-!!  fractal/mj/Fractal.newMaxReps().21
-!"! '#scala/collection/StringOps#toInt().2+
-!! scala/Predef.augmentString().2
-!! !local123
-"#" *%javax/swing/AbstractButton#setText().2G
-"" "9fractal/application/controls/Settings.maxIterationButton.2&
-"L" Mscala/StringContext#s().2*
-"-" -scala/StringContext.apply().21
-"F" K#scala/collection/StringOps#toInt().2+
-"?" ?scala/Predef.augmentString().2
-"?" Elocal129
-##  +fractal/application/GUI.reloadIterations().2
-%% local22&
-%% !scala/package.Exception#2<
-%1% B.javax/swing/JOptionPane#showMessageDialog(+1).2&
-%%% 0javax/swing/JOptionPane#2:
-%C% H,fractal/application/controls/Settings.frame.26
-
-%„% ‘&javax/swing/JOptionPane#ERROR_MESSAGE.2'
-	%x% ƒjavax/swing/JOptionPane#2'
-'
-' java/awt/Container#add().2:
-'' 	,fractal/application/controls/Settings.panel.2G
-''  9fractal/application/controls/Settings.maxIterationButton.2A
-)) 3fractal/application/controls/Settings.preference().2C
-** 5fractal/application/controls/Settings.getPreferece().2A
-** !3fractal/application/controls/Settings.preference().2<
-++ .fractal/application/controls/Settings.options.27
-+ +  )scala/collection/IterableFactory#apply().2#
-++  scala/package.Vector.2I
-,, $;fractal/application/controls/Settings.standardBoringButton.2/
-,2, 2!javax/swing/JButton#`<init>`(+2).2"
-,+, 2javax/swing/JButton#2&
-,k, lscala/StringContext#s().2*
-,5, 5scala/StringContext.apply().2.
-,^, ^ scala/collection/SeqOps#apply().2<
-,W, ^.fractal/application/controls/Settings.options.2A
-,_, i3fractal/application/controls/Settings.preference().2=
--- */javax/swing/AbstractButton#addActionListener().2I
--- ;fractal/application/controls/Settings.standardBoringButton.2
--+- ,local32A
-.. 3fractal/application/controls/Settings.preference().2 
-.. scala/Int#`+`(+4).2A
-// 3fractal/application/controls/Settings.preference().2 
-// scala/Int#`%`(+3).2-
-// "scala/collection/SeqOps#size().2<
-// .fractal/application/controls/Settings.options.23
-00 $%javax/swing/AbstractButton#setText().2I
-00 ;fractal/application/controls/Settings.standardBoringButton.2&
-0]0 ^scala/StringContext#s().2*
-0'0 'scala/StringContext.apply().2.
-0P0 P scala/collection/SeqOps#apply().2<
-0I0 P.fractal/application/controls/Settings.options.2A
-0Q0 [3fractal/application/controls/Settings.preference().2'
-2
-2 java/awt/Container#add().2:
-22 	,fractal/application/controls/Settings.panel.2I
-22 ";fractal/application/controls/Settings.standardBoringButton.2A
-44 3fractal/application/controls/Settings.secretButton.2/
-4*4 *!javax/swing/JButton#`<init>`(+2).2"
-4#4 *javax/swing/JButton#2=
-55 "/javax/swing/AbstractButton#addActionListener().2A
-55 3fractal/application/controls/Settings.secretButton.2
-5#5 $local422
-66 $fractal/application/Music#newSong().2,
-66 fractal/application/GUI.music.2<
-77 %.javax/swing/JOptionPane#showMessageDialog(+1).2&
-77 javax/swing/JOptionPane#2:
-7&7 +,fractal/application/controls/Settings.frame.24
-7]7 j&javax/swing/JOptionPane#PLAIN_MESSAGE.2&
-7Q7 \javax/swing/JOptionPane#2'
-9
-9 java/awt/Container#add().2:
-99 	,fractal/application/controls/Settings.panel.2A
-99 3fractal/application/controls/Settings.secretButton.PZ 0549FBEBFBA7DE462EC09E7B91ED84E9

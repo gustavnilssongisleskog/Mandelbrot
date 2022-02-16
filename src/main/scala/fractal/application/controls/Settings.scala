@@ -1,7 +1,8 @@
 package fractal.application.controls
 
 import fractal.mj.Fractal.{getMaxReps, newMaxReps}
-import fractal.application.GUI.{reloadIterations, music}
+import fractal.application.GUI.{reload, music}
+import fractal.application.graphics.SColor.{changeColor, rainbow, bbw, random}
 
 import javax.swing.JButton
 import javax.swing.JFrame
@@ -10,6 +11,8 @@ import javax.swing.JPanel
 import java.awt.FlowLayout
 import java.awt.BorderLayout
 import javax.swing.WindowConstants
+import javax.swing.JColorChooser
+import java.awt.Color
 
 object Settings{
     def open: Unit = {
@@ -33,7 +36,7 @@ object Settings{
             try
                 newMaxReps(newMax.toInt)
                 maxIterationButton.setText(s"Max iterations: ${newMax.toInt}")
-                reloadIterations
+                reload
             catch
                 case e: Exception => JOptionPane.showMessageDialog(frame, "Input must be a positive integer!", "Error", JOptionPane.ERROR_MESSAGE)
     )
@@ -53,8 +56,49 @@ object Settings{
     private val secretButton = new JButton("Secret, do not open")
     secretButton.addActionListener(e =>
         music.newSong("Secret")
-        JOptionPane.showMessageDialog(frame, "You just lost The Game!", "Loser", JOptionPane.PLAIN_MESSAGE)
+        JOptionPane.showMessageDialog(null, "You just lost The Game!", "Loser", JOptionPane.PLAIN_MESSAGE)
     )
     panel.add(secretButton)
-    
+
+    private val colorButton = new JButton("Change color palette")
+    colorButton.addActionListener(e =>
+        val options = Array("BBW (Brown, Blue, White)", "Rainbow", "Random colors", "Choose colors yourself", "Cancel").map(_.asInstanceOf[Object])
+        val choice = JOptionPane.showOptionDialog(frame, 
+            "What color palette would you like to use?",
+            "Color change",
+            JOptionPane.YES_NO_CANCEL_OPTION,
+            JOptionPane.QUESTION_MESSAGE,
+            null,
+            options,
+            options(4)
+            
+        )
+        choice match 
+            case 0 => 
+                changeColor(bbw)
+                reload
+            case 1 => 
+                changeColor(rainbow)
+                reload
+            case 2 => 
+                changeColor(random)
+                reload
+            case 3 =>
+                var continue = true
+                var colors = Vector[Color]()
+                while continue do
+                    val newColor = JColorChooser.showDialog(null, "Choose a color", Color.WHITE)
+                    if newColor == null then
+                        continue = false
+                    else
+                        colors = colors appended newColor
+                    if JOptionPane.showConfirmDialog(null, "Would you like to add another color?") != JOptionPane.YES_OPTION then
+                        continue = false
+                changeColor(colors)
+                reload
+
+            case _ => {}
+
+    )
+    panel.add(colorButton)
 }
