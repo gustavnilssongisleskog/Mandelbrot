@@ -1,9 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(d, Some(415f185c-2021-40c5-8b93-90ed39341b49), Some(CommandSource(console0)))[0m
-[0m[[0m[31merror[0m] [0m[0mNot a valid command: d[0m
-[0m[[0m[31merror[0m] [0m[0mExpected 'debug'[0m
-[0m[[0m[31merror[0m] [0m[0mNot a valid project ID: d[0m
-[0m[[0m[31merror[0m] [0m[0mExpected ':'[0m
-[0m[[0m[31merror[0m] [0m[0mNot a valid key: d[0m
-[0m[[0m[31merror[0m] [0m[0md[0m
-[0m[[0m[31merror[0m] [0m[0m ^[0m
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

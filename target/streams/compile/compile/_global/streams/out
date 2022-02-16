@@ -1,6 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\Gustav\Desktop\Scala\Projekt\Mandelbrot\src\main\scala\fractal\application\GUI.scala:119:62 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m119 |[0m        juliaHistory.newEntry(Julia(reDim = dim, c = newJulia.c, reSize = Julia.initSize, imSize = Julia.initSize))[0m
-[0m[[0m[31merror[0m] [0m[0m    |                                                     [31m^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |                                       value c is not a member of Unit[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
