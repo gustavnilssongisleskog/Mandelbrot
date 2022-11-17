@@ -151,7 +151,7 @@ object GUI{
         picture.addMouseMotionListener(mouse)
         picture.addKeyListener(keyboard)
         frame.add(picture)
-        frame.setSize(new Dimension(mandel.reDim, mandel.imDim))
+        frame.setSize(new Dimension(mandel.reDim + Picture.borderWidth + julia.reDim, mandel.imDim))
         frame.setLocationRelativeTo(null)
         frame.setVisible(true)
 
